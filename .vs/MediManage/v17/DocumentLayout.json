@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\output\\MediManage_250226_\uC644\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|c:\\output\\medimanage_250226_\uC644\\medimanage\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|solutionrelative:medimanage\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|c:\\output\\medimanage_250226_\uC644\\medimanage\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|solutionrelative:medimanage\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|C:\\output\\MediManage_250226_\uC644\\medimanage\\clsdbmng.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|solutionrelative:medimanage\\clsdbmng.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|C:\\output\\MediManage_250226_\uC644\\medimanage\\form1.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|solutionrelative:medimanage\\form1.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.Designer.vb",
+              "DocumentMoniker": "C:\\output\\MediManage_250226_\uC644\\MediManage\\Form1.Designer.vb",
+              "RelativeDocumentMoniker": "MediManage\\Form1.Designer.vb",
+              "ToolTip": "C:\\output\\MediManage_250226_\uC644\\MediManage\\Form1.Designer.vb",
+              "RelativeToolTip": "MediManage\\Form1.Designer.vb",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAjwFgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-25T23:03:37.221Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "C:\\output\\MediManage_250226_\uC644\\MediManage\\Form1.vb",
+              "RelativeDocumentMoniker": "MediManage\\Form1.vb",
+              "ToolTip": "C:\\output\\MediManage_250226_\uC644\\MediManage\\Form1.vb",
+              "RelativeToolTip": "MediManage\\Form1.vb",
+              "ViewState": "AgIAAJgAAAAAAAAAAADwv6UAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-27T10:58:07.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.vb [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\output\\MediManage_250226_\uC644\\MediManage\\Form1.vb",
+              "RelativeDocumentMoniker": "MediManage\\Form1.vb",
+              "ToolTip": "C:\\output\\MediManage_250226_\uC644\\MediManage\\Form1.vb [\uB514\uC790\uC778]",
+              "RelativeToolTip": "MediManage\\Form1.vb [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-26T10:50:43.372Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsDBmng.vb",
+              "DocumentMoniker": "C:\\output\\MediManage_250226_\uC644\\MediManage\\clsDBmng.vb",
+              "RelativeDocumentMoniker": "MediManage\\clsDBmng.vb",
+              "ToolTip": "C:\\output\\MediManage_250226_\uC644\\MediManage\\clsDBmng.vb",
+              "RelativeToolTip": "MediManage\\clsDBmng.vb",
+              "ViewState": "AgIAADoAAAAAAAAAAAAewEMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-25T23:16:24.119Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

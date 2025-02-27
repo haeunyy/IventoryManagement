@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MediManage", "MediManage\MediManage.vbproj", "{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D891644A-6843-42E9-8393-274CD99EF000}
+	EndGlobalSection
+EndGlobal
