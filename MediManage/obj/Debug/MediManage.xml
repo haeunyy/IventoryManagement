@@ -22,5 +22,127 @@ MediManage
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="M:MediManage.Form1.sD_CreateTable">
+ <summary>
+ TB_보험약, TB_치료재료대 테이블 존재하지 않을 경우 CREATE <br/> 
+ ++ TB_보험약 [단가] 컬럼 추가 
+ </summary>
+</member>
+<member name="M:MediManage.Form1.Form1_Load(System.Object,System.EventArgs)">
+ <summary>
+ 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:MediManage.Form1.sD_Get_infoList(System.Object)">
+ <summary>
+  보험약 조회 프로시저
+ </summary>
+ <param name="strL_Code">조회할 보험약의 코드</param>
+</member>
+<member name="M:MediManage.Form1.grid_Medi_CellContentClick(System.Object,System.EventArgs)">
+ <summary>
+ 기준처방 항목 클릭 이벤트
+ </summary>
+</member>
+<member name="M:MediManage.Form1.grid_보험약_CellContentClick(System.Object,System.EventArgs)">
+ <summary>
+ 보험약재고 항목 클릭 이벤트
+ </summary>
+</member>
+<member name="M:MediManage.Form1.btn_Update_Click(System.Object,System.EventArgs)">
+ <summary>
+ 보험약 수정 버튼 클릭 이벤트
+ </summary>
+</member>
+<member name="M:MediManage.Form1.btn_Save_Click(System.Object,System.EventArgs)">
+ <summary>
+ 보험약 저장 버튼 클릭 이벤트
+ </summary>
+</member>
+<member name="M:MediManage.Form1.btn_New_Click(System.Object,System.EventArgs)">
+ <summary>
+ 보험약 새로입력 버튼 클릭 이벤트
+ </summary>
+</member>
+<member name="M:MediManage.Form1.btn_delete_Click(System.Object,System.EventArgs)">
+ <summary>
+ 보험약 삭제 버튼 클릭 이벤트
+ </summary>
+</member>
+<member name="T:MediManage.Form1.en_치료재료대_Col">
+ <summary>
+   치료재료대 
+ </summary>
+ 
+</member>
+<member name="F:MediManage.Form1.intD_index_in">
+ <summary>
+ 현재 치료재료대 인덱스
+ </summary>
+</member>
+<member name="M:MediManage.Form1.sD_inven_Return_Clear">
+ <summary>
+ 재료대재고 폼 value 초기화
+ </summary>
+</member>
+<member name="M:MediManage.Form1.sD_btnTrue_in">
+ <summary>
+ 재료대 수정, 저장, 삭제 버튼 활성화
+ </summary>
+</member>
+<member name="M:MediManage.Form1.sD_btnFalse_in">
+ <summary>
+ 재료대 수정, 삭제 버튼 비활성화
+ </summary>
+</member>
+<member name="M:MediManage.Form1.sD_txtEnableTrue_in">
+ <summary>
+ 입고일자, 수량, 단가 항목 수정 활성화
+ </summary>
+</member>
+<member name="M:MediManage.Form1.sD_txtEnableFalse_in">
+ <summary>
+ 재고항목 전체 수정 비활성화 <br/>
+ txt_code_inven, txt_name_inven, txt_comp_inven, txt_수입업소, dtp_inven, txt_count_inven, txt_price_inven
+ </summary>
+</member>
+<member name="M:MediManage.Form1.tap_치료재료대_Click(System.Object,System.EventArgs)">
+ <summary>
+ 치료재료대 탭 클릭 
+ </summary>
+</member>
+<member name="M:MediManage.Form1.grid_치료재료대_CellClick(System.Object,System.EventArgs)">
+ <summary>
+ 치료재료대 내역 클릭
+ </summary>
+</member>
+<member name="M:MediManage.Form1.sD_get_inven(System.String)">
+ <summary>
+ 치료재료대 재고 조회
+ </summary>
+ <param name="vCode">처방코드</param>
+</member>
+<member name="M:MediManage.Form1.grid_재료대재고내역_CellContentClick(System.Object,System.EventArgs)">
+ <summary>
+ 치료재료대 재고내역 클릭
+ </summary>
+</member>
+<member name="M:MediManage.Form1.btn_save_inven_Click(System.Object,System.EventArgs)">
+ <summary>
+ 저장버튼 클릭
+ </summary>
+</member>
+<member name="M:MediManage.Form1.btn_update_inven_Click(System.Object,System.EventArgs)">
+ <summary>
+ 수정버튼 클릭
+ </summary>
+</member>
+<member name="M:MediManage.Form1.btn_new_inven_Click(System.Object,System.EventArgs)">
+ <summary>
+ 새로 입력 클릭 
+ </summary>
+</member>
 </members>
 </doc>
