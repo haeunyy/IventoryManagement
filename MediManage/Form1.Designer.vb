@@ -23,6 +23,69 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.치료재료대 = New System.Windows.Forms.TabPage()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.grid_단미제 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.grid_단미제_inven = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.txt_price_sg = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.btn_update_sg = New System.Windows.Forms.Button()
+        Me.btn_save_sg = New System.Windows.Forms.Button()
+        Me.btn_del_sg = New System.Windows.Forms.Button()
+        Me.btn_new_sg = New System.Windows.Forms.Button()
+        Me.dtp_received_sg = New System.Windows.Forms.DateTimePicker()
+        Me.txt_count_sg = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.txt_comp_sg = New System.Windows.Forms.TextBox()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.txt_code_sg = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.txt_name_sg = New System.Windows.Forms.TextBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.보험약 = New System.Windows.Forms.TabPage()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.grid_혼합제 = New System.Windows.Forms.DataGridView()
+        Me.grid_Code = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.grid_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.grid_MediCompany = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.grid_Count = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.약재정보 = New System.Windows.Forms.GroupBox()
+        Me.grid_혼합제_inven = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.col_idx = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.txt_Price = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.btn_Update = New System.Windows.Forms.Button()
+        Me.btn_Save = New System.Windows.Forms.Button()
+        Me.btn_delete = New System.Windows.Forms.Button()
+        Me.btn_New = New System.Windows.Forms.Button()
+        Me.dtp_Received = New System.Windows.Forms.DateTimePicker()
+        Me.txt_count = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txt_comp = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txt_Code = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txt_Name = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.tap_페이지 = New System.Windows.Forms.TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.grid_치료재료대 = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -55,71 +118,751 @@ Partial Class Form1
         Me.Label11 = New System.Windows.Forms.Label()
         Me.txt_name_inven = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.보험약 = New System.Windows.Forms.TabPage()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.grid_기준처방 = New System.Windows.Forms.DataGridView()
-        Me.grid_Code = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.grid_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.grid_MediCompany = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.grid_Count = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.약재정보 = New System.Windows.Forms.GroupBox()
-        Me.grid_보험약 = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.col_idx = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.txt_Price = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.btn_Update = New System.Windows.Forms.Button()
-        Me.btn_Save = New System.Windows.Forms.Button()
-        Me.btn_delete = New System.Windows.Forms.Button()
-        Me.btn_New = New System.Windows.Forms.Button()
-        Me.dtp_Received = New System.Windows.Forms.DateTimePicker()
-        Me.txt_count = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txt_mediCompany = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.txt_Code = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txt_Name = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.tap_치료재료대 = New System.Windows.Forms.TabControl()
         Me.치료재료대.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        CType(Me.grid_단미제, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox5.SuspendLayout()
+        CType(Me.grid_단미제_inven, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.보험약.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        CType(Me.grid_혼합제, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.약재정보.SuspendLayout()
+        CType(Me.grid_혼합제_inven, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tap_페이지.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.grid_치료재료대, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         CType(Me.grid_재료대재고내역, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.보험약.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        CType(Me.grid_기준처방, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.약재정보.SuspendLayout()
-        CType(Me.grid_보험약, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.tap_치료재료대.SuspendLayout()
         Me.SuspendLayout()
         '
         '치료재료대
         '
-        Me.치료재료대.Controls.Add(Me.GroupBox1)
-        Me.치료재료대.Controls.Add(Me.GroupBox3)
+        Me.치료재료대.Controls.Add(Me.GroupBox4)
+        Me.치료재료대.Controls.Add(Me.GroupBox5)
         Me.치료재료대.Location = New System.Drawing.Point(4, 22)
-        Me.치료재료대.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.치료재료대.Margin = New System.Windows.Forms.Padding(2)
         Me.치료재료대.Name = "치료재료대"
-        Me.치료재료대.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.치료재료대.Size = New System.Drawing.Size(787, 577)
+        Me.치료재료대.Padding = New System.Windows.Forms.Padding(2)
+        Me.치료재료대.Size = New System.Drawing.Size(809, 599)
         Me.치료재료대.TabIndex = 2
-        Me.치료재료대.Text = "치료재료대"
+        Me.치료재료대.Text = "단미제"
         Me.치료재료대.UseVisualStyleBackColor = True
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox4.Controls.Add(Me.grid_단미제)
+        Me.GroupBox4.Location = New System.Drawing.Point(12, 5)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(789, 294)
+        Me.GroupBox4.TabIndex = 8
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "단미제 정보"
+        '
+        'grid_단미제
+        '
+        Me.grid_단미제.AllowUserToAddRows = False
+        Me.grid_단미제.AllowUserToDeleteRows = False
+        Me.grid_단미제.AllowUserToOrderColumns = True
+        Me.grid_단미제.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders
+        Me.grid_단미제.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grid_단미제.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8})
+        Me.grid_단미제.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grid_단미제.Location = New System.Drawing.Point(3, 17)
+        Me.grid_단미제.Name = "grid_단미제"
+        Me.grid_단미제.ReadOnly = True
+        Me.grid_단미제.RowHeadersWidth = 62
+        Me.grid_단미제.RowTemplate.Height = 23
+        Me.grid_단미제.Size = New System.Drawing.Size(783, 274)
+        Me.grid_단미제.TabIndex = 2
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "기준코드"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "코드"
+        Me.DataGridViewTextBoxColumn3.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        Me.DataGridViewTextBoxColumn3.Width = 54
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "기준코드명칭"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "명칭"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
+        Me.DataGridViewTextBoxColumn6.Width = 54
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "기준코드제약사"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "제약사"
+        Me.DataGridViewTextBoxColumn7.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.ReadOnly = True
+        Me.DataGridViewTextBoxColumn7.Width = 66
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "전체수량"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "전체수량"
+        Me.DataGridViewTextBoxColumn8.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.ReadOnly = True
+        Me.DataGridViewTextBoxColumn8.Visible = False
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox5.Controls.Add(Me.grid_단미제_inven)
+        Me.GroupBox5.Controls.Add(Me.txt_price_sg)
+        Me.GroupBox5.Controls.Add(Me.Label14)
+        Me.GroupBox5.Controls.Add(Me.btn_update_sg)
+        Me.GroupBox5.Controls.Add(Me.btn_save_sg)
+        Me.GroupBox5.Controls.Add(Me.btn_del_sg)
+        Me.GroupBox5.Controls.Add(Me.btn_new_sg)
+        Me.GroupBox5.Controls.Add(Me.dtp_received_sg)
+        Me.GroupBox5.Controls.Add(Me.txt_count_sg)
+        Me.GroupBox5.Controls.Add(Me.Label15)
+        Me.GroupBox5.Controls.Add(Me.Label16)
+        Me.GroupBox5.Controls.Add(Me.txt_comp_sg)
+        Me.GroupBox5.Controls.Add(Me.Label17)
+        Me.GroupBox5.Controls.Add(Me.txt_code_sg)
+        Me.GroupBox5.Controls.Add(Me.Label18)
+        Me.GroupBox5.Controls.Add(Me.txt_name_sg)
+        Me.GroupBox5.Controls.Add(Me.Label19)
+        Me.GroupBox5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.GroupBox5.Location = New System.Drawing.Point(12, 305)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(789, 286)
+        Me.GroupBox5.TabIndex = 7
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "재고내역"
+        '
+        'grid_단미제_inven
+        '
+        Me.grid_단미제_inven.AllowUserToAddRows = False
+        Me.grid_단미제_inven.AllowUserToDeleteRows = False
+        Me.grid_단미제_inven.AllowUserToOrderColumns = True
+        Me.grid_단미제_inven.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.grid_단미제_inven.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grid_단미제_inven.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19, Me.DataGridViewTextBoxColumn20})
+        Me.grid_단미제_inven.Location = New System.Drawing.Point(310, 19)
+        Me.grid_단미제_inven.Name = "grid_단미제_inven"
+        Me.grid_단미제_inven.ReadOnly = True
+        Me.grid_단미제_inven.RowHeadersWidth = 62
+        Me.grid_단미제_inven.RowTemplate.Height = 23
+        Me.grid_단미제_inven.Size = New System.Drawing.Size(463, 251)
+        Me.grid_단미제_inven.StandardTab = True
+        Me.grid_단미제_inven.TabIndex = 21
+        '
+        'DataGridViewTextBoxColumn15
+        '
+        Me.DataGridViewTextBoxColumn15.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn15.DataPropertyName = "코드"
+        Me.DataGridViewTextBoxColumn15.HeaderText = "코드"
+        Me.DataGridViewTextBoxColumn15.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
+        Me.DataGridViewTextBoxColumn15.ReadOnly = True
+        Me.DataGridViewTextBoxColumn15.Width = 54
+        '
+        'DataGridViewTextBoxColumn16
+        '
+        Me.DataGridViewTextBoxColumn16.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn16.DataPropertyName = "명칭"
+        Me.DataGridViewTextBoxColumn16.HeaderText = "명칭"
+        Me.DataGridViewTextBoxColumn16.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
+        Me.DataGridViewTextBoxColumn16.ReadOnly = True
+        Me.DataGridViewTextBoxColumn16.Width = 54
+        '
+        'DataGridViewTextBoxColumn17
+        '
+        Me.DataGridViewTextBoxColumn17.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn17.DataPropertyName = "입고일자"
+        Me.DataGridViewTextBoxColumn17.HeaderText = "입고일자"
+        Me.DataGridViewTextBoxColumn17.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
+        Me.DataGridViewTextBoxColumn17.ReadOnly = True
+        Me.DataGridViewTextBoxColumn17.Width = 78
+        '
+        'DataGridViewTextBoxColumn18
+        '
+        Me.DataGridViewTextBoxColumn18.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn18.DataPropertyName = "수량"
+        Me.DataGridViewTextBoxColumn18.HeaderText = "수량"
+        Me.DataGridViewTextBoxColumn18.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
+        Me.DataGridViewTextBoxColumn18.ReadOnly = True
+        Me.DataGridViewTextBoxColumn18.Width = 54
+        '
+        'DataGridViewTextBoxColumn19
+        '
+        Me.DataGridViewTextBoxColumn19.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn19.DataPropertyName = "단가"
+        Me.DataGridViewTextBoxColumn19.HeaderText = "단가"
+        Me.DataGridViewTextBoxColumn19.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
+        Me.DataGridViewTextBoxColumn19.ReadOnly = True
+        Me.DataGridViewTextBoxColumn19.Width = 54
+        '
+        'DataGridViewTextBoxColumn20
+        '
+        Me.DataGridViewTextBoxColumn20.DataPropertyName = "인덱스"
+        Me.DataGridViewTextBoxColumn20.HeaderText = "인덱스"
+        Me.DataGridViewTextBoxColumn20.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
+        Me.DataGridViewTextBoxColumn20.ReadOnly = True
+        Me.DataGridViewTextBoxColumn20.Visible = False
+        Me.DataGridViewTextBoxColumn20.Width = 150
+        '
+        'txt_price_sg
+        '
+        Me.txt_price_sg.Enabled = False
+        Me.txt_price_sg.ForeColor = System.Drawing.Color.Black
+        Me.txt_price_sg.Location = New System.Drawing.Point(78, 170)
+        Me.txt_price_sg.Name = "txt_price_sg"
+        Me.txt_price_sg.Size = New System.Drawing.Size(182, 21)
+        Me.txt_price_sg.TabIndex = 20
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(15, 177)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(29, 12)
+        Me.Label14.TabIndex = 19
+        Me.Label14.Text = "단가"
+        '
+        'btn_update_sg
+        '
+        Me.btn_update_sg.Location = New System.Drawing.Point(77, 223)
+        Me.btn_update_sg.Name = "btn_update_sg"
+        Me.btn_update_sg.Size = New System.Drawing.Size(63, 23)
+        Me.btn_update_sg.TabIndex = 15
+        Me.btn_update_sg.Text = "수정"
+        Me.btn_update_sg.UseVisualStyleBackColor = True
+        Me.btn_update_sg.Visible = False
+        '
+        'btn_save_sg
+        '
+        Me.btn_save_sg.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.btn_save_sg.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btn_save_sg.Location = New System.Drawing.Point(216, 223)
+        Me.btn_save_sg.Name = "btn_save_sg"
+        Me.btn_save_sg.Size = New System.Drawing.Size(63, 23)
+        Me.btn_save_sg.TabIndex = 17
+        Me.btn_save_sg.Text = "저장"
+        Me.btn_save_sg.UseVisualStyleBackColor = False
+        '
+        'btn_del_sg
+        '
+        Me.btn_del_sg.Location = New System.Drawing.Point(146, 223)
+        Me.btn_del_sg.Name = "btn_del_sg"
+        Me.btn_del_sg.Size = New System.Drawing.Size(63, 23)
+        Me.btn_del_sg.TabIndex = 16
+        Me.btn_del_sg.Text = "삭제"
+        Me.btn_del_sg.UseVisualStyleBackColor = True
+        Me.btn_del_sg.Visible = False
+        '
+        'btn_new_sg
+        '
+        Me.btn_new_sg.Location = New System.Drawing.Point(8, 223)
+        Me.btn_new_sg.Name = "btn_new_sg"
+        Me.btn_new_sg.Size = New System.Drawing.Size(63, 23)
+        Me.btn_new_sg.TabIndex = 4
+        Me.btn_new_sg.Text = "새로입력"
+        Me.btn_new_sg.UseVisualStyleBackColor = True
+        '
+        'dtp_received_sg
+        '
+        Me.dtp_received_sg.CalendarForeColor = System.Drawing.Color.Black
+        Me.dtp_received_sg.CausesValidation = False
+        Me.dtp_received_sg.Enabled = False
+        Me.dtp_received_sg.Location = New System.Drawing.Point(78, 117)
+        Me.dtp_received_sg.Name = "dtp_received_sg"
+        Me.dtp_received_sg.Size = New System.Drawing.Size(182, 21)
+        Me.dtp_received_sg.TabIndex = 14
+        Me.dtp_received_sg.Value = New Date(2025, 2, 25, 0, 0, 0, 0)
+        '
+        'txt_count_sg
+        '
+        Me.txt_count_sg.Enabled = False
+        Me.txt_count_sg.ForeColor = System.Drawing.Color.Black
+        Me.txt_count_sg.Location = New System.Drawing.Point(78, 143)
+        Me.txt_count_sg.Name = "txt_count_sg"
+        Me.txt_count_sg.Size = New System.Drawing.Size(182, 21)
+        Me.txt_count_sg.TabIndex = 13
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(15, 149)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(46, 12)
+        Me.Label15.TabIndex = 12
+        Me.Label15.Text = "수량(g)"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(15, 122)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(53, 12)
+        Me.Label16.TabIndex = 10
+        Me.Label16.Text = "입고일자"
+        '
+        'txt_comp_sg
+        '
+        Me.txt_comp_sg.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txt_comp_sg.Enabled = False
+        Me.txt_comp_sg.ForeColor = System.Drawing.Color.Black
+        Me.txt_comp_sg.Location = New System.Drawing.Point(78, 89)
+        Me.txt_comp_sg.Name = "txt_comp_sg"
+        Me.txt_comp_sg.ReadOnly = True
+        Me.txt_comp_sg.Size = New System.Drawing.Size(182, 21)
+        Me.txt_comp_sg.TabIndex = 9
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(15, 95)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(41, 12)
+        Me.Label17.TabIndex = 8
+        Me.Label17.Text = "제약사"
+        '
+        'txt_code_sg
+        '
+        Me.txt_code_sg.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txt_code_sg.Enabled = False
+        Me.txt_code_sg.ForeColor = System.Drawing.Color.Black
+        Me.txt_code_sg.Location = New System.Drawing.Point(78, 62)
+        Me.txt_code_sg.Name = "txt_code_sg"
+        Me.txt_code_sg.ReadOnly = True
+        Me.txt_code_sg.Size = New System.Drawing.Size(182, 21)
+        Me.txt_code_sg.TabIndex = 7
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(15, 69)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(29, 12)
+        Me.Label18.TabIndex = 6
+        Me.Label18.Text = "코드"
+        '
+        'txt_name_sg
+        '
+        Me.txt_name_sg.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txt_name_sg.Enabled = False
+        Me.txt_name_sg.ForeColor = System.Drawing.Color.Black
+        Me.txt_name_sg.Location = New System.Drawing.Point(78, 35)
+        Me.txt_name_sg.Name = "txt_name_sg"
+        Me.txt_name_sg.ReadOnly = True
+        Me.txt_name_sg.Size = New System.Drawing.Size(182, 21)
+        Me.txt_name_sg.TabIndex = 5
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(15, 41)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(29, 12)
+        Me.Label19.TabIndex = 4
+        Me.Label19.Text = "명칭"
+        '
+        '보험약
+        '
+        Me.보험약.Controls.Add(Me.GroupBox2)
+        Me.보험약.Controls.Add(Me.약재정보)
+        Me.보험약.Location = New System.Drawing.Point(4, 22)
+        Me.보험약.Margin = New System.Windows.Forms.Padding(2)
+        Me.보험약.Name = "보험약"
+        Me.보험약.Padding = New System.Windows.Forms.Padding(2)
+        Me.보험약.Size = New System.Drawing.Size(809, 599)
+        Me.보험약.TabIndex = 1
+        Me.보험약.Text = "혼합제"
+        Me.보험약.UseVisualStyleBackColor = True
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox2.Controls.Add(Me.grid_혼합제)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 5)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(789, 294)
+        Me.GroupBox2.TabIndex = 6
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "단미제 정보"
+        '
+        'grid_혼합제
+        '
+        Me.grid_혼합제.AllowUserToAddRows = False
+        Me.grid_혼합제.AllowUserToDeleteRows = False
+        Me.grid_혼합제.AllowUserToOrderColumns = True
+        Me.grid_혼합제.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders
+        Me.grid_혼합제.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grid_혼합제.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.grid_Code, Me.grid_Name, Me.grid_MediCompany, Me.grid_Count})
+        Me.grid_혼합제.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grid_혼합제.Location = New System.Drawing.Point(3, 17)
+        Me.grid_혼합제.Name = "grid_혼합제"
+        Me.grid_혼합제.ReadOnly = True
+        Me.grid_혼합제.RowHeadersWidth = 62
+        Me.grid_혼합제.RowTemplate.Height = 23
+        Me.grid_혼합제.Size = New System.Drawing.Size(783, 274)
+        Me.grid_혼합제.TabIndex = 2
+        '
+        'grid_Code
+        '
+        Me.grid_Code.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.grid_Code.DataPropertyName = "기준코드"
+        Me.grid_Code.HeaderText = "코드"
+        Me.grid_Code.MinimumWidth = 8
+        Me.grid_Code.Name = "grid_Code"
+        Me.grid_Code.ReadOnly = True
+        Me.grid_Code.Width = 54
+        '
+        'grid_Name
+        '
+        Me.grid_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.grid_Name.DataPropertyName = "기준코드명칭"
+        Me.grid_Name.HeaderText = "명칭"
+        Me.grid_Name.MinimumWidth = 8
+        Me.grid_Name.Name = "grid_Name"
+        Me.grid_Name.ReadOnly = True
+        Me.grid_Name.Width = 54
+        '
+        'grid_MediCompany
+        '
+        Me.grid_MediCompany.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.grid_MediCompany.DataPropertyName = "기준코드제약사"
+        Me.grid_MediCompany.HeaderText = "제약사"
+        Me.grid_MediCompany.MinimumWidth = 8
+        Me.grid_MediCompany.Name = "grid_MediCompany"
+        Me.grid_MediCompany.ReadOnly = True
+        Me.grid_MediCompany.Width = 66
+        '
+        'grid_Count
+        '
+        Me.grid_Count.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.grid_Count.DataPropertyName = "전체수량"
+        Me.grid_Count.HeaderText = "전체수량"
+        Me.grid_Count.MinimumWidth = 8
+        Me.grid_Count.Name = "grid_Count"
+        Me.grid_Count.ReadOnly = True
+        Me.grid_Count.Visible = False
+        '
+        '약재정보
+        '
+        Me.약재정보.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.약재정보.Controls.Add(Me.grid_혼합제_inven)
+        Me.약재정보.Controls.Add(Me.txt_Price)
+        Me.약재정보.Controls.Add(Me.Label6)
+        Me.약재정보.Controls.Add(Me.btn_Update)
+        Me.약재정보.Controls.Add(Me.btn_Save)
+        Me.약재정보.Controls.Add(Me.btn_delete)
+        Me.약재정보.Controls.Add(Me.btn_New)
+        Me.약재정보.Controls.Add(Me.dtp_Received)
+        Me.약재정보.Controls.Add(Me.txt_count)
+        Me.약재정보.Controls.Add(Me.Label5)
+        Me.약재정보.Controls.Add(Me.Label4)
+        Me.약재정보.Controls.Add(Me.txt_comp)
+        Me.약재정보.Controls.Add(Me.Label3)
+        Me.약재정보.Controls.Add(Me.txt_Code)
+        Me.약재정보.Controls.Add(Me.Label2)
+        Me.약재정보.Controls.Add(Me.txt_Name)
+        Me.약재정보.Controls.Add(Me.Label1)
+        Me.약재정보.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.약재정보.Location = New System.Drawing.Point(14, 305)
+        Me.약재정보.Name = "약재정보"
+        Me.약재정보.Size = New System.Drawing.Size(789, 286)
+        Me.약재정보.TabIndex = 5
+        Me.약재정보.TabStop = False
+        Me.약재정보.Text = "재고내역"
+        '
+        'grid_혼합제_inven
+        '
+        Me.grid_혼합제_inven.AllowUserToAddRows = False
+        Me.grid_혼합제_inven.AllowUserToDeleteRows = False
+        Me.grid_혼합제_inven.AllowUserToOrderColumns = True
+        Me.grid_혼합제_inven.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.grid_혼합제_inven.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grid_혼합제_inven.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.col_idx})
+        Me.grid_혼합제_inven.Location = New System.Drawing.Point(310, 19)
+        Me.grid_혼합제_inven.Name = "grid_혼합제_inven"
+        Me.grid_혼합제_inven.ReadOnly = True
+        Me.grid_혼합제_inven.RowHeadersWidth = 62
+        Me.grid_혼합제_inven.RowTemplate.Height = 23
+        Me.grid_혼합제_inven.Size = New System.Drawing.Size(463, 251)
+        Me.grid_혼합제_inven.StandardTab = True
+        Me.grid_혼합제_inven.TabIndex = 21
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "코드"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "코드"
+        Me.DataGridViewTextBoxColumn1.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        Me.DataGridViewTextBoxColumn1.Width = 54
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "명칭"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "명칭"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        Me.DataGridViewTextBoxColumn2.Width = 54
+        '
+        'DataGridViewTextBoxColumn
+        '
+        Me.DataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn.DataPropertyName = "입고일자"
+        Me.DataGridViewTextBoxColumn.HeaderText = "입고일자"
+        Me.DataGridViewTextBoxColumn.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn.Name = "DataGridViewTextBoxColumn"
+        Me.DataGridViewTextBoxColumn.ReadOnly = True
+        Me.DataGridViewTextBoxColumn.Width = 78
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "수량"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "수량"
+        Me.DataGridViewTextBoxColumn4.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
+        Me.DataGridViewTextBoxColumn4.Width = 54
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "단가"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "단가"
+        Me.DataGridViewTextBoxColumn5.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
+        Me.DataGridViewTextBoxColumn5.Width = 54
+        '
+        'col_idx
+        '
+        Me.col_idx.DataPropertyName = "인덱스"
+        Me.col_idx.HeaderText = "인덱스"
+        Me.col_idx.MinimumWidth = 8
+        Me.col_idx.Name = "col_idx"
+        Me.col_idx.ReadOnly = True
+        Me.col_idx.Visible = False
+        Me.col_idx.Width = 150
+        '
+        'txt_Price
+        '
+        Me.txt_Price.Enabled = False
+        Me.txt_Price.ForeColor = System.Drawing.Color.Black
+        Me.txt_Price.Location = New System.Drawing.Point(78, 170)
+        Me.txt_Price.Name = "txt_Price"
+        Me.txt_Price.Size = New System.Drawing.Size(182, 21)
+        Me.txt_Price.TabIndex = 20
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(15, 177)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(29, 12)
+        Me.Label6.TabIndex = 19
+        Me.Label6.Text = "단가"
+        '
+        'btn_Update
+        '
+        Me.btn_Update.Location = New System.Drawing.Point(77, 223)
+        Me.btn_Update.Name = "btn_Update"
+        Me.btn_Update.Size = New System.Drawing.Size(63, 23)
+        Me.btn_Update.TabIndex = 15
+        Me.btn_Update.Text = "수정"
+        Me.btn_Update.UseVisualStyleBackColor = True
+        Me.btn_Update.Visible = False
+        '
+        'btn_Save
+        '
+        Me.btn_Save.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.btn_Save.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btn_Save.Location = New System.Drawing.Point(216, 223)
+        Me.btn_Save.Name = "btn_Save"
+        Me.btn_Save.Size = New System.Drawing.Size(63, 23)
+        Me.btn_Save.TabIndex = 17
+        Me.btn_Save.Text = "저장"
+        Me.btn_Save.UseVisualStyleBackColor = False
+        '
+        'btn_delete
+        '
+        Me.btn_delete.Location = New System.Drawing.Point(146, 223)
+        Me.btn_delete.Name = "btn_delete"
+        Me.btn_delete.Size = New System.Drawing.Size(63, 23)
+        Me.btn_delete.TabIndex = 16
+        Me.btn_delete.Text = "삭제"
+        Me.btn_delete.UseVisualStyleBackColor = True
+        Me.btn_delete.Visible = False
+        '
+        'btn_New
+        '
+        Me.btn_New.Location = New System.Drawing.Point(8, 223)
+        Me.btn_New.Name = "btn_New"
+        Me.btn_New.Size = New System.Drawing.Size(63, 23)
+        Me.btn_New.TabIndex = 4
+        Me.btn_New.Text = "새로입력"
+        Me.btn_New.UseVisualStyleBackColor = True
+        '
+        'dtp_Received
+        '
+        Me.dtp_Received.CalendarForeColor = System.Drawing.Color.Black
+        Me.dtp_Received.CausesValidation = False
+        Me.dtp_Received.Enabled = False
+        Me.dtp_Received.Location = New System.Drawing.Point(78, 117)
+        Me.dtp_Received.Name = "dtp_Received"
+        Me.dtp_Received.Size = New System.Drawing.Size(182, 21)
+        Me.dtp_Received.TabIndex = 14
+        Me.dtp_Received.Value = New Date(2025, 2, 25, 0, 0, 0, 0)
+        '
+        'txt_count
+        '
+        Me.txt_count.Enabled = False
+        Me.txt_count.ForeColor = System.Drawing.Color.Black
+        Me.txt_count.Location = New System.Drawing.Point(78, 143)
+        Me.txt_count.Name = "txt_count"
+        Me.txt_count.Size = New System.Drawing.Size(182, 21)
+        Me.txt_count.TabIndex = 13
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(15, 149)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(46, 12)
+        Me.Label5.TabIndex = 12
+        Me.Label5.Text = "수량(g)"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(15, 122)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(53, 12)
+        Me.Label4.TabIndex = 10
+        Me.Label4.Text = "입고일자"
+        '
+        'txt_comp
+        '
+        Me.txt_comp.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txt_comp.Enabled = False
+        Me.txt_comp.ForeColor = System.Drawing.Color.Black
+        Me.txt_comp.Location = New System.Drawing.Point(78, 89)
+        Me.txt_comp.Name = "txt_comp"
+        Me.txt_comp.ReadOnly = True
+        Me.txt_comp.Size = New System.Drawing.Size(182, 21)
+        Me.txt_comp.TabIndex = 9
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(15, 95)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(41, 12)
+        Me.Label3.TabIndex = 8
+        Me.Label3.Text = "제약사"
+        '
+        'txt_Code
+        '
+        Me.txt_Code.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txt_Code.Enabled = False
+        Me.txt_Code.ForeColor = System.Drawing.Color.Black
+        Me.txt_Code.Location = New System.Drawing.Point(78, 62)
+        Me.txt_Code.Name = "txt_Code"
+        Me.txt_Code.ReadOnly = True
+        Me.txt_Code.Size = New System.Drawing.Size(182, 21)
+        Me.txt_Code.TabIndex = 7
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(15, 69)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(29, 12)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "코드"
+        '
+        'txt_Name
+        '
+        Me.txt_Name.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txt_Name.Enabled = False
+        Me.txt_Name.ForeColor = System.Drawing.Color.Black
+        Me.txt_Name.Location = New System.Drawing.Point(78, 35)
+        Me.txt_Name.Name = "txt_Name"
+        Me.txt_Name.ReadOnly = True
+        Me.txt_Name.Size = New System.Drawing.Size(182, 21)
+        Me.txt_Name.TabIndex = 5
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(15, 41)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(29, 12)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "명칭"
+        '
+        'tap_페이지
+        '
+        Me.tap_페이지.Controls.Add(Me.보험약)
+        Me.tap_페이지.Controls.Add(Me.치료재료대)
+        Me.tap_페이지.Controls.Add(Me.TabPage1)
+        Me.tap_페이지.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tap_페이지.Location = New System.Drawing.Point(0, 0)
+        Me.tap_페이지.Margin = New System.Windows.Forms.Padding(2)
+        Me.tap_페이지.Name = "tap_페이지"
+        Me.tap_페이지.SelectedIndex = 0
+        Me.tap_페이지.Size = New System.Drawing.Size(817, 625)
+        Me.tap_페이지.TabIndex = 5
+        '
+        'TabPage1
+        '
+        Me.TabPage1.Controls.Add(Me.GroupBox1)
+        Me.TabPage1.Controls.Add(Me.GroupBox3)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(809, 599)
+        Me.TabPage1.TabIndex = 3
+        Me.TabPage1.Text = "치료재료대"
+        Me.TabPage1.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
+        Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.Controls.Add(Me.grid_치료재료대)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 5)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(763, 291)
-        Me.GroupBox1.TabIndex = 8
+        Me.GroupBox1.Size = New System.Drawing.Size(789, 294)
+        Me.GroupBox1.TabIndex = 10
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "치료재료대"
         '
@@ -131,13 +874,14 @@ Partial Class Form1
         Me.grid_치료재료대.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
         Me.grid_치료재료대.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grid_치료재료대.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.수입업소})
-        Me.grid_치료재료대.Location = New System.Drawing.Point(17, 19)
-        Me.grid_치료재료대.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.grid_치료재료대.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grid_치료재료대.Location = New System.Drawing.Point(3, 17)
+        Me.grid_치료재료대.Margin = New System.Windows.Forms.Padding(2)
         Me.grid_치료재료대.Name = "grid_치료재료대"
         Me.grid_치료재료대.ReadOnly = True
         Me.grid_치료재료대.RowHeadersWidth = 62
         Me.grid_치료재료대.RowTemplate.Height = 30
-        Me.grid_치료재료대.Size = New System.Drawing.Size(730, 258)
+        Me.grid_치료재료대.Size = New System.Drawing.Size(783, 274)
         Me.grid_치료재료대.TabIndex = 0
         '
         'Column1
@@ -181,6 +925,8 @@ Partial Class Form1
         '
         'GroupBox3
         '
+        Me.GroupBox3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox3.Controls.Add(Me.txt_수입업소)
         Me.GroupBox3.Controls.Add(Me.Label13)
         Me.GroupBox3.Controls.Add(Me.grid_재료대재고내역)
@@ -203,8 +949,8 @@ Partial Class Form1
         Me.GroupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.GroupBox3.Location = New System.Drawing.Point(12, 305)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(763, 267)
-        Me.GroupBox3.TabIndex = 7
+        Me.GroupBox3.Size = New System.Drawing.Size(789, 291)
+        Me.GroupBox3.TabIndex = 9
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "재료대재고"
         '
@@ -231,20 +977,22 @@ Partial Class Form1
         Me.grid_재료대재고내역.AllowUserToAddRows = False
         Me.grid_재료대재고내역.AllowUserToDeleteRows = False
         Me.grid_재료대재고내역.AllowUserToOrderColumns = True
+        Me.grid_재료대재고내역.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grid_재료대재고내역.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grid_재료대재고내역.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14})
-        Me.grid_재료대재고내역.Location = New System.Drawing.Point(284, 19)
+        Me.grid_재료대재고내역.Location = New System.Drawing.Point(310, 19)
         Me.grid_재료대재고내역.Name = "grid_재료대재고내역"
         Me.grid_재료대재고내역.ReadOnly = True
         Me.grid_재료대재고내역.RowHeadersWidth = 62
         Me.grid_재료대재고내역.RowTemplate.Height = 23
-        Me.grid_재료대재고내역.Size = New System.Drawing.Size(463, 232)
+        Me.grid_재료대재고내역.Size = New System.Drawing.Size(463, 256)
         Me.grid_재료대재고내역.TabIndex = 21
         '
         'DataGridViewTextBoxColumn9
         '
         Me.DataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "처방코드"
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "코드"
         Me.DataGridViewTextBoxColumn9.HeaderText = "코드"
         Me.DataGridViewTextBoxColumn9.MinimumWidth = 8
         Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
@@ -445,385 +1193,94 @@ Partial Class Form1
         Me.Label12.TabIndex = 4
         Me.Label12.Text = "명칭"
         '
-        '보험약
-        '
-        Me.보험약.Controls.Add(Me.GroupBox2)
-        Me.보험약.Controls.Add(Me.약재정보)
-        Me.보험약.Location = New System.Drawing.Point(4, 22)
-        Me.보험약.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.보험약.Name = "보험약"
-        Me.보험약.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.보험약.Size = New System.Drawing.Size(787, 577)
-        Me.보험약.TabIndex = 1
-        Me.보험약.Text = "보험약"
-        Me.보험약.UseVisualStyleBackColor = True
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.grid_기준처방)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 5)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(763, 291)
-        Me.GroupBox2.TabIndex = 6
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "기준처방"
-        '
-        'grid_기준처방
-        '
-        Me.grid_기준처방.AllowUserToAddRows = False
-        Me.grid_기준처방.AllowUserToDeleteRows = False
-        Me.grid_기준처방.AllowUserToOrderColumns = True
-        Me.grid_기준처방.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders
-        Me.grid_기준처방.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grid_기준처방.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.grid_Code, Me.grid_Name, Me.grid_MediCompany, Me.grid_Count})
-        Me.grid_기준처방.Location = New System.Drawing.Point(17, 19)
-        Me.grid_기준처방.Name = "grid_기준처방"
-        Me.grid_기준처방.ReadOnly = True
-        Me.grid_기준처방.RowHeadersWidth = 62
-        Me.grid_기준처방.RowTemplate.Height = 23
-        Me.grid_기준처방.Size = New System.Drawing.Size(730, 258)
-        Me.grid_기준처방.TabIndex = 2
-        '
-        'grid_Code
-        '
-        Me.grid_Code.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.grid_Code.DataPropertyName = "기준코드"
-        Me.grid_Code.HeaderText = "코드"
-        Me.grid_Code.MinimumWidth = 8
-        Me.grid_Code.Name = "grid_Code"
-        Me.grid_Code.ReadOnly = True
-        Me.grid_Code.Width = 54
-        '
-        'grid_Name
-        '
-        Me.grid_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.grid_Name.DataPropertyName = "기준코드명칭"
-        Me.grid_Name.HeaderText = "명칭"
-        Me.grid_Name.MinimumWidth = 8
-        Me.grid_Name.Name = "grid_Name"
-        Me.grid_Name.ReadOnly = True
-        Me.grid_Name.Width = 54
-        '
-        'grid_MediCompany
-        '
-        Me.grid_MediCompany.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.grid_MediCompany.DataPropertyName = "기준코드제약사"
-        Me.grid_MediCompany.HeaderText = "제약사"
-        Me.grid_MediCompany.MinimumWidth = 8
-        Me.grid_MediCompany.Name = "grid_MediCompany"
-        Me.grid_MediCompany.ReadOnly = True
-        Me.grid_MediCompany.Width = 66
-        '
-        'grid_Count
-        '
-        Me.grid_Count.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.grid_Count.DataPropertyName = "전체수량"
-        Me.grid_Count.HeaderText = "전체수량"
-        Me.grid_Count.MinimumWidth = 8
-        Me.grid_Count.Name = "grid_Count"
-        Me.grid_Count.ReadOnly = True
-        Me.grid_Count.Visible = False
-        '
-        '약재정보
-        '
-        Me.약재정보.Controls.Add(Me.grid_보험약)
-        Me.약재정보.Controls.Add(Me.txt_Price)
-        Me.약재정보.Controls.Add(Me.Label6)
-        Me.약재정보.Controls.Add(Me.btn_Update)
-        Me.약재정보.Controls.Add(Me.btn_Save)
-        Me.약재정보.Controls.Add(Me.btn_delete)
-        Me.약재정보.Controls.Add(Me.btn_New)
-        Me.약재정보.Controls.Add(Me.dtp_Received)
-        Me.약재정보.Controls.Add(Me.txt_count)
-        Me.약재정보.Controls.Add(Me.Label5)
-        Me.약재정보.Controls.Add(Me.Label4)
-        Me.약재정보.Controls.Add(Me.txt_mediCompany)
-        Me.약재정보.Controls.Add(Me.Label3)
-        Me.약재정보.Controls.Add(Me.txt_Code)
-        Me.약재정보.Controls.Add(Me.Label2)
-        Me.약재정보.Controls.Add(Me.txt_Name)
-        Me.약재정보.Controls.Add(Me.Label1)
-        Me.약재정보.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.약재정보.Location = New System.Drawing.Point(12, 305)
-        Me.약재정보.Name = "약재정보"
-        Me.약재정보.Size = New System.Drawing.Size(763, 267)
-        Me.약재정보.TabIndex = 5
-        Me.약재정보.TabStop = False
-        Me.약재정보.Text = "약재정보"
-        '
-        'grid_보험약
-        '
-        Me.grid_보험약.AllowUserToAddRows = False
-        Me.grid_보험약.AllowUserToDeleteRows = False
-        Me.grid_보험약.AllowUserToOrderColumns = True
-        Me.grid_보험약.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grid_보험약.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.col_idx})
-        Me.grid_보험약.Location = New System.Drawing.Point(284, 19)
-        Me.grid_보험약.Name = "grid_보험약"
-        Me.grid_보험약.ReadOnly = True
-        Me.grid_보험약.RowHeadersWidth = 62
-        Me.grid_보험약.RowTemplate.Height = 23
-        Me.grid_보험약.Size = New System.Drawing.Size(463, 232)
-        Me.grid_보험약.StandardTab = True
-        Me.grid_보험약.TabIndex = 21
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "기준코드"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "코드"
-        Me.DataGridViewTextBoxColumn1.MinimumWidth = 8
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        Me.DataGridViewTextBoxColumn1.Width = 54
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "기준코드명칭"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "명칭"
-        Me.DataGridViewTextBoxColumn2.MinimumWidth = 8
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        Me.DataGridViewTextBoxColumn2.Width = 54
-        '
-        'DataGridViewTextBoxColumn
-        '
-        Me.DataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.DataGridViewTextBoxColumn.DataPropertyName = "입고일자_변환"
-        Me.DataGridViewTextBoxColumn.HeaderText = "입고일자"
-        Me.DataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.DataGridViewTextBoxColumn.Name = "DataGridViewTextBoxColumn"
-        Me.DataGridViewTextBoxColumn.ReadOnly = True
-        Me.DataGridViewTextBoxColumn.Width = 78
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "수량"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "수량"
-        Me.DataGridViewTextBoxColumn4.MinimumWidth = 8
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.ReadOnly = True
-        Me.DataGridViewTextBoxColumn4.Width = 54
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "단가"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "단가"
-        Me.DataGridViewTextBoxColumn5.MinimumWidth = 8
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.ReadOnly = True
-        Me.DataGridViewTextBoxColumn5.Width = 54
-        '
-        'col_idx
-        '
-        Me.col_idx.DataPropertyName = "인덱스"
-        Me.col_idx.HeaderText = "인덱스"
-        Me.col_idx.MinimumWidth = 8
-        Me.col_idx.Name = "col_idx"
-        Me.col_idx.ReadOnly = True
-        Me.col_idx.Visible = False
-        Me.col_idx.Width = 150
-        '
-        'txt_Price
-        '
-        Me.txt_Price.Enabled = False
-        Me.txt_Price.ForeColor = System.Drawing.Color.Black
-        Me.txt_Price.Location = New System.Drawing.Point(78, 170)
-        Me.txt_Price.Name = "txt_Price"
-        Me.txt_Price.Size = New System.Drawing.Size(182, 21)
-        Me.txt_Price.TabIndex = 20
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(15, 177)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(29, 12)
-        Me.Label6.TabIndex = 19
-        Me.Label6.Text = "단가"
-        '
-        'btn_Update
-        '
-        Me.btn_Update.Location = New System.Drawing.Point(77, 223)
-        Me.btn_Update.Name = "btn_Update"
-        Me.btn_Update.Size = New System.Drawing.Size(63, 23)
-        Me.btn_Update.TabIndex = 15
-        Me.btn_Update.Text = "수정"
-        Me.btn_Update.UseVisualStyleBackColor = True
-        Me.btn_Update.Visible = False
-        '
-        'btn_Save
-        '
-        Me.btn_Save.AccessibleRole = System.Windows.Forms.AccessibleRole.None
-        Me.btn_Save.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.btn_Save.Location = New System.Drawing.Point(216, 223)
-        Me.btn_Save.Name = "btn_Save"
-        Me.btn_Save.Size = New System.Drawing.Size(63, 23)
-        Me.btn_Save.TabIndex = 17
-        Me.btn_Save.Text = "저장"
-        Me.btn_Save.UseVisualStyleBackColor = False
-        '
-        'btn_delete
-        '
-        Me.btn_delete.Location = New System.Drawing.Point(146, 223)
-        Me.btn_delete.Name = "btn_delete"
-        Me.btn_delete.Size = New System.Drawing.Size(63, 23)
-        Me.btn_delete.TabIndex = 16
-        Me.btn_delete.Text = "삭제"
-        Me.btn_delete.UseVisualStyleBackColor = True
-        Me.btn_delete.Visible = False
-        '
-        'btn_New
-        '
-        Me.btn_New.Location = New System.Drawing.Point(8, 223)
-        Me.btn_New.Name = "btn_New"
-        Me.btn_New.Size = New System.Drawing.Size(63, 23)
-        Me.btn_New.TabIndex = 4
-        Me.btn_New.Text = "새로입력"
-        Me.btn_New.UseVisualStyleBackColor = True
-        '
-        'dtp_Received
-        '
-        Me.dtp_Received.CalendarForeColor = System.Drawing.Color.Black
-        Me.dtp_Received.CausesValidation = False
-        Me.dtp_Received.Enabled = False
-        Me.dtp_Received.Location = New System.Drawing.Point(78, 117)
-        Me.dtp_Received.Name = "dtp_Received"
-        Me.dtp_Received.Size = New System.Drawing.Size(182, 21)
-        Me.dtp_Received.TabIndex = 14
-        Me.dtp_Received.Value = New Date(2025, 2, 25, 0, 0, 0, 0)
-        '
-        'txt_count
-        '
-        Me.txt_count.Enabled = False
-        Me.txt_count.ForeColor = System.Drawing.Color.Black
-        Me.txt_count.Location = New System.Drawing.Point(78, 143)
-        Me.txt_count.Name = "txt_count"
-        Me.txt_count.Size = New System.Drawing.Size(182, 21)
-        Me.txt_count.TabIndex = 13
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(15, 149)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(46, 12)
-        Me.Label5.TabIndex = 12
-        Me.Label5.Text = "수량(g)"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(15, 122)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(53, 12)
-        Me.Label4.TabIndex = 10
-        Me.Label4.Text = "입고일자"
-        '
-        'txt_mediCompany
-        '
-        Me.txt_mediCompany.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txt_mediCompany.Enabled = False
-        Me.txt_mediCompany.ForeColor = System.Drawing.Color.Black
-        Me.txt_mediCompany.Location = New System.Drawing.Point(78, 89)
-        Me.txt_mediCompany.Name = "txt_mediCompany"
-        Me.txt_mediCompany.ReadOnly = True
-        Me.txt_mediCompany.Size = New System.Drawing.Size(182, 21)
-        Me.txt_mediCompany.TabIndex = 9
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(15, 95)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(41, 12)
-        Me.Label3.TabIndex = 8
-        Me.Label3.Text = "제약사"
-        '
-        'txt_Code
-        '
-        Me.txt_Code.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txt_Code.Enabled = False
-        Me.txt_Code.ForeColor = System.Drawing.Color.Black
-        Me.txt_Code.Location = New System.Drawing.Point(78, 62)
-        Me.txt_Code.Name = "txt_Code"
-        Me.txt_Code.ReadOnly = True
-        Me.txt_Code.Size = New System.Drawing.Size(182, 21)
-        Me.txt_Code.TabIndex = 7
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(15, 69)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(29, 12)
-        Me.Label2.TabIndex = 6
-        Me.Label2.Text = "코드"
-        '
-        'txt_Name
-        '
-        Me.txt_Name.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txt_Name.Enabled = False
-        Me.txt_Name.ForeColor = System.Drawing.Color.Black
-        Me.txt_Name.Location = New System.Drawing.Point(78, 35)
-        Me.txt_Name.Name = "txt_Name"
-        Me.txt_Name.ReadOnly = True
-        Me.txt_Name.Size = New System.Drawing.Size(182, 21)
-        Me.txt_Name.TabIndex = 5
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(15, 41)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(29, 12)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "명칭"
-        '
-        'tap_치료재료대
-        '
-        Me.tap_치료재료대.Controls.Add(Me.보험약)
-        Me.tap_치료재료대.Controls.Add(Me.치료재료대)
-        Me.tap_치료재료대.Location = New System.Drawing.Point(8, 8)
-        Me.tap_치료재료대.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.tap_치료재료대.Name = "tap_치료재료대"
-        Me.tap_치료재료대.SelectedIndex = 0
-        Me.tap_치료재료대.Size = New System.Drawing.Size(795, 603)
-        Me.tap_치료재료대.TabIndex = 5
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(817, 625)
-        Me.Controls.Add(Me.tap_치료재료대)
+        Me.Controls.Add(Me.tap_페이지)
         Me.KeyPreview = True
+        Me.MinimumSize = New System.Drawing.Size(833, 664)
         Me.Name = "Form1"
         Me.Text = "재고관리"
         Me.치료재료대.ResumeLayout(False)
+        Me.GroupBox4.ResumeLayout(False)
+        CType(Me.grid_단미제, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox5.PerformLayout()
+        CType(Me.grid_단미제_inven, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.보험약.ResumeLayout(False)
+        Me.GroupBox2.ResumeLayout(False)
+        CType(Me.grid_혼합제, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.약재정보.ResumeLayout(False)
+        Me.약재정보.PerformLayout()
+        CType(Me.grid_혼합제_inven, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tap_페이지.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.grid_치료재료대, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         CType(Me.grid_재료대재고내역, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.보험약.ResumeLayout(False)
-        Me.GroupBox2.ResumeLayout(False)
-        CType(Me.grid_기준처방, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.약재정보.ResumeLayout(False)
-        Me.약재정보.PerformLayout()
-        CType(Me.grid_보험약, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.tap_치료재료대.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents 치료재료대 As TabPage
+    Friend WithEvents 보험약 As TabPage
+    Friend WithEvents 약재정보 As GroupBox
+    Friend WithEvents grid_혼합제_inven As DataGridView
+    Friend WithEvents txt_Price As TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents btn_Update As Button
+    Friend WithEvents btn_Save As Button
+    Friend WithEvents btn_delete As Button
+    Friend WithEvents btn_New As Button
+    Friend WithEvents dtp_Received As DateTimePicker
+    Friend WithEvents txt_count As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents txt_comp As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txt_Code As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents txt_Name As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents tap_페이지 As TabControl
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents grid_단미제 As DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
+    Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents grid_단미제_inven As DataGridView
+    Friend WithEvents txt_price_sg As TextBox
+    Friend WithEvents Label14 As Label
+    Friend WithEvents btn_update_sg As Button
+    Friend WithEvents btn_save_sg As Button
+    Friend WithEvents btn_del_sg As Button
+    Friend WithEvents btn_new_sg As Button
+    Friend WithEvents dtp_received_sg As DateTimePicker
+    Friend WithEvents txt_count_sg As TextBox
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents txt_comp_sg As TextBox
+    Friend WithEvents Label17 As Label
+    Friend WithEvents txt_code_sg As TextBox
+    Friend WithEvents Label18 As Label
+    Friend WithEvents txt_name_sg As TextBox
+    Friend WithEvents Label19 As Label
+    Friend WithEvents TabPage1 As TabPage
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents grid_치료재료대 As DataGridView
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents 수입업소 As DataGridViewTextBoxColumn
     Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents txt_수입업소 As TextBox
+    Friend WithEvents Label13 As Label
     Friend WithEvents grid_재료대재고내역 As DataGridView
     Friend WithEvents txt_price_inven As TextBox
     Friend WithEvents Label7 As Label
@@ -841,48 +1298,28 @@ Partial Class Form1
     Friend WithEvents Label11 As Label
     Friend WithEvents txt_name_inven As TextBox
     Friend WithEvents Label12 As Label
-    Friend WithEvents 보험약 As TabPage
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents grid_기준처방 As DataGridView
+    Friend WithEvents grid_혼합제 As DataGridView
     Friend WithEvents grid_Code As DataGridViewTextBoxColumn
     Friend WithEvents grid_Name As DataGridViewTextBoxColumn
     Friend WithEvents grid_MediCompany As DataGridViewTextBoxColumn
     Friend WithEvents grid_Count As DataGridViewTextBoxColumn
-    Friend WithEvents 약재정보 As GroupBox
-    Friend WithEvents grid_보험약 As DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn15 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn16 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn17 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn18 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn19 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn20 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
     Friend WithEvents col_idx As DataGridViewTextBoxColumn
-    Friend WithEvents txt_Price As TextBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents btn_Update As Button
-    Friend WithEvents btn_Save As Button
-    Friend WithEvents btn_delete As Button
-    Friend WithEvents btn_New As Button
-    Friend WithEvents dtp_Received As DateTimePicker
-    Friend WithEvents txt_count As TextBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents txt_mediCompany As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents txt_Code As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents txt_Name As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents tap_치료재료대 As TabControl
     Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn12 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn13 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn14 As DataGridViewTextBoxColumn
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents 수입업소 As DataGridViewTextBoxColumn
-    Friend WithEvents txt_수입업소 As TextBox
-    Friend WithEvents Label13 As Label
 End Class
