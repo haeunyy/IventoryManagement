@@ -22,6 +22,11 @@ MediManage
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="M:MediManage.Form1.sD_Return_Clear">
+ <summary>
+ 페이지인덱스에 따라 폼 value 초기화
+ </summary>
+</member>
 <member name="M:MediManage.Form1.sD_btnTrue">
  <summary>
  textBox 활성화 
@@ -53,19 +58,6 @@ MediManage
   Form 로드되면 기준처방 리스트 조회
  </summary>
 </member>
-<member name="F:MediManage.Form1.intD_pageIndex">
- <summary>
- 현재 페이지 인덱스 저장하는 변수,  초기값 9
- </summary>
-</member>
-<member name="M:MediManage.Form1.tap_페이지_Click(System.Object,System.EventArgs)">
- <summary>
- 1. TapControl 클릭하면 <br/>
- 2. tap 인덱스에 따라 쿼리 조회<br/> 
- 3. 인덱스 저장<br/> 
- 4. form value 초기화<br/> 
- </summary>
-</member>
 <member name="M:MediManage.Form1.sD_sql_get_mixList">
  <summary>
  복합제 리스트 조회 쿼리 
@@ -90,7 +82,7 @@ MediManage
  4. 수량이 소수점 없는 정수면 정수로 변환<br/>
  </summary>
  <param name="dtL_data"> 보험약 리스트, DataTable 타입 </param>
- <returns>괄호 제거한 DataTable </returns>
+ <returns>변환된 DataTable </returns>
 </member>
 <member name="M:MediManage.Form1.fD_Get_invenList(System.String)">
  <summary>
@@ -121,29 +113,19 @@ MediManage
  보험약 새로입력 버튼 클릭 이벤트
  </summary>
 </member>
-<member name="M:MediManage.Form1.btn_Save_Click(System.Object,System.EventArgs)">
+<member name="M:MediManage.Form1.sD_Save(System.Object,System.EventArgs)">
  <summary>
  보험약 저장 버튼 클릭 이벤트
  </summary>
 </member>
 <member name="M:MediManage.Form1.btn_Update_Click(System.Object,System.EventArgs)">
  <summary>
- 보험약 수정 버튼 클릭 이벤트
+ 수정 버튼 클릭 이벤트
  </summary>
 </member>
 <member name="M:MediManage.Form1.btn_delete_Click(System.Object,System.EventArgs)">
  <summary>
- 보험약 삭제 버튼 클릭 이벤트
- </summary>
-</member>
-<member name="F:MediManage.Form1.intD_index_sg">
- <summary>
- 현재 단미제 인덱스
- </summary>
-</member>
-<member name="M:MediManage.Form1.sD_single_Return_Clear">
- <summary>
- 단미제 폼 value 초기화
+ 삭제 버튼 클릭 이벤트
  </summary>
 </member>
 <member name="M:MediManage.Form1.grid_단미제_CellContentClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
@@ -156,41 +138,11 @@ MediManage
  단미제 재고항목 클릭 이벤트
  </summary>
 </member>
-<member name="M:MediManage.Form1.btn_new_sg_Click(System.Object,System.EventArgs)">
- <summary>
- 단미제 새로 입력 클릭 
- </summary>
-</member>
-<member name="M:MediManage.Form1.btn_update_sg_Click(System.Object,System.EventArgs)">
- <summary>
- 단미제 수정 클릭
- </summary>
-</member>
-<member name="M:MediManage.Form1.btn_save_sg_Click(System.Object,System.EventArgs)">
- <summary>
- 단미제 저장 클릭
- </summary>
-</member>
-<member name="M:MediManage.Form1.btn_del_sg_Click(System.Object,System.EventArgs)">
- <summary>
- 단미제 삭제 클릭 이벤트
- </summary>
-</member>
 <member name="T:MediManage.Form1.en_치료재료대_Col">
  <summary>
    치료재료대 enum 
  </summary>
  
-</member>
-<member name="F:MediManage.Form1.intD_index_in">
- <summary>
- 현재 치료재료대 인덱스
- </summary>
-</member>
-<member name="M:MediManage.Form1.sD_inven_Return_Clear">
- <summary>
- 재료대재고 폼 value 초기화
- </summary>
 </member>
 <member name="M:MediManage.Form1.grid_치료재료대_CellClick(System.Object,System.EventArgs)">
  <summary>
@@ -200,21 +152,6 @@ MediManage
 <member name="M:MediManage.Form1.grid_재료대재고내역_CellContentClick(System.Object,System.EventArgs)">
  <summary>
  치료재료대 재고내역 클릭
- </summary>
-</member>
-<member name="M:MediManage.Form1.btn_save_inven_Click(System.Object,System.EventArgs)">
- <summary>
- 저장버튼 클릭
- </summary>
-</member>
-<member name="M:MediManage.Form1.btn_update_inven_Click(System.Object,System.EventArgs)">
- <summary>
- 수정버튼 클릭
- </summary>
-</member>
-<member name="M:MediManage.Form1.btn_new_inven_Click(System.Object,System.EventArgs)">
- <summary>
- 새로 입력 클릭 
  </summary>
 </member>
 </members>
