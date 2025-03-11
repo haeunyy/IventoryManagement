@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\output\\MediManage_250306_\uC644\\MediManage_250306\\MediManage_250306\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|c:\\output\\medimanage_250306_\uC644\\medimanage_250306\\medimanage_250306\\medimanage\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|solutionrelative:medimanage\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|c:\\output\\medimanage_250306_\uC644\\medimanage_250306\\medimanage_250306\\medimanage\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|solutionrelative:medimanage\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
@@ -26,62 +22,29 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.vb",
               "DocumentMoniker": "C:\\output\\MediManage_250306_\uC644\\MediManage_250306\\MediManage_250306\\MediManage\\Form1.vb",
               "RelativeDocumentMoniker": "MediManage\\Form1.vb",
               "ToolTip": "C:\\output\\MediManage_250306_\uC644\\MediManage_250306\\MediManage_250306\\MediManage\\Form1.vb",
               "RelativeToolTip": "MediManage\\Form1.vb",
-              "ViewState": "AgIAAL4AAAAAAAAAAAAQwMwAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAnwD4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-03-05T22:40:49.287Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.Designer.vb",
               "DocumentMoniker": "C:\\output\\MediManage_250306_\uC644\\MediManage_250306\\MediManage_250306\\MediManage\\Form1.Designer.vb",
               "RelativeDocumentMoniker": "MediManage\\Form1.Designer.vb",
               "ToolTip": "C:\\output\\MediManage_250306_\uC644\\MediManage_250306\\MediManage_250306\\MediManage\\Form1.Designer.vb",
               "RelativeToolTip": "MediManage\\Form1.Designer.vb",
-              "ViewState": "AgIAANIEAAAAAAAAAAAAwPMEAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAAAJgAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-03-05T22:56:12.343Z",
               "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "ac8eec8f-aa81-40c4-a6ce-8691eafc10e0",
-        "Display": 0,
-        "X": 588,
-        "Y": 276,
-        "Width": 1408,
-        "Height": 714,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.vb [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\output\\MediManage_250306_\uC644\\MediManage_250306\\MediManage_250306\\MediManage\\Form1.vb",
-              "RelativeDocumentMoniker": "MediManage\\Form1.vb",
-              "ToolTip": "C:\\output\\MediManage_250306_\uC644\\MediManage_250306\\MediManage_250306\\MediManage\\Form1.vb [\uB514\uC790\uC778]",
-              "RelativeToolTip": "MediManage\\Form1.vb [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-03-05T22:41:46.72Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
             }
           ]
         }

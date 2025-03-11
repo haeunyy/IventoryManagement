@@ -117,18 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="DataGridViewTextBoxColumn3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="DataGridViewTextBoxColumn6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="DataGridViewTextBoxColumn7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="DataGridViewTextBoxColumn8.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="DataGridViewTextBoxColumn15.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -147,16 +135,16 @@
   <metadata name="DataGridViewTextBoxColumn20.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="grid_Code.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="DataGridViewTextBoxColumn3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="grid_Name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="DataGridViewTextBoxColumn6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="grid_MediCompany.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="DataGridViewTextBoxColumn7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="grid_Count.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="DataGridViewTextBoxColumn8.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="DataGridViewTextBoxColumn1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -177,16 +165,16 @@
   <metadata name="col_idx.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="grid_Code.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="grid_Name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="grid_MediCompany.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="수입업소.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="grid_Count.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="DataGridViewTextBoxColumn9.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -207,7 +195,93 @@
   <metadata name="DataGridViewTextBoxColumn14.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="수입업소.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAN0AAADdAAAAAAAAAAAA
+        AAD///8AdWRhz3dmY/uEcW7/h3Rw/4d0cP+HdHD/h3Rw/4d0cP+HdHD/h3Rw/4d0cP+HdHD/h3Rw/4d0
+        cP+HdHD/h3Rw/4d0cP+HdHD/h3Rw/4d0cP+HdHD/iHRw74d0cH3///8A////AP///wD///8A////AP//
+        /wD///8A////AHtnZE9uXVv/hHFu/5OBff+PfXn/jnt3/457d/+Oe3f/jnt3/457d/+Oe3f/jnt3/457
+        d/+Oe3f/jnt3/457d/+LeXX/h3Rw/4d0cP+HdHD/h3Rw/4d0cP+HdHD/h3Rw+4Vvbxf///8A////AP//
+        /wD///8A////AP///wD///8Ad2dlfG5dW/+6q6f/5t3Z//fq5P/46uT/+Ork//jq5P/46uT/+Ork//jq
+        5P/46uT/+Ork//jq5P/46uT/+Ork/+XZ1f+5qqb/h3Rw/4d0cP+HdHD/h3Rw/4d0cP+HdHD/hXVwMP//
+        /wD///8A////AP///wD///8A////AP///wB3Z2V8bl1b/8Gzrv/m3dn/+Ork//jq5P/46uT/+Ork//jq
+        5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/5drU/9PKxf+woZz/h3Rw/4d0cP+HdHD/h3Rw/4d0
+        cP+FdXAw////AP///wD///8A////AP///wD///8A////AHdnZXxuXVv/wbOu/+bd2f/46uT/+Ork//jq
+        5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/l2tT/08rF/+bc2P+vn5v/h3Rw/4d0
+        cP+HdHD/h3Rw/4V1cDD///8A////AP///wD///8A////AP///wD///8Ad2dlfG5dW//Bs67/5t3Z//jq
+        5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork/+Xa1P/TysX/5dzY/+bc
+        2P+vn5r/h3Rw/4d0cP+HdHD/hXVwMP///wD///8A////AP///wD///8A////AP///wB3Z2V8bl1b/8Gz
+        rv/m3dn/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/5drU/9PK
+        xf/l3Nj/5dzY/+bc2P+unpr/h3Rw/4d0cP+FdXAw////AP///wD///8A////AP///wD///8A////AHdn
+        ZXxuXVv/wbOu/+bd2f/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq
+        5P/v493/3dPO/+zh3P/t4t3/7eLd/+vg2/+Yh4L/h3Rw/4V1cDD///8A////AP///wD///8A////AP//
+        /wD///8Ad2dlfG5dW//Bs67/5t3Z//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq
+        5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork/6OSjf+HdHD/hXVwMP///wD///8A////AP//
+        /wD///8A////AP///wB3Z2V8bl1b/8Gzrv/m3dn/+Ork//jq5P/46uT/+Ork//jq5P/46uT/9+nk/+/i
+        5v/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/o5KN/4d0cP+FdXAw////AP//
+        /wD///8A////AP///wD///8A////AHdnZXxuXVv/wbOu/+bd2f/46uT/+Ork//jq5P/46uT/+Ork//jq
+        5P+7s+//iIT4//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P+jko3/h3Rw/4V1
+        cDD///8A////AP///wD///8A////AP///wD///8Ad2dlfG5dW//Bs67/5t3Z//jq5P/46uT/+Ork//jq
+        5P/46uT/+Ork/5KO9v9iYv//5dnn//jq5P/w4uX/9Obl//jq5P/46uT/+Ork//jq5P/46uT/+Ork/6OS
+        jf+HdHD/hXVwMP///wD///8A////AP///wD///8A////AP///wB3Z2V8bl1b/8Gzrv/m3dn/+Ork//jq
+        5P/46uT/+Ork//jq5P/36eT/bWz9/5qV9f+tpvH/+Ork/5CL9/+tpvH/+Ork//jq5P/46uT/+Ork//jq
+        5P/46uT/o5KN/4d0cP+FdXAw////AP///wD///8A////AP///wD///8A////AHdnZXxuXVv/wbOu/+bd
+        2f/46uT/3dLp/8m/7P/JwOz/8uXl/9rP6f+Affn/3NHp/3Vz/P/GvO3/ZWX+/4WC+f/26OT/zMLs/8m/
+        7P/h1ej/+Ork//jq5P+jko3/h3Rw/4V1cDD///8A////AP///wD///8A////AP///wD///8Ad2dlfG5d
+        W//Bs67/5t3Z//jq5P+1rfD/lZD2/4B9+f+qo/L/sqvw/6eh8v/46uT/qaPy/5WQ9v+6su//amr9/7au
+        8P96ePr/lZD2/7qy7//46uT/+Ork/6OSjf+HdHD/hXVwMP///wD///8A////AP///wD///8A////AP//
+        /wB3Z2V8bl1b/8Gzrv/m3dn/+Ork//jq5P/46uT/3NDp/3x6+v+Kh/j/z8Xr//jq5P/46uT/+Ork//jq
+        5P+Jhvj/bWz9/8zC7P/46uT/+Ork//jq5P/46uT/o5KN/4d0cP+FdXAw////AP///wD///8A////AP//
+        /wD///8A////AHdnZXxuXVv/wbOu/+bd2f/46uT/+Ork//jq5P/46uT/cnD8/2lo/v/z5eX/+Ork//jq
+        5P/46uT/+Ork/7Cp8f9paP7/9Obl//jq5P/46uT/+Ork//jq5P+jko3/h3Rw/3dqkTxPT+x4////AP//
+        /wD///8A////AP///wD///8Ad2dlfG5dW//Bs67/5t3Z//jq5P/46uT/+Ork//jq5P+emPT/hoP4//jq
+        5P/46uT/+Ork//jq5P/46uT/49fo/7au8P/46uT/+Ork//jq5P/46uT/+Ork/6OSjf9zZ57/Sknj91lZ
+        9v9hYf+zYGD/GP///wD///8A////AP///wB3Z2V8bl1b/8Gzrv/m3dn/+Ork//jq5P/46uT/+Ork/+HW
+        6P/SyOv/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/05uT/YV3S/0tL
+        5f9eXvz/YWH//2Fh//9hYf/sYGD/Vf///wD///8A////AHdnZXxuXVv/wbOu/+bd2f/46uT/+Ork//jq
+        5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork/2xp
+        5v9NTej/YWH//2Fh//9hYf//YWH//2Fh//9hYf/+YWH/T////wD///8Ad2dlfG5dW//Bs67/5t3Z//jq
+        5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq
+        5P+Qiuj/R0fh/19f/f9hYf//YWH//2Fh//9hYf//YWH//2Fh//9hYf/wYGD/Jf///wB3Z2V8bl1b/8Gz
+        rv/m3dn/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq
+        5P/46uT/9ujk/0ZG3/9XV/T/YWH//2Fh//9hYf//YWH//2Fh//9hYf//YWH//2Fh//9hYf+l////AHdn
+        ZXxuXVv/wbOu/+bd2f/46uT/+Ork//jq5P/46uT/+OjW//rgrP/64Kv/+uCr//rgq//64Kv/+uCr//rh
+        rf/46Nr/+Ork//jq5P+8tOf/Q0Pd/19f/P9hYf//YWH//2Fh//9hYf//YWH//2Fh//9hYf//YWH//2Fh
+        /+j///8Ad2dlfG5dW//Bs67/5t3Z//jq5P/46uT/+Ork//jq4//+yB7//c4///3OP//9zj///c4///3O
+        P//9zj///c09//7LLv/46uT/+Ork/4B85/9ISOL/YWH//2Fh//9hYf//YWH//2Fh//9hYf//YWH//2Fh
+        //9hYf//YWH//19f/yt3Z2V8bl1b/7qrp//m3dn/9+rk//jq5P/46uT/+Ond///FDf/46uT/+Ork//jq
+        5P/46uT/+Ork//jq5P/46d3//8UN//jq5P/46uT/n5jn/0VF3/9gYP7/YWH//2Fh//9hYf//YWH//2Fh
+        //9hYf//YWH//2Fh//9hYf/3Y2P/EndnZXxuXVv/h3Rw/5OBff+PfXn/jnt3/457d/+SfXP/+L8H/457
+        d/+Oe3f/jnt3/457d/+Oe3f/jnt3/5J9c//4vwf/jnt3/457d/+Menr/R0ff/1dX9P9hYf//YWH//2Ji
+        +ddiYv9TYWH/72Fh//9hYf//YWH//2Fh/6P///8AeGhmcW5dW/+Gc3D/h3Rw/4d0cP+HdHD/h3Rw/5OB
+        dvj2y0X9p5eS6aeXkumnl5Lpp5eS6aeXkumnl5LpqpmQ6vbLRf2MeXX7h3Rw/4d0cP99bYf/XVjJ/1tZ
+        4P9xacL/e3KfOP///wBfX/8zYWH/pmJi/8RhYf9kZmb/Cv///wCAamoMcF9d/X5saf+HdHD/h3Rw/4d0
+        cP+HdHD/597Z9uXc2P/l3Nj/5dzY/+Xc2P/l3Nj/5dzY/+Xc2P/l3Nj/5dzY/+Xc1u+HdHD/h3Rw/4d0
+        cP+HdHD/h3Rw/4d0cNb///8A////AP///wD///8A////AP///wD///8A////AP///wB7amodeGdjlYFu
+        a3mHc3Foh3NxaIdzcWjv5N//9uji//bo4v/26OL/9uji//bo4v/26OL/9uji//bo4v/26OL/7uPe84dz
+        cWiHc3Foh3NxaIdzcWiHdW9XgIBmCv///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////APjq5Kv46uT/+Ork//jq5P/46uT/+Ork//jq5P/46uT/+Ork//jq
+        5P/46uOT////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A3tPILtHIw//h2NP/5dzY////
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wDV1b8M1cvH8drR
+        zf/l3Nix////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8AgAAA/wAAAH8AAAB/AAAAfwAAAH8AAAB/AAAAfwAAAH8AAAB/AAAAfwAA
+        AH8AAAB/AAAAfwAAAH8AAAB/AAAAfwAAAD8AAAAPAAAABwAAAAMAAAABAAAAAQAAAAEAAAAAAAAAAAAA
+        AAEAAABBAAAA/4AAAP/+AD///8P////D//8=
+</value>
+  </data>
 </root>
