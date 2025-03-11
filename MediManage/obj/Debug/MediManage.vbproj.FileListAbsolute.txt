@@ -130,3 +130,15 @@ D:\Git소스\교육용샘플\MediManage_250311\MediManage_250306_완\MediManage_
 D:\Git소스\교육용샘플\MediManage_250311\MediManage_250306_완\MediManage_250306\MediManage_250306\MediManage\obj\Debug\MediManage.xml
 D:\Git소스\교육용샘플\MediManage_250311\MediManage_250306_완\MediManage_250306\MediManage_250306\MediManage\obj\Debug\MediManage.pdb
 D:\Git소스\교육용샘플\MediManage_250311\MediManage_250306_완\MediManage_250306\MediManage_250306\MediManage\obj\Debug\MediManage.Form1.resources
+C:\output\MediManage_250311_완\MediManage\bin\Debug\MediManage.exe.config
+C:\output\MediManage_250311_완\MediManage\bin\Debug\MediManage.exe
+C:\output\MediManage_250311_완\MediManage\bin\Debug\MediManage.pdb
+C:\output\MediManage_250311_완\MediManage\bin\Debug\MediManage.xml
+C:\output\MediManage_250311_완\MediManage\obj\Debug\MediManage.vbproj.AssemblyReference.cache
+C:\output\MediManage_250311_완\MediManage\obj\Debug\MediManage.Form1.resources
+C:\output\MediManage_250311_완\MediManage\obj\Debug\MediManage.Resources.resources
+C:\output\MediManage_250311_완\MediManage\obj\Debug\MediManage.vbproj.GenerateResource.cache
+C:\output\MediManage_250311_완\MediManage\obj\Debug\MediManage.vbproj.CoreCompileInputs.cache
+C:\output\MediManage_250311_완\MediManage\obj\Debug\MediManage.exe
+C:\output\MediManage_250311_완\MediManage\obj\Debug\MediManage.xml
+C:\output\MediManage_250311_완\MediManage\obj\Debug\MediManage.pdb

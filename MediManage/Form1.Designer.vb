@@ -71,40 +71,25 @@ Partial Class Form1
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.보험약 = New System.Windows.Forms.TabPage()
         Me.tab_혼합제재고 = New System.Windows.Forms.TabControl()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.tp_혼합제_입고 = New System.Windows.Forms.TabPage()
+        Me.pnl_혼합제_입출고 = New System.Windows.Forms.Panel()
         Me.txt_count = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txt_Price = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txt_comp = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.btn_Update = New System.Windows.Forms.Button()
         Me.dtp_Received = New System.Windows.Forms.DateTimePicker()
-        Me.txt_Name = New System.Windows.Forms.TextBox()
-        Me.txt_Code = New System.Windows.Forms.TextBox()
-        Me.btn_Save = New System.Windows.Forms.Button()
-        Me.btn_New = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lbl_혼합제_입출고_일자 = New System.Windows.Forms.Label()
         Me.btn_delete = New System.Windows.Forms.Button()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.txt_o_count = New System.Windows.Forms.TextBox()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.txt_o_price = New System.Windows.Forms.TextBox()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.txt_o_comp = New System.Windows.Forms.TextBox()
-        Me.Label28 = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.btn_o_update = New System.Windows.Forms.Button()
-        Me.dtp_o_received = New System.Windows.Forms.DateTimePicker()
-        Me.txt_o_name = New System.Windows.Forms.TextBox()
-        Me.txt_o_code = New System.Windows.Forms.TextBox()
-        Me.btn_o_save = New System.Windows.Forms.Button()
-        Me.btn_o_new = New System.Windows.Forms.Button()
-        Me.Label30 = New System.Windows.Forms.Label()
-        Me.Label31 = New System.Windows.Forms.Label()
-        Me.btn_o_delete = New System.Windows.Forms.Button()
+        Me.txt_Price = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lbl_혼합제_입출고_수량 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txt_comp = New System.Windows.Forms.TextBox()
+        Me.btn_New = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.btn_Save = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txt_Code = New System.Windows.Forms.TextBox()
+        Me.btn_Update = New System.Windows.Forms.Button()
+        Me.txt_Name = New System.Windows.Forms.TextBox()
+        Me.tp_혼합제_출고 = New System.Windows.Forms.TabPage()
         Me.grid_혼합제_inven = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -121,44 +106,27 @@ Partial Class Form1
         Me.tab_페이지 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.tab_치료재재고 = New System.Windows.Forms.TabControl()
-        Me.TabPage6 = New System.Windows.Forms.TabPage()
+        Me.tp_치료대_입고 = New System.Windows.Forms.TabPage()
+        Me.pnl_치료대_입출고 = New System.Windows.Forms.Panel()
         Me.txt_name_inven = New System.Windows.Forms.TextBox()
-        Me.txt_count_inven = New System.Windows.Forms.TextBox()
-        Me.txt_수입업소 = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.dtp_inven = New System.Windows.Forms.DateTimePicker()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.btn_new_inven = New System.Windows.Forms.Button()
         Me.txt_price_inven = New System.Windows.Forms.TextBox()
-        Me.txt_comp_inven = New System.Windows.Forms.TextBox()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.btn_del_inven = New System.Windows.Forms.Button()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.txt_code_inven = New System.Windows.Forms.TextBox()
-        Me.btn_save_inven = New System.Windows.Forms.Button()
-        Me.btn_update_inven = New System.Windows.Forms.Button()
+        Me.txt_count_inven = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.TabPage7 = New System.Windows.Forms.TabPage()
-        Me.txt_o_name_inven = New System.Windows.Forms.TextBox()
-        Me.txt_o_count_inven = New System.Windows.Forms.TextBox()
-        Me.txt_o_수입업소_inven = New System.Windows.Forms.TextBox()
-        Me.Label32 = New System.Windows.Forms.Label()
-        Me.dtp_o_inven = New System.Windows.Forms.DateTimePicker()
-        Me.Label33 = New System.Windows.Forms.Label()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.Label35 = New System.Windows.Forms.Label()
-        Me.btn_o_new_inven = New System.Windows.Forms.Button()
-        Me.txt_o_price_inven = New System.Windows.Forms.TextBox()
-        Me.txt_o_comp_inven = New System.Windows.Forms.TextBox()
-        Me.Label36 = New System.Windows.Forms.Label()
-        Me.btn_o_del_inven = New System.Windows.Forms.Button()
-        Me.Label37 = New System.Windows.Forms.Label()
-        Me.txt_o_code_inven = New System.Windows.Forms.TextBox()
-        Me.btn_o_save_inven = New System.Windows.Forms.Button()
-        Me.btn_o_update_inven = New System.Windows.Forms.Button()
-        Me.Label38 = New System.Windows.Forms.Label()
+        Me.txt_수입업소 = New System.Windows.Forms.TextBox()
+        Me.btn_update_inven = New System.Windows.Forms.Button()
+        Me.lbl_치료대_입출고_수량 = New System.Windows.Forms.Label()
+        Me.btn_save_inven = New System.Windows.Forms.Button()
+        Me.dtp_inven = New System.Windows.Forms.DateTimePicker()
+        Me.txt_code_inven = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.lbl_치료대_입출고_일자 = New System.Windows.Forms.Label()
+        Me.btn_del_inven = New System.Windows.Forms.Button()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.btn_new_inven = New System.Windows.Forms.Button()
+        Me.txt_comp_inven = New System.Windows.Forms.TextBox()
+        Me.tp_치료대_출고 = New System.Windows.Forms.TabPage()
         Me.grid_재료대재고내역 = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -181,16 +149,16 @@ Partial Class Form1
         CType(Me.grid_단미제, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.보험약.SuspendLayout()
         Me.tab_혼합제재고.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
-        Me.TabPage3.SuspendLayout()
+        Me.tp_혼합제_입고.SuspendLayout()
+        Me.pnl_혼합제_입출고.SuspendLayout()
         CType(Me.grid_혼합제_inven, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.grid_혼합제, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tab_페이지.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.tab_치료재재고.SuspendLayout()
-        Me.TabPage6.SuspendLayout()
-        Me.TabPage7.SuspendLayout()
+        Me.tp_치료대_입고.SuspendLayout()
+        Me.pnl_치료대_입출고.SuspendLayout()
         CType(Me.grid_재료대재고내역, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.grid_치료재료대, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -212,6 +180,7 @@ Partial Class Form1
         '
         'tab_단미제재고
         '
+        Me.tab_단미제재고.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.tab_단미제재고.Controls.Add(Me.tp_단미제_입고)
         Me.tab_단미제재고.Controls.Add(Me.tp_단미제_출고)
         Me.tab_단미제재고.Location = New System.Drawing.Point(12, 307)
@@ -260,7 +229,7 @@ Partial Class Form1
         Me.txt_name_sg.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txt_name_sg.Enabled = False
         Me.txt_name_sg.ForeColor = System.Drawing.Color.Black
-        Me.txt_name_sg.Location = New System.Drawing.Point(84, 15)
+        Me.txt_name_sg.Location = New System.Drawing.Point(84, 22)
         Me.txt_name_sg.Name = "txt_name_sg"
         Me.txt_name_sg.ReadOnly = True
         Me.txt_name_sg.Size = New System.Drawing.Size(182, 21)
@@ -270,7 +239,7 @@ Partial Class Form1
         '
         Me.txt_count_sg.Enabled = False
         Me.txt_count_sg.ForeColor = System.Drawing.Color.Black
-        Me.txt_count_sg.Location = New System.Drawing.Point(84, 123)
+        Me.txt_count_sg.Location = New System.Drawing.Point(84, 130)
         Me.txt_count_sg.Name = "txt_count_sg"
         Me.txt_count_sg.Size = New System.Drawing.Size(182, 21)
         Me.txt_count_sg.TabIndex = 25
@@ -280,7 +249,7 @@ Partial Class Form1
         Me.txt_code_sg.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txt_code_sg.Enabled = False
         Me.txt_code_sg.ForeColor = System.Drawing.Color.Black
-        Me.txt_code_sg.Location = New System.Drawing.Point(84, 42)
+        Me.txt_code_sg.Location = New System.Drawing.Point(84, 49)
         Me.txt_code_sg.Name = "txt_code_sg"
         Me.txt_code_sg.ReadOnly = True
         Me.txt_code_sg.Size = New System.Drawing.Size(182, 21)
@@ -289,7 +258,7 @@ Partial Class Form1
         'lbl_단미제_입출고_일자
         '
         Me.lbl_단미제_입출고_일자.AutoSize = True
-        Me.lbl_단미제_입출고_일자.Location = New System.Drawing.Point(14, 102)
+        Me.lbl_단미제_입출고_일자.Location = New System.Drawing.Point(14, 109)
         Me.lbl_단미제_입출고_일자.Name = "lbl_단미제_입출고_일자"
         Me.lbl_단미제_입출고_일자.Size = New System.Drawing.Size(53, 12)
         Me.lbl_단미제_입출고_일자.TabIndex = 32
@@ -300,7 +269,7 @@ Partial Class Form1
         Me.dtp_received_sg.CalendarForeColor = System.Drawing.Color.Black
         Me.dtp_received_sg.CausesValidation = False
         Me.dtp_received_sg.Enabled = False
-        Me.dtp_received_sg.Location = New System.Drawing.Point(84, 97)
+        Me.dtp_received_sg.Location = New System.Drawing.Point(84, 104)
         Me.dtp_received_sg.Name = "dtp_received_sg"
         Me.dtp_received_sg.Size = New System.Drawing.Size(182, 21)
         Me.dtp_received_sg.TabIndex = 23
@@ -309,7 +278,7 @@ Partial Class Form1
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(14, 75)
+        Me.Label17.Location = New System.Drawing.Point(14, 82)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(41, 12)
         Me.Label17.TabIndex = 29
@@ -319,7 +288,7 @@ Partial Class Form1
         '
         Me.txt_price_sg.Enabled = False
         Me.txt_price_sg.ForeColor = System.Drawing.Color.Black
-        Me.txt_price_sg.Location = New System.Drawing.Point(84, 150)
+        Me.txt_price_sg.Location = New System.Drawing.Point(84, 157)
         Me.txt_price_sg.Name = "txt_price_sg"
         Me.txt_price_sg.Size = New System.Drawing.Size(182, 21)
         Me.txt_price_sg.TabIndex = 26
@@ -328,17 +297,18 @@ Partial Class Form1
         '
         Me.btn_save_sg.AccessibleRole = System.Windows.Forms.AccessibleRole.None
         Me.btn_save_sg.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.btn_save_sg.Location = New System.Drawing.Point(217, 203)
+        Me.btn_save_sg.Location = New System.Drawing.Point(214, 204)
         Me.btn_save_sg.Name = "btn_save_sg"
         Me.btn_save_sg.Size = New System.Drawing.Size(63, 23)
         Me.btn_save_sg.TabIndex = 33
         Me.btn_save_sg.Text = "저장"
         Me.btn_save_sg.UseVisualStyleBackColor = False
+        Me.btn_save_sg.Visible = False
         '
         'lbl_단미제_입출고_수량
         '
         Me.lbl_단미제_입출고_수량.AutoSize = True
-        Me.lbl_단미제_입출고_수량.Location = New System.Drawing.Point(14, 129)
+        Me.lbl_단미제_입출고_수량.Location = New System.Drawing.Point(14, 136)
         Me.lbl_단미제_입출고_수량.Name = "lbl_단미제_입출고_수량"
         Me.lbl_단미제_입출고_수량.Size = New System.Drawing.Size(46, 12)
         Me.lbl_단미제_입출고_수량.TabIndex = 34
@@ -346,7 +316,7 @@ Partial Class Form1
         '
         'btn_update_sg
         '
-        Me.btn_update_sg.Location = New System.Drawing.Point(78, 203)
+        Me.btn_update_sg.Location = New System.Drawing.Point(75, 204)
         Me.btn_update_sg.Name = "btn_update_sg"
         Me.btn_update_sg.Size = New System.Drawing.Size(63, 23)
         Me.btn_update_sg.TabIndex = 30
@@ -356,7 +326,7 @@ Partial Class Form1
         '
         'btn_del_sg
         '
-        Me.btn_del_sg.Location = New System.Drawing.Point(147, 203)
+        Me.btn_del_sg.Location = New System.Drawing.Point(144, 204)
         Me.btn_del_sg.Name = "btn_del_sg"
         Me.btn_del_sg.Size = New System.Drawing.Size(63, 23)
         Me.btn_del_sg.TabIndex = 31
@@ -367,7 +337,7 @@ Partial Class Form1
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(14, 49)
+        Me.Label18.Location = New System.Drawing.Point(14, 56)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(29, 12)
         Me.Label18.TabIndex = 27
@@ -378,7 +348,7 @@ Partial Class Form1
         Me.txt_comp_sg.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txt_comp_sg.Enabled = False
         Me.txt_comp_sg.ForeColor = System.Drawing.Color.Black
-        Me.txt_comp_sg.Location = New System.Drawing.Point(84, 69)
+        Me.txt_comp_sg.Location = New System.Drawing.Point(84, 76)
         Me.txt_comp_sg.Name = "txt_comp_sg"
         Me.txt_comp_sg.ReadOnly = True
         Me.txt_comp_sg.Size = New System.Drawing.Size(182, 21)
@@ -387,7 +357,7 @@ Partial Class Form1
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(14, 21)
+        Me.Label19.Location = New System.Drawing.Point(14, 28)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(29, 12)
         Me.Label19.TabIndex = 24
@@ -395,7 +365,7 @@ Partial Class Form1
         '
         'btn_new_sg
         '
-        Me.btn_new_sg.Location = New System.Drawing.Point(9, 203)
+        Me.btn_new_sg.Location = New System.Drawing.Point(6, 204)
         Me.btn_new_sg.Name = "btn_new_sg"
         Me.btn_new_sg.Size = New System.Drawing.Size(63, 23)
         Me.btn_new_sg.TabIndex = 28
@@ -405,7 +375,7 @@ Partial Class Form1
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(14, 157)
+        Me.Label14.Location = New System.Drawing.Point(14, 164)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(29, 12)
         Me.Label14.TabIndex = 35
@@ -426,8 +396,7 @@ Partial Class Form1
         Me.grid_단미제_inven.AllowUserToAddRows = False
         Me.grid_단미제_inven.AllowUserToDeleteRows = False
         Me.grid_단미제_inven.AllowUserToOrderColumns = True
-        Me.grid_단미제_inven.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.grid_단미제_inven.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
@@ -606,189 +575,82 @@ Partial Class Form1
         '
         'tab_혼합제재고
         '
-        Me.tab_혼합제재고.Controls.Add(Me.TabPage2)
-        Me.tab_혼합제재고.Controls.Add(Me.TabPage3)
+        Me.tab_혼합제재고.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.tab_혼합제재고.Controls.Add(Me.tp_혼합제_입고)
+        Me.tab_혼합제재고.Controls.Add(Me.tp_혼합제_출고)
         Me.tab_혼합제재고.Location = New System.Drawing.Point(12, 307)
         Me.tab_혼합제재고.Name = "tab_혼합제재고"
         Me.tab_혼합제재고.SelectedIndex = 0
         Me.tab_혼합제재고.Size = New System.Drawing.Size(296, 271)
         Me.tab_혼합제재고.TabIndex = 22
         '
-        'TabPage2
+        'tp_혼합제_입고
         '
-        Me.TabPage2.Controls.Add(Me.txt_count)
-        Me.TabPage2.Controls.Add(Me.Label4)
-        Me.TabPage2.Controls.Add(Me.txt_Price)
-        Me.TabPage2.Controls.Add(Me.Label5)
-        Me.TabPage2.Controls.Add(Me.txt_comp)
-        Me.TabPage2.Controls.Add(Me.Label6)
-        Me.TabPage2.Controls.Add(Me.Label3)
-        Me.TabPage2.Controls.Add(Me.btn_Update)
-        Me.TabPage2.Controls.Add(Me.dtp_Received)
-        Me.TabPage2.Controls.Add(Me.txt_Name)
-        Me.TabPage2.Controls.Add(Me.txt_Code)
-        Me.TabPage2.Controls.Add(Me.btn_Save)
-        Me.TabPage2.Controls.Add(Me.btn_New)
-        Me.TabPage2.Controls.Add(Me.Label1)
-        Me.TabPage2.Controls.Add(Me.Label2)
-        Me.TabPage2.Controls.Add(Me.btn_delete)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(288, 245)
-        Me.TabPage2.TabIndex = 0
-        Me.TabPage2.Text = "입고"
-        Me.TabPage2.UseVisualStyleBackColor = True
+        Me.tp_혼합제_입고.Controls.Add(Me.pnl_혼합제_입출고)
+        Me.tp_혼합제_입고.Location = New System.Drawing.Point(4, 22)
+        Me.tp_혼합제_입고.Name = "tp_혼합제_입고"
+        Me.tp_혼합제_입고.Padding = New System.Windows.Forms.Padding(3)
+        Me.tp_혼합제_입고.Size = New System.Drawing.Size(288, 245)
+        Me.tp_혼합제_입고.TabIndex = 0
+        Me.tp_혼합제_입고.Text = "입고"
+        Me.tp_혼합제_입고.UseVisualStyleBackColor = True
+        '
+        'pnl_혼합제_입출고
+        '
+        Me.pnl_혼합제_입출고.Controls.Add(Me.txt_count)
+        Me.pnl_혼합제_입출고.Controls.Add(Me.dtp_Received)
+        Me.pnl_혼합제_입출고.Controls.Add(Me.lbl_혼합제_입출고_일자)
+        Me.pnl_혼합제_입출고.Controls.Add(Me.btn_delete)
+        Me.pnl_혼합제_입출고.Controls.Add(Me.txt_Price)
+        Me.pnl_혼합제_입출고.Controls.Add(Me.Label2)
+        Me.pnl_혼합제_입출고.Controls.Add(Me.lbl_혼합제_입출고_수량)
+        Me.pnl_혼합제_입출고.Controls.Add(Me.Label1)
+        Me.pnl_혼합제_입출고.Controls.Add(Me.txt_comp)
+        Me.pnl_혼합제_입출고.Controls.Add(Me.btn_New)
+        Me.pnl_혼합제_입출고.Controls.Add(Me.Label6)
+        Me.pnl_혼합제_입출고.Controls.Add(Me.btn_Save)
+        Me.pnl_혼합제_입출고.Controls.Add(Me.Label3)
+        Me.pnl_혼합제_입출고.Controls.Add(Me.txt_Code)
+        Me.pnl_혼합제_입출고.Controls.Add(Me.btn_Update)
+        Me.pnl_혼합제_입출고.Controls.Add(Me.txt_Name)
+        Me.pnl_혼합제_입출고.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnl_혼합제_입출고.Location = New System.Drawing.Point(3, 3)
+        Me.pnl_혼합제_입출고.Name = "pnl_혼합제_입출고"
+        Me.pnl_혼합제_입출고.Size = New System.Drawing.Size(282, 239)
+        Me.pnl_혼합제_입출고.TabIndex = 23
         '
         'txt_count
         '
         Me.txt_count.Enabled = False
         Me.txt_count.ForeColor = System.Drawing.Color.Black
-        Me.txt_count.Location = New System.Drawing.Point(84, 127)
+        Me.txt_count.Location = New System.Drawing.Point(84, 130)
         Me.txt_count.Name = "txt_count"
         Me.txt_count.Size = New System.Drawing.Size(182, 21)
         Me.txt_count.TabIndex = 5
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(14, 106)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(53, 12)
-        Me.Label4.TabIndex = 10
-        Me.Label4.Text = "입고일자"
-        '
-        'txt_Price
-        '
-        Me.txt_Price.Enabled = False
-        Me.txt_Price.ForeColor = System.Drawing.Color.Black
-        Me.txt_Price.Location = New System.Drawing.Point(84, 154)
-        Me.txt_Price.Name = "txt_Price"
-        Me.txt_Price.Size = New System.Drawing.Size(182, 21)
-        Me.txt_Price.TabIndex = 6
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(14, 133)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(46, 12)
-        Me.Label5.TabIndex = 12
-        Me.Label5.Text = "수량(g)"
-        '
-        'txt_comp
-        '
-        Me.txt_comp.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txt_comp.Enabled = False
-        Me.txt_comp.ForeColor = System.Drawing.Color.Black
-        Me.txt_comp.Location = New System.Drawing.Point(84, 73)
-        Me.txt_comp.Name = "txt_comp"
-        Me.txt_comp.ReadOnly = True
-        Me.txt_comp.Size = New System.Drawing.Size(182, 21)
-        Me.txt_comp.TabIndex = 3
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(14, 161)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(29, 12)
-        Me.Label6.TabIndex = 19
-        Me.Label6.Text = "단가"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(14, 79)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(41, 12)
-        Me.Label3.TabIndex = 8
-        Me.Label3.Text = "제약사"
-        '
-        'btn_Update
-        '
-        Me.btn_Update.Location = New System.Drawing.Point(78, 207)
-        Me.btn_Update.Name = "btn_Update"
-        Me.btn_Update.Size = New System.Drawing.Size(63, 23)
-        Me.btn_Update.TabIndex = 8
-        Me.btn_Update.Text = "수정"
-        Me.btn_Update.UseVisualStyleBackColor = True
-        Me.btn_Update.Visible = False
         '
         'dtp_Received
         '
         Me.dtp_Received.CalendarForeColor = System.Drawing.Color.Black
         Me.dtp_Received.CausesValidation = False
         Me.dtp_Received.Enabled = False
-        Me.dtp_Received.Location = New System.Drawing.Point(84, 101)
+        Me.dtp_Received.Location = New System.Drawing.Point(84, 104)
         Me.dtp_Received.Name = "dtp_Received"
         Me.dtp_Received.Size = New System.Drawing.Size(182, 21)
         Me.dtp_Received.TabIndex = 4
         Me.dtp_Received.Value = New Date(2025, 2, 25, 0, 0, 0, 0)
         '
-        'txt_Name
+        'lbl_혼합제_입출고_일자
         '
-        Me.txt_Name.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txt_Name.Enabled = False
-        Me.txt_Name.ForeColor = System.Drawing.Color.Black
-        Me.txt_Name.Location = New System.Drawing.Point(84, 19)
-        Me.txt_Name.Name = "txt_Name"
-        Me.txt_Name.ReadOnly = True
-        Me.txt_Name.Size = New System.Drawing.Size(182, 21)
-        Me.txt_Name.TabIndex = 0
-        '
-        'txt_Code
-        '
-        Me.txt_Code.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txt_Code.Enabled = False
-        Me.txt_Code.ForeColor = System.Drawing.Color.Black
-        Me.txt_Code.Location = New System.Drawing.Point(84, 46)
-        Me.txt_Code.Name = "txt_Code"
-        Me.txt_Code.ReadOnly = True
-        Me.txt_Code.Size = New System.Drawing.Size(182, 21)
-        Me.txt_Code.TabIndex = 1
-        '
-        'btn_Save
-        '
-        Me.btn_Save.AccessibleRole = System.Windows.Forms.AccessibleRole.None
-        Me.btn_Save.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.btn_Save.Location = New System.Drawing.Point(217, 207)
-        Me.btn_Save.Name = "btn_Save"
-        Me.btn_Save.Size = New System.Drawing.Size(63, 23)
-        Me.btn_Save.TabIndex = 9
-        Me.btn_Save.Text = "저장"
-        Me.btn_Save.UseVisualStyleBackColor = False
-        '
-        'btn_New
-        '
-        Me.btn_New.Location = New System.Drawing.Point(9, 207)
-        Me.btn_New.Name = "btn_New"
-        Me.btn_New.Size = New System.Drawing.Size(63, 23)
-        Me.btn_New.TabIndex = 7
-        Me.btn_New.Text = "새로입력"
-        Me.btn_New.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(14, 25)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(29, 12)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "명칭"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(14, 53)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(29, 12)
-        Me.Label2.TabIndex = 6
-        Me.Label2.Text = "코드"
+        Me.lbl_혼합제_입출고_일자.AutoSize = True
+        Me.lbl_혼합제_입출고_일자.Location = New System.Drawing.Point(14, 109)
+        Me.lbl_혼합제_입출고_일자.Name = "lbl_혼합제_입출고_일자"
+        Me.lbl_혼합제_입출고_일자.Size = New System.Drawing.Size(53, 12)
+        Me.lbl_혼합제_입출고_일자.TabIndex = 10
+        Me.lbl_혼합제_입출고_일자.Text = "입고일자"
         '
         'btn_delete
         '
-        Me.btn_delete.Location = New System.Drawing.Point(147, 207)
+        Me.btn_delete.Location = New System.Drawing.Point(144, 204)
         Me.btn_delete.Name = "btn_delete"
         Me.btn_delete.Size = New System.Drawing.Size(63, 23)
         Me.btn_delete.TabIndex = 8
@@ -796,195 +658,140 @@ Partial Class Form1
         Me.btn_delete.UseVisualStyleBackColor = True
         Me.btn_delete.Visible = False
         '
-        'TabPage3
+        'txt_Price
         '
-        Me.TabPage3.Controls.Add(Me.txt_o_count)
-        Me.TabPage3.Controls.Add(Me.Label26)
-        Me.TabPage3.Controls.Add(Me.txt_o_price)
-        Me.TabPage3.Controls.Add(Me.Label27)
-        Me.TabPage3.Controls.Add(Me.txt_o_comp)
-        Me.TabPage3.Controls.Add(Me.Label28)
-        Me.TabPage3.Controls.Add(Me.Label29)
-        Me.TabPage3.Controls.Add(Me.btn_o_update)
-        Me.TabPage3.Controls.Add(Me.dtp_o_received)
-        Me.TabPage3.Controls.Add(Me.txt_o_name)
-        Me.TabPage3.Controls.Add(Me.txt_o_code)
-        Me.TabPage3.Controls.Add(Me.btn_o_save)
-        Me.TabPage3.Controls.Add(Me.btn_o_new)
-        Me.TabPage3.Controls.Add(Me.Label30)
-        Me.TabPage3.Controls.Add(Me.Label31)
-        Me.TabPage3.Controls.Add(Me.btn_o_delete)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(288, 245)
-        Me.TabPage3.TabIndex = 1
-        Me.TabPage3.Text = "출고"
-        Me.TabPage3.UseVisualStyleBackColor = True
+        Me.txt_Price.Enabled = False
+        Me.txt_Price.ForeColor = System.Drawing.Color.Black
+        Me.txt_Price.Location = New System.Drawing.Point(84, 157)
+        Me.txt_Price.Name = "txt_Price"
+        Me.txt_Price.Size = New System.Drawing.Size(182, 21)
+        Me.txt_Price.TabIndex = 6
         '
-        'txt_o_count
+        'Label2
         '
-        Me.txt_o_count.Enabled = False
-        Me.txt_o_count.ForeColor = System.Drawing.Color.Black
-        Me.txt_o_count.Location = New System.Drawing.Point(84, 127)
-        Me.txt_o_count.Name = "txt_o_count"
-        Me.txt_o_count.Size = New System.Drawing.Size(182, 21)
-        Me.txt_o_count.TabIndex = 25
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(14, 56)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(29, 12)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "코드"
         '
-        'Label26
+        'lbl_혼합제_입출고_수량
         '
-        Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(14, 106)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(53, 12)
-        Me.Label26.TabIndex = 33
-        Me.Label26.Text = "출고일자"
+        Me.lbl_혼합제_입출고_수량.AutoSize = True
+        Me.lbl_혼합제_입출고_수량.Location = New System.Drawing.Point(14, 136)
+        Me.lbl_혼합제_입출고_수량.Name = "lbl_혼합제_입출고_수량"
+        Me.lbl_혼합제_입출고_수량.Size = New System.Drawing.Size(46, 12)
+        Me.lbl_혼합제_입출고_수량.TabIndex = 12
+        Me.lbl_혼합제_입출고_수량.Text = "수량(g)"
         '
-        'txt_o_price
+        'Label1
         '
-        Me.txt_o_price.Enabled = False
-        Me.txt_o_price.ForeColor = System.Drawing.Color.Black
-        Me.txt_o_price.Location = New System.Drawing.Point(84, 154)
-        Me.txt_o_price.Name = "txt_o_price"
-        Me.txt_o_price.Size = New System.Drawing.Size(182, 21)
-        Me.txt_o_price.TabIndex = 26
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(14, 28)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(29, 12)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "명칭"
         '
-        'Label27
+        'txt_comp
         '
-        Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(14, 133)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(70, 12)
-        Me.Label27.TabIndex = 34
-        Me.Label27.Text = "출고수량(g)"
+        Me.txt_comp.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txt_comp.Enabled = False
+        Me.txt_comp.ForeColor = System.Drawing.Color.Black
+        Me.txt_comp.Location = New System.Drawing.Point(84, 76)
+        Me.txt_comp.Name = "txt_comp"
+        Me.txt_comp.ReadOnly = True
+        Me.txt_comp.Size = New System.Drawing.Size(182, 21)
+        Me.txt_comp.TabIndex = 3
         '
-        'txt_o_comp
+        'btn_New
         '
-        Me.txt_o_comp.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txt_o_comp.Enabled = False
-        Me.txt_o_comp.ForeColor = System.Drawing.Color.Black
-        Me.txt_o_comp.Location = New System.Drawing.Point(84, 73)
-        Me.txt_o_comp.Name = "txt_o_comp"
-        Me.txt_o_comp.ReadOnly = True
-        Me.txt_o_comp.Size = New System.Drawing.Size(182, 21)
-        Me.txt_o_comp.TabIndex = 22
+        Me.btn_New.Location = New System.Drawing.Point(6, 204)
+        Me.btn_New.Name = "btn_New"
+        Me.btn_New.Size = New System.Drawing.Size(63, 23)
+        Me.btn_New.TabIndex = 7
+        Me.btn_New.Text = "새로입력"
+        Me.btn_New.UseVisualStyleBackColor = True
         '
-        'Label28
+        'Label6
         '
-        Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(14, 161)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(29, 12)
-        Me.Label28.TabIndex = 35
-        Me.Label28.Text = "단가"
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(14, 164)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(29, 12)
+        Me.Label6.TabIndex = 19
+        Me.Label6.Text = "단가"
         '
-        'Label29
+        'btn_Save
         '
-        Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(14, 79)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(41, 12)
-        Me.Label29.TabIndex = 29
-        Me.Label29.Text = "제약사"
+        Me.btn_Save.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.btn_Save.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btn_Save.Location = New System.Drawing.Point(214, 204)
+        Me.btn_Save.Name = "btn_Save"
+        Me.btn_Save.Size = New System.Drawing.Size(63, 23)
+        Me.btn_Save.TabIndex = 9
+        Me.btn_Save.Text = "저장"
+        Me.btn_Save.UseVisualStyleBackColor = False
+        Me.btn_Save.Visible = False
         '
-        'btn_o_update
+        'Label3
         '
-        Me.btn_o_update.Location = New System.Drawing.Point(78, 207)
-        Me.btn_o_update.Name = "btn_o_update"
-        Me.btn_o_update.Size = New System.Drawing.Size(63, 23)
-        Me.btn_o_update.TabIndex = 30
-        Me.btn_o_update.Text = "수정"
-        Me.btn_o_update.UseVisualStyleBackColor = True
-        Me.btn_o_update.Visible = False
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(14, 82)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(41, 12)
+        Me.Label3.TabIndex = 8
+        Me.Label3.Text = "제약사"
         '
-        'dtp_o_received
+        'txt_Code
         '
-        Me.dtp_o_received.CalendarForeColor = System.Drawing.Color.Black
-        Me.dtp_o_received.CausesValidation = False
-        Me.dtp_o_received.Enabled = False
-        Me.dtp_o_received.Location = New System.Drawing.Point(84, 101)
-        Me.dtp_o_received.Name = "dtp_o_received"
-        Me.dtp_o_received.Size = New System.Drawing.Size(182, 21)
-        Me.dtp_o_received.TabIndex = 23
-        Me.dtp_o_received.Value = New Date(2025, 2, 25, 0, 0, 0, 0)
+        Me.txt_Code.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txt_Code.Enabled = False
+        Me.txt_Code.ForeColor = System.Drawing.Color.Black
+        Me.txt_Code.Location = New System.Drawing.Point(84, 49)
+        Me.txt_Code.Name = "txt_Code"
+        Me.txt_Code.ReadOnly = True
+        Me.txt_Code.Size = New System.Drawing.Size(182, 21)
+        Me.txt_Code.TabIndex = 1
         '
-        'txt_o_name
+        'btn_Update
         '
-        Me.txt_o_name.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txt_o_name.Enabled = False
-        Me.txt_o_name.ForeColor = System.Drawing.Color.Black
-        Me.txt_o_name.Location = New System.Drawing.Point(84, 19)
-        Me.txt_o_name.Name = "txt_o_name"
-        Me.txt_o_name.ReadOnly = True
-        Me.txt_o_name.Size = New System.Drawing.Size(182, 21)
-        Me.txt_o_name.TabIndex = 20
+        Me.btn_Update.Location = New System.Drawing.Point(75, 204)
+        Me.btn_Update.Name = "btn_Update"
+        Me.btn_Update.Size = New System.Drawing.Size(63, 23)
+        Me.btn_Update.TabIndex = 8
+        Me.btn_Update.Text = "수정"
+        Me.btn_Update.UseVisualStyleBackColor = True
+        Me.btn_Update.Visible = False
         '
-        'txt_o_code
+        'txt_Name
         '
-        Me.txt_o_code.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txt_o_code.Enabled = False
-        Me.txt_o_code.ForeColor = System.Drawing.Color.Black
-        Me.txt_o_code.Location = New System.Drawing.Point(84, 46)
-        Me.txt_o_code.Name = "txt_o_code"
-        Me.txt_o_code.ReadOnly = True
-        Me.txt_o_code.Size = New System.Drawing.Size(182, 21)
-        Me.txt_o_code.TabIndex = 21
+        Me.txt_Name.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txt_Name.Enabled = False
+        Me.txt_Name.ForeColor = System.Drawing.Color.Black
+        Me.txt_Name.Location = New System.Drawing.Point(84, 22)
+        Me.txt_Name.Name = "txt_Name"
+        Me.txt_Name.ReadOnly = True
+        Me.txt_Name.Size = New System.Drawing.Size(182, 21)
+        Me.txt_Name.TabIndex = 0
         '
-        'btn_o_save
+        'tp_혼합제_출고
         '
-        Me.btn_o_save.AccessibleRole = System.Windows.Forms.AccessibleRole.None
-        Me.btn_o_save.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.btn_o_save.Location = New System.Drawing.Point(217, 207)
-        Me.btn_o_save.Name = "btn_o_save"
-        Me.btn_o_save.Size = New System.Drawing.Size(63, 23)
-        Me.btn_o_save.TabIndex = 32
-        Me.btn_o_save.Text = "저장"
-        Me.btn_o_save.UseVisualStyleBackColor = False
-        '
-        'btn_o_new
-        '
-        Me.btn_o_new.Location = New System.Drawing.Point(9, 207)
-        Me.btn_o_new.Name = "btn_o_new"
-        Me.btn_o_new.Size = New System.Drawing.Size(63, 23)
-        Me.btn_o_new.TabIndex = 28
-        Me.btn_o_new.Text = "새로입력"
-        Me.btn_o_new.UseVisualStyleBackColor = True
-        '
-        'Label30
-        '
-        Me.Label30.AutoSize = True
-        Me.Label30.Location = New System.Drawing.Point(14, 25)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(29, 12)
-        Me.Label30.TabIndex = 24
-        Me.Label30.Text = "명칭"
-        '
-        'Label31
-        '
-        Me.Label31.AutoSize = True
-        Me.Label31.Location = New System.Drawing.Point(14, 53)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(29, 12)
-        Me.Label31.TabIndex = 27
-        Me.Label31.Text = "코드"
-        '
-        'btn_o_delete
-        '
-        Me.btn_o_delete.Location = New System.Drawing.Point(147, 207)
-        Me.btn_o_delete.Name = "btn_o_delete"
-        Me.btn_o_delete.Size = New System.Drawing.Size(63, 23)
-        Me.btn_o_delete.TabIndex = 31
-        Me.btn_o_delete.Text = "삭제"
-        Me.btn_o_delete.UseVisualStyleBackColor = True
-        Me.btn_o_delete.Visible = False
+        Me.tp_혼합제_출고.Location = New System.Drawing.Point(4, 22)
+        Me.tp_혼합제_출고.Name = "tp_혼합제_출고"
+        Me.tp_혼합제_출고.Padding = New System.Windows.Forms.Padding(3)
+        Me.tp_혼합제_출고.Size = New System.Drawing.Size(288, 245)
+        Me.tp_혼합제_출고.TabIndex = 1
+        Me.tp_혼합제_출고.Text = "출고"
+        Me.tp_혼합제_출고.UseVisualStyleBackColor = True
         '
         'grid_혼합제_inven
         '
         Me.grid_혼합제_inven.AllowUserToAddRows = False
         Me.grid_혼합제_inven.AllowUserToDeleteRows = False
         Me.grid_혼합제_inven.AllowUserToOrderColumns = True
-        Me.grid_혼합제_inven.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.grid_혼합제_inven.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control
@@ -1182,51 +989,69 @@ Partial Class Form1
         '
         'tab_치료재재고
         '
-        Me.tab_치료재재고.Controls.Add(Me.TabPage6)
-        Me.tab_치료재재고.Controls.Add(Me.TabPage7)
+        Me.tab_치료재재고.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.tab_치료재재고.Controls.Add(Me.tp_치료대_입고)
+        Me.tab_치료재재고.Controls.Add(Me.tp_치료대_출고)
         Me.tab_치료재재고.Location = New System.Drawing.Point(12, 307)
         Me.tab_치료재재고.Name = "tab_치료재재고"
         Me.tab_치료재재고.SelectedIndex = 0
         Me.tab_치료재재고.Size = New System.Drawing.Size(296, 271)
         Me.tab_치료재재고.TabIndex = 24
         '
-        'TabPage6
+        'tp_치료대_입고
         '
-        Me.TabPage6.Controls.Add(Me.txt_name_inven)
-        Me.TabPage6.Controls.Add(Me.txt_count_inven)
-        Me.TabPage6.Controls.Add(Me.txt_수입업소)
-        Me.TabPage6.Controls.Add(Me.Label8)
-        Me.TabPage6.Controls.Add(Me.dtp_inven)
-        Me.TabPage6.Controls.Add(Me.Label13)
-        Me.TabPage6.Controls.Add(Me.Label9)
-        Me.TabPage6.Controls.Add(Me.Label10)
-        Me.TabPage6.Controls.Add(Me.btn_new_inven)
-        Me.TabPage6.Controls.Add(Me.txt_price_inven)
-        Me.TabPage6.Controls.Add(Me.txt_comp_inven)
-        Me.TabPage6.Controls.Add(Me.Label12)
-        Me.TabPage6.Controls.Add(Me.btn_del_inven)
-        Me.TabPage6.Controls.Add(Me.Label7)
-        Me.TabPage6.Controls.Add(Me.txt_code_inven)
-        Me.TabPage6.Controls.Add(Me.btn_save_inven)
-        Me.TabPage6.Controls.Add(Me.btn_update_inven)
-        Me.TabPage6.Controls.Add(Me.Label11)
-        Me.TabPage6.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage6.Size = New System.Drawing.Size(288, 245)
-        Me.TabPage6.TabIndex = 0
-        Me.TabPage6.Text = "입고"
-        Me.TabPage6.UseVisualStyleBackColor = True
+        Me.tp_치료대_입고.Controls.Add(Me.pnl_치료대_입출고)
+        Me.tp_치료대_입고.Location = New System.Drawing.Point(4, 22)
+        Me.tp_치료대_입고.Name = "tp_치료대_입고"
+        Me.tp_치료대_입고.Padding = New System.Windows.Forms.Padding(3)
+        Me.tp_치료대_입고.Size = New System.Drawing.Size(288, 245)
+        Me.tp_치료대_입고.TabIndex = 0
+        Me.tp_치료대_입고.Text = "입고"
+        Me.tp_치료대_입고.UseVisualStyleBackColor = True
+        '
+        'pnl_치료대_입출고
+        '
+        Me.pnl_치료대_입출고.Controls.Add(Me.txt_name_inven)
+        Me.pnl_치료대_입출고.Controls.Add(Me.txt_price_inven)
+        Me.pnl_치료대_입출고.Controls.Add(Me.txt_count_inven)
+        Me.pnl_치료대_입출고.Controls.Add(Me.Label11)
+        Me.pnl_치료대_입출고.Controls.Add(Me.txt_수입업소)
+        Me.pnl_치료대_입출고.Controls.Add(Me.btn_update_inven)
+        Me.pnl_치료대_입출고.Controls.Add(Me.lbl_치료대_입출고_수량)
+        Me.pnl_치료대_입출고.Controls.Add(Me.btn_save_inven)
+        Me.pnl_치료대_입출고.Controls.Add(Me.dtp_inven)
+        Me.pnl_치료대_입출고.Controls.Add(Me.txt_code_inven)
+        Me.pnl_치료대_입출고.Controls.Add(Me.Label13)
+        Me.pnl_치료대_입출고.Controls.Add(Me.Label7)
+        Me.pnl_치료대_입출고.Controls.Add(Me.lbl_치료대_입출고_일자)
+        Me.pnl_치료대_입출고.Controls.Add(Me.btn_del_inven)
+        Me.pnl_치료대_입출고.Controls.Add(Me.Label10)
+        Me.pnl_치료대_입출고.Controls.Add(Me.Label12)
+        Me.pnl_치료대_입출고.Controls.Add(Me.btn_new_inven)
+        Me.pnl_치료대_입출고.Controls.Add(Me.txt_comp_inven)
+        Me.pnl_치료대_입출고.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnl_치료대_입출고.Location = New System.Drawing.Point(3, 3)
+        Me.pnl_치료대_입출고.Name = "pnl_치료대_입출고"
+        Me.pnl_치료대_입출고.Size = New System.Drawing.Size(282, 239)
+        Me.pnl_치료대_입출고.TabIndex = 1
         '
         'txt_name_inven
         '
         Me.txt_name_inven.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txt_name_inven.Enabled = False
-        Me.txt_name_inven.Location = New System.Drawing.Point(85, 14)
+        Me.txt_name_inven.Location = New System.Drawing.Point(85, 15)
         Me.txt_name_inven.Name = "txt_name_inven"
         Me.txt_name_inven.ReadOnly = True
         Me.txt_name_inven.Size = New System.Drawing.Size(182, 21)
         Me.txt_name_inven.TabIndex = 5
+        '
+        'txt_price_inven
+        '
+        Me.txt_price_inven.Enabled = False
+        Me.txt_price_inven.Location = New System.Drawing.Point(85, 171)
+        Me.txt_price_inven.Name = "txt_price_inven"
+        Me.txt_price_inven.Size = New System.Drawing.Size(182, 21)
+        Me.txt_price_inven.TabIndex = 3
         '
         'txt_count_inven
         '
@@ -1236,116 +1061,65 @@ Partial Class Form1
         Me.txt_count_inven.Size = New System.Drawing.Size(182, 21)
         Me.txt_count_inven.TabIndex = 2
         '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(14, 48)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(53, 12)
+        Me.Label11.TabIndex = 6
+        Me.Label11.Text = "처방코드"
+        '
         'txt_수입업소
         '
         Me.txt_수입업소.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txt_수입업소.Enabled = False
-        Me.txt_수입업소.Location = New System.Drawing.Point(85, 92)
+        Me.txt_수입업소.Location = New System.Drawing.Point(85, 93)
         Me.txt_수입업소.Name = "txt_수입업소"
         Me.txt_수입업소.ReadOnly = True
         Me.txt_수입업소.Size = New System.Drawing.Size(182, 21)
         Me.txt_수입업소.TabIndex = 23
         '
-        'Label8
+        'btn_update_inven
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(14, 151)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(29, 12)
-        Me.Label8.TabIndex = 12
-        Me.Label8.Text = "수량"
+        Me.btn_update_inven.Location = New System.Drawing.Point(75, 204)
+        Me.btn_update_inven.Name = "btn_update_inven"
+        Me.btn_update_inven.Size = New System.Drawing.Size(63, 23)
+        Me.btn_update_inven.TabIndex = 5
+        Me.btn_update_inven.Text = "수정"
+        Me.btn_update_inven.UseVisualStyleBackColor = True
+        Me.btn_update_inven.Visible = False
+        '
+        'lbl_치료대_입출고_수량
+        '
+        Me.lbl_치료대_입출고_수량.AutoSize = True
+        Me.lbl_치료대_입출고_수량.Location = New System.Drawing.Point(14, 151)
+        Me.lbl_치료대_입출고_수량.Name = "lbl_치료대_입출고_수량"
+        Me.lbl_치료대_입출고_수량.Size = New System.Drawing.Size(29, 12)
+        Me.lbl_치료대_입출고_수량.TabIndex = 12
+        Me.lbl_치료대_입출고_수량.Text = "수량"
+        '
+        'btn_save_inven
+        '
+        Me.btn_save_inven.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.btn_save_inven.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btn_save_inven.Location = New System.Drawing.Point(214, 204)
+        Me.btn_save_inven.Name = "btn_save_inven"
+        Me.btn_save_inven.Size = New System.Drawing.Size(63, 23)
+        Me.btn_save_inven.TabIndex = 17
+        Me.btn_save_inven.Text = "저장"
+        Me.btn_save_inven.UseVisualStyleBackColor = False
+        Me.btn_save_inven.Visible = False
         '
         'dtp_inven
         '
         Me.dtp_inven.CausesValidation = False
         Me.dtp_inven.Enabled = False
-        Me.dtp_inven.Location = New System.Drawing.Point(85, 120)
+        Me.dtp_inven.Location = New System.Drawing.Point(85, 119)
         Me.dtp_inven.Name = "dtp_inven"
         Me.dtp_inven.Size = New System.Drawing.Size(182, 21)
         Me.dtp_inven.TabIndex = 1
         Me.dtp_inven.Value = New Date(2025, 2, 25, 0, 0, 0, 0)
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(14, 98)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(53, 12)
-        Me.Label13.TabIndex = 22
-        Me.Label13.Text = "수입업소"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(14, 125)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(53, 12)
-        Me.Label9.TabIndex = 10
-        Me.Label9.Text = "입고일자"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(14, 74)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(41, 12)
-        Me.Label10.TabIndex = 8
-        Me.Label10.Text = "제조사"
-        '
-        'btn_new_inven
-        '
-        Me.btn_new_inven.Location = New System.Drawing.Point(9, 207)
-        Me.btn_new_inven.Name = "btn_new_inven"
-        Me.btn_new_inven.Size = New System.Drawing.Size(63, 23)
-        Me.btn_new_inven.TabIndex = 4
-        Me.btn_new_inven.Text = "새로입력"
-        Me.btn_new_inven.UseVisualStyleBackColor = True
-        '
-        'txt_price_inven
-        '
-        Me.txt_price_inven.Enabled = False
-        Me.txt_price_inven.Location = New System.Drawing.Point(85, 173)
-        Me.txt_price_inven.Name = "txt_price_inven"
-        Me.txt_price_inven.Size = New System.Drawing.Size(182, 21)
-        Me.txt_price_inven.TabIndex = 3
-        '
-        'txt_comp_inven
-        '
-        Me.txt_comp_inven.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txt_comp_inven.Enabled = False
-        Me.txt_comp_inven.Location = New System.Drawing.Point(85, 68)
-        Me.txt_comp_inven.Name = "txt_comp_inven"
-        Me.txt_comp_inven.ReadOnly = True
-        Me.txt_comp_inven.Size = New System.Drawing.Size(182, 21)
-        Me.txt_comp_inven.TabIndex = 9
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(14, 20)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(29, 12)
-        Me.Label12.TabIndex = 4
-        Me.Label12.Text = "명칭"
-        '
-        'btn_del_inven
-        '
-        Me.btn_del_inven.Location = New System.Drawing.Point(147, 207)
-        Me.btn_del_inven.Name = "btn_del_inven"
-        Me.btn_del_inven.Size = New System.Drawing.Size(63, 23)
-        Me.btn_del_inven.TabIndex = 16
-        Me.btn_del_inven.Text = "삭제"
-        Me.btn_del_inven.UseVisualStyleBackColor = True
-        Me.btn_del_inven.Visible = False
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(14, 179)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(29, 12)
-        Me.Label7.TabIndex = 19
-        Me.Label7.Text = "단가"
         '
         'txt_code_inven
         '
@@ -1357,240 +1131,96 @@ Partial Class Form1
         Me.txt_code_inven.Size = New System.Drawing.Size(182, 21)
         Me.txt_code_inven.TabIndex = 7
         '
-        'btn_save_inven
+        'Label13
         '
-        Me.btn_save_inven.AccessibleRole = System.Windows.Forms.AccessibleRole.None
-        Me.btn_save_inven.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.btn_save_inven.Location = New System.Drawing.Point(217, 207)
-        Me.btn_save_inven.Name = "btn_save_inven"
-        Me.btn_save_inven.Size = New System.Drawing.Size(63, 23)
-        Me.btn_save_inven.TabIndex = 17
-        Me.btn_save_inven.Text = "저장"
-        Me.btn_save_inven.UseVisualStyleBackColor = False
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(14, 98)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(53, 12)
+        Me.Label13.TabIndex = 22
+        Me.Label13.Text = "수입업소"
         '
-        'btn_update_inven
+        'Label7
         '
-        Me.btn_update_inven.Location = New System.Drawing.Point(78, 207)
-        Me.btn_update_inven.Name = "btn_update_inven"
-        Me.btn_update_inven.Size = New System.Drawing.Size(63, 23)
-        Me.btn_update_inven.TabIndex = 5
-        Me.btn_update_inven.Text = "수정"
-        Me.btn_update_inven.UseVisualStyleBackColor = True
-        Me.btn_update_inven.Visible = False
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(14, 177)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(29, 12)
+        Me.Label7.TabIndex = 19
+        Me.Label7.Text = "단가"
         '
-        'Label11
+        'lbl_치료대_입출고_일자
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(14, 48)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(53, 12)
-        Me.Label11.TabIndex = 6
-        Me.Label11.Text = "처방코드"
+        Me.lbl_치료대_입출고_일자.AutoSize = True
+        Me.lbl_치료대_입출고_일자.Location = New System.Drawing.Point(14, 124)
+        Me.lbl_치료대_입출고_일자.Name = "lbl_치료대_입출고_일자"
+        Me.lbl_치료대_입출고_일자.Size = New System.Drawing.Size(53, 12)
+        Me.lbl_치료대_입출고_일자.TabIndex = 10
+        Me.lbl_치료대_입출고_일자.Text = "입고일자"
         '
-        'TabPage7
+        'btn_del_inven
         '
-        Me.TabPage7.Controls.Add(Me.txt_o_name_inven)
-        Me.TabPage7.Controls.Add(Me.txt_o_count_inven)
-        Me.TabPage7.Controls.Add(Me.txt_o_수입업소_inven)
-        Me.TabPage7.Controls.Add(Me.Label32)
-        Me.TabPage7.Controls.Add(Me.dtp_o_inven)
-        Me.TabPage7.Controls.Add(Me.Label33)
-        Me.TabPage7.Controls.Add(Me.Label34)
-        Me.TabPage7.Controls.Add(Me.Label35)
-        Me.TabPage7.Controls.Add(Me.btn_o_new_inven)
-        Me.TabPage7.Controls.Add(Me.txt_o_price_inven)
-        Me.TabPage7.Controls.Add(Me.txt_o_comp_inven)
-        Me.TabPage7.Controls.Add(Me.Label36)
-        Me.TabPage7.Controls.Add(Me.btn_o_del_inven)
-        Me.TabPage7.Controls.Add(Me.Label37)
-        Me.TabPage7.Controls.Add(Me.txt_o_code_inven)
-        Me.TabPage7.Controls.Add(Me.btn_o_save_inven)
-        Me.TabPage7.Controls.Add(Me.btn_o_update_inven)
-        Me.TabPage7.Controls.Add(Me.Label38)
-        Me.TabPage7.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage7.Name = "TabPage7"
-        Me.TabPage7.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage7.Size = New System.Drawing.Size(288, 245)
-        Me.TabPage7.TabIndex = 1
-        Me.TabPage7.Text = "출고"
-        Me.TabPage7.UseVisualStyleBackColor = True
+        Me.btn_del_inven.Location = New System.Drawing.Point(144, 204)
+        Me.btn_del_inven.Name = "btn_del_inven"
+        Me.btn_del_inven.Size = New System.Drawing.Size(63, 23)
+        Me.btn_del_inven.TabIndex = 16
+        Me.btn_del_inven.Text = "삭제"
+        Me.btn_del_inven.UseVisualStyleBackColor = True
+        Me.btn_del_inven.Visible = False
         '
-        'txt_o_name_inven
+        'Label10
         '
-        Me.txt_o_name_inven.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txt_o_name_inven.Enabled = False
-        Me.txt_o_name_inven.Location = New System.Drawing.Point(85, 14)
-        Me.txt_o_name_inven.Name = "txt_o_name_inven"
-        Me.txt_o_name_inven.ReadOnly = True
-        Me.txt_o_name_inven.Size = New System.Drawing.Size(182, 21)
-        Me.txt_o_name_inven.TabIndex = 30
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(14, 73)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(41, 12)
+        Me.Label10.TabIndex = 8
+        Me.Label10.Text = "제조사"
         '
-        'txt_o_count_inven
+        'Label12
         '
-        Me.txt_o_count_inven.Enabled = False
-        Me.txt_o_count_inven.Location = New System.Drawing.Point(85, 145)
-        Me.txt_o_count_inven.Name = "txt_o_count_inven"
-        Me.txt_o_count_inven.Size = New System.Drawing.Size(182, 21)
-        Me.txt_o_count_inven.TabIndex = 25
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(14, 22)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(29, 12)
+        Me.Label12.TabIndex = 4
+        Me.Label12.Text = "명칭"
         '
-        'txt_o_수입업소_inven
+        'btn_new_inven
         '
-        Me.txt_o_수입업소_inven.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txt_o_수입업소_inven.Enabled = False
-        Me.txt_o_수입업소_inven.Location = New System.Drawing.Point(85, 92)
-        Me.txt_o_수입업소_inven.Name = "txt_o_수입업소_inven"
-        Me.txt_o_수입업소_inven.ReadOnly = True
-        Me.txt_o_수입업소_inven.Size = New System.Drawing.Size(182, 21)
-        Me.txt_o_수입업소_inven.TabIndex = 41
+        Me.btn_new_inven.Location = New System.Drawing.Point(6, 204)
+        Me.btn_new_inven.Name = "btn_new_inven"
+        Me.btn_new_inven.Size = New System.Drawing.Size(63, 23)
+        Me.btn_new_inven.TabIndex = 4
+        Me.btn_new_inven.Text = "새로입력"
+        Me.btn_new_inven.UseVisualStyleBackColor = True
         '
-        'Label32
+        'txt_comp_inven
         '
-        Me.Label32.AutoSize = True
-        Me.Label32.Location = New System.Drawing.Point(14, 151)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(57, 12)
-        Me.Label32.TabIndex = 36
-        Me.Label32.Text = "출고수량 "
+        Me.txt_comp_inven.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txt_comp_inven.Enabled = False
+        Me.txt_comp_inven.Location = New System.Drawing.Point(85, 67)
+        Me.txt_comp_inven.Name = "txt_comp_inven"
+        Me.txt_comp_inven.ReadOnly = True
+        Me.txt_comp_inven.Size = New System.Drawing.Size(182, 21)
+        Me.txt_comp_inven.TabIndex = 9
         '
-        'dtp_o_inven
+        'tp_치료대_출고
         '
-        Me.dtp_o_inven.CausesValidation = False
-        Me.dtp_o_inven.Enabled = False
-        Me.dtp_o_inven.Location = New System.Drawing.Point(85, 120)
-        Me.dtp_o_inven.Name = "dtp_o_inven"
-        Me.dtp_o_inven.Size = New System.Drawing.Size(182, 21)
-        Me.dtp_o_inven.TabIndex = 24
-        Me.dtp_o_inven.Value = New Date(2025, 2, 25, 0, 0, 0, 0)
-        '
-        'Label33
-        '
-        Me.Label33.AutoSize = True
-        Me.Label33.Location = New System.Drawing.Point(14, 98)
-        Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(53, 12)
-        Me.Label33.TabIndex = 40
-        Me.Label33.Text = "수입업소"
-        '
-        'Label34
-        '
-        Me.Label34.AutoSize = True
-        Me.Label34.Location = New System.Drawing.Point(14, 125)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(53, 12)
-        Me.Label34.TabIndex = 35
-        Me.Label34.Text = "출고일자"
-        '
-        'Label35
-        '
-        Me.Label35.AutoSize = True
-        Me.Label35.Location = New System.Drawing.Point(14, 74)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(41, 12)
-        Me.Label35.TabIndex = 33
-        Me.Label35.Text = "제조사"
-        '
-        'btn_o_new_inven
-        '
-        Me.btn_o_new_inven.Location = New System.Drawing.Point(9, 207)
-        Me.btn_o_new_inven.Name = "btn_o_new_inven"
-        Me.btn_o_new_inven.Size = New System.Drawing.Size(63, 23)
-        Me.btn_o_new_inven.TabIndex = 27
-        Me.btn_o_new_inven.Text = "새로입력"
-        Me.btn_o_new_inven.UseVisualStyleBackColor = True
-        '
-        'txt_o_price_inven
-        '
-        Me.txt_o_price_inven.Enabled = False
-        Me.txt_o_price_inven.Location = New System.Drawing.Point(85, 173)
-        Me.txt_o_price_inven.Name = "txt_o_price_inven"
-        Me.txt_o_price_inven.Size = New System.Drawing.Size(182, 21)
-        Me.txt_o_price_inven.TabIndex = 26
-        '
-        'txt_o_comp_inven
-        '
-        Me.txt_o_comp_inven.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txt_o_comp_inven.Enabled = False
-        Me.txt_o_comp_inven.Location = New System.Drawing.Point(85, 68)
-        Me.txt_o_comp_inven.Name = "txt_o_comp_inven"
-        Me.txt_o_comp_inven.ReadOnly = True
-        Me.txt_o_comp_inven.Size = New System.Drawing.Size(182, 21)
-        Me.txt_o_comp_inven.TabIndex = 34
-        '
-        'Label36
-        '
-        Me.Label36.AutoSize = True
-        Me.Label36.Location = New System.Drawing.Point(14, 20)
-        Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(29, 12)
-        Me.Label36.TabIndex = 28
-        Me.Label36.Text = "명칭"
-        '
-        'btn_o_del_inven
-        '
-        Me.btn_o_del_inven.Location = New System.Drawing.Point(147, 207)
-        Me.btn_o_del_inven.Name = "btn_o_del_inven"
-        Me.btn_o_del_inven.Size = New System.Drawing.Size(63, 23)
-        Me.btn_o_del_inven.TabIndex = 37
-        Me.btn_o_del_inven.Text = "삭제"
-        Me.btn_o_del_inven.UseVisualStyleBackColor = True
-        Me.btn_o_del_inven.Visible = False
-        '
-        'Label37
-        '
-        Me.Label37.AutoSize = True
-        Me.Label37.Location = New System.Drawing.Point(14, 179)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(29, 12)
-        Me.Label37.TabIndex = 39
-        Me.Label37.Text = "단가"
-        '
-        'txt_o_code_inven
-        '
-        Me.txt_o_code_inven.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txt_o_code_inven.Enabled = False
-        Me.txt_o_code_inven.Location = New System.Drawing.Point(85, 41)
-        Me.txt_o_code_inven.Name = "txt_o_code_inven"
-        Me.txt_o_code_inven.ReadOnly = True
-        Me.txt_o_code_inven.Size = New System.Drawing.Size(182, 21)
-        Me.txt_o_code_inven.TabIndex = 32
-        '
-        'btn_o_save_inven
-        '
-        Me.btn_o_save_inven.AccessibleRole = System.Windows.Forms.AccessibleRole.None
-        Me.btn_o_save_inven.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.btn_o_save_inven.Location = New System.Drawing.Point(217, 207)
-        Me.btn_o_save_inven.Name = "btn_o_save_inven"
-        Me.btn_o_save_inven.Size = New System.Drawing.Size(63, 23)
-        Me.btn_o_save_inven.TabIndex = 38
-        Me.btn_o_save_inven.Text = "저장"
-        Me.btn_o_save_inven.UseVisualStyleBackColor = False
-        '
-        'btn_o_update_inven
-        '
-        Me.btn_o_update_inven.Location = New System.Drawing.Point(78, 207)
-        Me.btn_o_update_inven.Name = "btn_o_update_inven"
-        Me.btn_o_update_inven.Size = New System.Drawing.Size(63, 23)
-        Me.btn_o_update_inven.TabIndex = 29
-        Me.btn_o_update_inven.Text = "수정"
-        Me.btn_o_update_inven.UseVisualStyleBackColor = True
-        Me.btn_o_update_inven.Visible = False
-        '
-        'Label38
-        '
-        Me.Label38.AutoSize = True
-        Me.Label38.Location = New System.Drawing.Point(14, 48)
-        Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(53, 12)
-        Me.Label38.TabIndex = 31
-        Me.Label38.Text = "처방코드"
+        Me.tp_치료대_출고.Location = New System.Drawing.Point(4, 22)
+        Me.tp_치료대_출고.Name = "tp_치료대_출고"
+        Me.tp_치료대_출고.Padding = New System.Windows.Forms.Padding(3)
+        Me.tp_치료대_출고.Size = New System.Drawing.Size(288, 245)
+        Me.tp_치료대_출고.TabIndex = 1
+        Me.tp_치료대_출고.Text = "출고"
+        Me.tp_치료대_출고.UseVisualStyleBackColor = True
         '
         'grid_재료대재고내역
         '
         Me.grid_재료대재고내역.AllowUserToAddRows = False
         Me.grid_재료대재고내역.AllowUserToDeleteRows = False
         Me.grid_재료대재고내역.AllowUserToOrderColumns = True
-        Me.grid_재료대재고내역.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.grid_재료대재고내역.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
@@ -1772,20 +1402,18 @@ Partial Class Form1
         CType(Me.grid_단미제, System.ComponentModel.ISupportInitialize).EndInit()
         Me.보험약.ResumeLayout(False)
         Me.tab_혼합제재고.ResumeLayout(False)
-        Me.TabPage2.ResumeLayout(False)
-        Me.TabPage2.PerformLayout()
-        Me.TabPage3.ResumeLayout(False)
-        Me.TabPage3.PerformLayout()
+        Me.tp_혼합제_입고.ResumeLayout(False)
+        Me.pnl_혼합제_입출고.ResumeLayout(False)
+        Me.pnl_혼합제_입출고.PerformLayout()
         CType(Me.grid_혼합제_inven, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         CType(Me.grid_혼합제, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tab_페이지.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.tab_치료재재고.ResumeLayout(False)
-        Me.TabPage6.ResumeLayout(False)
-        Me.TabPage6.PerformLayout()
-        Me.TabPage7.ResumeLayout(False)
-        Me.TabPage7.PerformLayout()
+        Me.tp_치료대_입고.ResumeLayout(False)
+        Me.pnl_치료대_입출고.ResumeLayout(False)
+        Me.pnl_치료대_입출고.PerformLayout()
         CType(Me.grid_재료대재고내역, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.grid_치료재료대, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1804,8 +1432,8 @@ Partial Class Form1
     Friend WithEvents btn_New As Button
     Friend WithEvents dtp_Received As DateTimePicker
     Friend WithEvents txt_count As TextBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents lbl_혼합제_입출고_수량 As Label
+    Friend WithEvents lbl_혼합제_입출고_일자 As Label
     Friend WithEvents txt_comp As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents txt_Code As TextBox
@@ -1830,8 +1458,8 @@ Partial Class Form1
     Friend WithEvents btn_new_inven As Button
     Friend WithEvents dtp_inven As DateTimePicker
     Friend WithEvents txt_count_inven As TextBox
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
+    Friend WithEvents lbl_치료대_입출고_수량 As Label
+    Friend WithEvents lbl_치료대_입출고_일자 As Label
     Friend WithEvents txt_comp_inven As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents txt_code_inven As TextBox
@@ -1855,57 +1483,17 @@ Partial Class Form1
     Friend WithEvents tab_단미제재고 As TabControl
     Friend WithEvents tp_단미제_입고 As TabPage
     Friend WithEvents tab_혼합제재고 As TabControl
-    Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents TabPage3 As TabPage
+    Friend WithEvents tp_혼합제_입고 As TabPage
+    Friend WithEvents tp_혼합제_출고 As TabPage
     Friend WithEvents tab_치료재재고 As TabControl
-    Friend WithEvents TabPage6 As TabPage
-    Friend WithEvents TabPage7 As TabPage
-    Friend WithEvents txt_o_count As TextBox
-    Friend WithEvents Label26 As Label
-    Friend WithEvents txt_o_price As TextBox
-    Friend WithEvents Label27 As Label
-    Friend WithEvents txt_o_comp As TextBox
-    Friend WithEvents Label28 As Label
-    Friend WithEvents Label29 As Label
-    Friend WithEvents btn_o_update As Button
-    Friend WithEvents dtp_o_received As DateTimePicker
-    Friend WithEvents txt_o_name As TextBox
-    Friend WithEvents txt_o_code As TextBox
-    Friend WithEvents btn_o_save As Button
-    Friend WithEvents btn_o_new As Button
-    Friend WithEvents Label30 As Label
-    Friend WithEvents Label31 As Label
-    Friend WithEvents btn_o_delete As Button
-    Friend WithEvents txt_o_name_inven As TextBox
-    Friend WithEvents txt_o_count_inven As TextBox
-    Friend WithEvents txt_o_수입업소_inven As TextBox
-    Friend WithEvents Label32 As Label
-    Friend WithEvents dtp_o_inven As DateTimePicker
-    Friend WithEvents Label33 As Label
-    Friend WithEvents Label34 As Label
-    Friend WithEvents Label35 As Label
-    Friend WithEvents btn_o_new_inven As Button
-    Friend WithEvents txt_o_comp_inven As TextBox
-    Friend WithEvents Label36 As Label
-    Friend WithEvents btn_o_del_inven As Button
-    Friend WithEvents txt_o_code_inven As TextBox
-    Friend WithEvents btn_o_save_inven As Button
-    Friend WithEvents btn_o_update_inven As Button
-    Friend WithEvents Label38 As Label
-    Friend WithEvents txt_o_price_inven As TextBox
-    Friend WithEvents Label37 As Label
+    Friend WithEvents tp_치료대_입고 As TabPage
+    Friend WithEvents tp_치료대_출고 As TabPage
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents 수량 As DataGridViewTextBoxColumn
     Friend WithEvents 단가 As DataGridViewTextBoxColumn
     Friend WithEvents col_idx As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
-    Friend WithEvents 수량_재료 As DataGridViewTextBoxColumn
-    Friend WithEvents 단가_재료 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn14 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn15 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn16 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn17 As DataGridViewTextBoxColumn
@@ -1930,4 +1518,12 @@ Partial Class Form1
     Friend WithEvents Label19 As Label
     Friend WithEvents btn_new_sg As Button
     Friend WithEvents Label14 As Label
+    Friend WithEvents pnl_혼합제_입출고 As Panel
+    Friend WithEvents pnl_치료대_입출고 As Panel
+    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
+    Friend WithEvents 수량_재료 As DataGridViewTextBoxColumn
+    Friend WithEvents 단가_재료 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn14 As DataGridViewTextBoxColumn
 End Class
