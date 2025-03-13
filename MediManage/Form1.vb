@@ -1,5 +1,7 @@
 ﻿Imports System.CodeDom
 Imports System.Diagnostics.Eventing.Reader
+Imports System.Globalization
+Imports System.Reflection
 Imports System.Reflection.Emit
 
 
@@ -12,23 +14,24 @@ Public Class Form1
         명칭
         제약사
     End Enum
+    Private Enum en_치료재료대_Col
+        코드 = 0
+        명칭
+        제조사
+        수입업소
+    End Enum
 
-    Private Enum en_보험약재고내역_col
+    Private Enum en_재고_col
         인덱스 = 0
+        입출고
         코드
         명칭
         입고일자
         수량
         단가
-        입고일자_변환
+        구분
+        입출고_변환
     End Enum
-
-    'Private intD_index As Integer = 0
-    'Private intD_index_sg As Integer = 0
-    'Private intD_index_in As Integer = 0
-    'Private intD_o_index As Integer = 0
-    'Private intD_o_index_sg As Integer = 0
-    'Private intD_o_index_in As Integer = 0
 
     ''' <summary>
     ''' 페이지인덱스에 따라 폼 value 초기화
@@ -36,26 +39,17 @@ Public Class Form1
     Private Sub sD_Return_Clear()
         If tab_페이지.SelectedIndex = 0 Then
 
-            'If tab_혼합제재고.SelectedIndex = 0 Then grid_혼합제_inven.CurrentRow.Cells(en_보험약재고내역_col.인덱스) = 0
-            'If tab_혼합제재고.SelectedIndex = 1 Then intD_o_index = 0
-
             dtp_Received.Value = Now
             txt_count.Text = ""
             txt_Price.Text = ""
 
         ElseIf tab_페이지.SelectedIndex = 1 Then
 
-            'If tab_단미제재고.SelectedIndex = 0 Then intD_index_sg = 0
-            'If tab_단미제재고.SelectedIndex = 1 Then intD_o_index_sg = 0
-
             dtp_received_sg.Value = Now
             txt_count_sg.Text = ""
             txt_price_sg.Text = ""
 
         ElseIf tab_페이지.SelectedIndex = 2 Then
-
-            'If tab_치료재재고.SelectedIndex = 0 Then intD_index_in = 0
-            'If tab_치료재재고.SelectedIndex = 1 Then intD_o_index_in = 0
 
             dtp_inven.Value = Now
             txt_count_inven.Text = ""
@@ -65,39 +59,47 @@ Public Class Form1
     End Sub
 
 
-    '''''''''''''''''''''''''출고에서 입고항목 눌러도 버튼 활성호ㅏ 됨 버튼 항목 나눠야할듯...
     ''' <summary>
     ''' btn 활성화 
     ''' </summary>
     Private Sub sD_btnTrue()
         If tab_페이지.SelectedIndex = 0 Then
-            btn_Update.Visible = True
             btn_delete.Visible = True
+            btn_Save.Visible = True
         ElseIf tab_페이지.SelectedIndex = 1 Then
-            btn_update_sg.Visible = True
             btn_del_sg.Visible = True
+            btn_save_sg.Visible = True
         ElseIf tab_페이지.SelectedIndex = 2 Then
-            btn_update_inven.Visible = True
             btn_del_inven.Visible = True
+            btn_save_inven.Visible = True
         End If
     End Sub
 
     ''' <summary>
     ''' btn 비활성화 
     ''' </summary>
-    Private Sub sD_btnFalse()
+    Private Sub sD_btnFalse(is기준 As Boolean)
         If tab_페이지.SelectedIndex = 0 Then
-            btn_Save.Visible = False
-            btn_Update.Visible = False
-            btn_delete.Visible = False
+            If is기준 Then
+                btn_Save.Visible = False
+                btn_delete.Visible = False
+            Else
+                btn_delete.Visible = False
+            End If
         ElseIf tab_페이지.SelectedIndex = 1 Then
-            btn_save_sg.Visible = False
-            btn_update_sg.Visible = False
-            btn_del_sg.Visible = False
+            If is기준 Then
+                btn_save_sg.Visible = False
+                btn_del_sg.Visible = False
+            Else
+                btn_del_sg.Visible = False
+            End If
         ElseIf tab_페이지.SelectedIndex = 2 Then
-            btn_save_inven.Visible = False
-            btn_update_inven.Visible = False
-            btn_del_inven.Visible = False
+            If is기준 Then
+                btn_save_inven.Visible = False
+                btn_del_inven.Visible = False
+            Else
+                btn_del_inven.Visible = False
+            End If
         End If
     End Sub
 
@@ -131,24 +133,24 @@ Public Class Form1
             txt_Code.Enabled = False
             txt_Name.Enabled = False
             txt_comp.Enabled = False
-            dtp_Received.Enabled = False
-            txt_count.Enabled = False
-            txt_Price.Enabled = False
+            'dtp_Received.Enabled = False
+            'txt_count.Enabled = False
+            'txt_Price.Enabled = False
         ElseIf tab_페이지.SelectedIndex = 1 Then
             txt_code_sg.Enabled = False
             txt_name_sg.Enabled = False
             txt_comp_sg.Enabled = False
-            dtp_received_sg.Enabled = False
-            txt_count_sg.Enabled = False
-            txt_price_sg.Enabled = False
+            'dtp_received_sg.Enabled = False
+            'txt_count_sg.Enabled = False
+            'txt_price_sg.Enabled = False
         ElseIf tab_페이지.SelectedIndex = 2 Then
             txt_code_inven.Enabled = False
             txt_name_inven.Enabled = False
             txt_comp_inven.Enabled = False
             txt_수입업소.Enabled = False
-            dtp_inven.Enabled = False
-            txt_count_inven.Enabled = False
-            txt_price_inven.Enabled = False
+            'dtp_inven.Enabled = False
+            'txt_count_inven.Enabled = False
+            'txt_price_inven.Enabled = False
         End If
     End Sub
 
@@ -317,6 +319,18 @@ Public Class Form1
                     row("명칭") = strL_split_name(0)
                 End If
             End If
+
+            If Not dtL_data.Columns.Contains("입출고_변환") Then
+                dtL_data.Columns.Add("입출고_변환", GetType(String))
+            End If
+
+            If dtL_data.Columns.Contains("입출고") AndAlso Not row("입출고") Is Nothing Then
+                If row("입출고").ToString = "0" Then
+                    row("입출고_변환") = "입고"
+                Else
+                    row("입출고_변환") = "출고"
+                End If
+            End If
         Next
 
         Return dtL_data
@@ -324,6 +338,15 @@ Public Class Form1
     End Function
 
 
+    Private Sub sD_inout(grid_data As DataGridView)
+
+        For Each row In grid_data.Rows
+            If row.Cells(en_재고_col.입출고).value = 0 Then
+                row.DefaultCellStyle.BackColor = Color.LightCyan
+            End If
+        Next
+
+    End Sub
 
 
     ''' <summary>
@@ -335,36 +358,58 @@ Public Class Form1
 
         Dim dtL_dataList As DataTable = clsG_DBmng.sql_Get_Datatable(
                 $"
-                    select idx as 인덱스, 처방코드 as 코드, 명칭, 일자,  수량, 단가 from TB_재고
+                    select idx as 인덱스, 입출고, 처방코드 as 코드, 명칭, 일자,  수량, 단가, 구분  from TB_재고
                     where 처방코드 = '{strL_Code}'
                 ")
 
         If tab_페이지.SelectedIndex = 0 Then
 
-            grid_혼합제_inven.DataSource = fD_formatData(dtL_dataList)
-            grid_혼합제_inven.Columns("수량").DefaultCellStyle.Format = "#,##0.##"
-            grid_혼합제_inven.Columns("단가").DefaultCellStyle.Format = "#,##0"
-            grid_혼합제_inven.Update()
+            grid_혼합제재고.DataSource = fD_formatData(dtL_dataList)
+            grid_혼합제재고.Columns("수량").DefaultCellStyle.Format = "#,##0.##"
+            grid_혼합제재고.Columns("단가").DefaultCellStyle.Format = "#,##0"
 
-            sD_enableFalse()
+            If Not grid_혼합제재고.Columns("입출고_변환") Is Nothing Then
+                grid_혼합제재고.Columns("입출고_변환").DisplayIndex = 0
+                grid_혼합제재고.Columns("입출고_변환").AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+                grid_혼합제재고.Columns("입출고_변환").HeaderText = "입출고"
+                grid_혼합제재고.Update()
+            End If
+
+            sD_inout(grid_혼합제재고)
 
         ElseIf tab_페이지.SelectedIndex = 1 Then
 
-            grid_단미제_inven.DataSource = fD_formatData(dtL_dataList)
-            grid_단미제_inven.Columns("수량_단미").DefaultCellStyle.Format = "#,##0.##"
-            grid_단미제_inven.Columns("단가_단미").DefaultCellStyle.Format = "#,##0"
-            grid_단미제_inven.Update()
+            grid_단미제재고.DataSource = fD_formatData(dtL_dataList)
+            grid_단미제재고.Columns("수량_단미").DefaultCellStyle.Format = "#,##0.##"
+            grid_단미제재고.Columns("단가_단미").DefaultCellStyle.Format = "#,##0"
 
-            sD_enableFalse()
+            If Not grid_단미제재고.Columns("입출고_변환") Is Nothing Then
+                grid_단미제재고.Columns("입출고_변환").DisplayIndex = 0
+                grid_단미제재고.Columns("입출고_변환").AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+                grid_단미제재고.Columns("입출고_변환").HeaderText = "입출고"
+                grid_단미제재고.Update()
+            End If
+
+            sD_inout(grid_단미제재고)
+
+            grid_단미제재고.Update()
 
         ElseIf tab_페이지.SelectedIndex = 2 Then
 
-            grid_재료대재고내역.DataSource = fD_formatData(dtL_dataList)
-            grid_재료대재고내역.Columns("수량_재료").DefaultCellStyle.Format = "#,##0.##"
-            grid_재료대재고내역.Columns("단가_재료").DefaultCellStyle.Format = "#,##0"
-            grid_재료대재고내역.Update()
+            grid_치료대재고.DataSource = fD_formatData(dtL_dataList)
+            grid_치료대재고.Columns("수량_재료").DefaultCellStyle.Format = "#,##0.##"
+            grid_치료대재고.Columns("단가_재료").DefaultCellStyle.Format = "#,##0"
 
-            sD_enableFalse()
+            If Not grid_치료대재고.Columns("입출고_변환") Is Nothing Then
+                grid_치료대재고.Columns("입출고_변환").DisplayIndex = 0
+                grid_치료대재고.Columns("입출고_변환").AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+                grid_치료대재고.Columns("입출고_변환").HeaderText = "입출고"
+                grid_치료대재고.Update()
+            End If
+
+            sD_inout(grid_치료대재고)
+
+            grid_치료대재고.Update()
 
         End If
 
@@ -373,45 +418,99 @@ Public Class Form1
 
 
     ''' <summary>
-    ''' 기준처방 항목 클릭 이벤트
+    ''' 기준 항목 클릭 이벤트
     ''' </summary>
-    Private Sub grid_Medi_CellContentClick(sender As Object, e As EventArgs) Handles grid_혼합제.CellClick
 
-        If grid_혼합제.CurrentRow Is Nothing Then Exit Sub
+    Private Sub grid_CellContentClick(sender As Object, e As EventArgs) Handles grid_혼합제.CellClick, grid_단미제.CellClick, grid_치료재료대.CellClick
 
+        'If grid_혼합제.CurrentRow Is Nothing Then Exit Sub
+
+        Dim temp_grid As DataGridView
+        Dim temp_code As TextBox
+        Dim temp_name As TextBox
+        Dim temp_comp As TextBox
+        Dim temp_enum As List(Of Integer)
+
+        If sender Is grid_혼합제 Then
+            temp_grid = grid_혼합제
+            temp_code = txt_Code
+            temp_name = txt_Name
+            temp_comp = txt_comp
+            temp_enum = New List(Of Integer) From {en_보험약_Col.코드, en_보험약_Col.명칭, en_보험약_Col.제약사}
+        ElseIf sender Is grid_단미제 Then
+            temp_grid = grid_단미제
+            temp_code = txt_code_sg
+            temp_name = txt_name_sg
+            temp_comp = txt_comp_sg
+            temp_enum = New List(Of Integer) From {en_보험약_Col.코드, en_보험약_Col.명칭, en_보험약_Col.제약사}
+        ElseIf sender Is grid_치료재료대 Then
+            temp_grid = grid_치료재료대
+            temp_code = txt_code_inven
+            temp_name = txt_name_inven
+            temp_comp = txt_comp_inven
+            txt_수입업소.Text = grid_치료재료대.CurrentRow.Cells(en_치료재료대_Col.수입업소).Value?.ToString
+            temp_enum = New List(Of Integer) From {en_치료재료대_Col.코드, en_치료재료대_Col.명칭, en_치료재료대_Col.제조사}
+        End If
+
+        temp_code.Text = ""
+        temp_name.Text = ""
+        temp_comp.Text = ""
         sD_Return_Clear()
-        txt_Code.Text = ""
-        txt_Name.Text = ""
-        txt_comp.Text = ""
 
-        txt_Code.Text = grid_혼합제.CurrentRow.Cells(en_보험약_Col.코드).Value?.ToString
-        txt_Name.Text = grid_혼합제.CurrentRow.Cells(en_보험약_Col.명칭).Value?.ToString
-        txt_comp.Text = grid_혼합제.CurrentRow.Cells(en_보험약_Col.제약사).Value?.ToString
+        temp_code.Text = temp_grid.CurrentRow.Cells(temp_enum(0)).Value?.ToString
+        temp_name.Text = temp_grid.CurrentRow.Cells(temp_enum(1)).Value?.ToString
+        temp_comp.Text = temp_grid.CurrentRow.Cells(temp_enum(2)).Value?.ToString
 
-        sD_load_invenList(txt_Code.Text)
+        sD_load_invenList(temp_code.Text)
 
-        sD_btnFalse()
-        sD_enableFalse()
+        sD_btnFalse(True)
+        'sD_enableFalse()
 
     End Sub
+
+
 
 
     ''' <summary>
     ''' 재고 항목 클릭 이벤트
     ''' </summary>
-    Private Sub grid_보험약_CellContentClick(sender As Object, e As EventArgs) Handles grid_혼합제_inven.CellClick
+    Private Sub grid_inven_CellContentClick(sender As Object, e As EventArgs) Handles grid_혼합제재고.CellClick, grid_단미제재고.CellClick, grid_치료대재고.CellClick
 
-        If grid_혼합제_inven.CurrentRow Is Nothing Then
-            sD_btnFalse()
-            Exit Sub
-        Else
-            sD_btnTrue()
-            sD_enableFalse()
-            tab_혼합제재고.SelectedIndex = 0
-            dtp_Received.Value = Convert.ToDateTime(grid_혼합제_inven.CurrentRow.Cells(en_보험약재고내역_col.입고일자).Value)
-            txt_count.Text = grid_혼합제_inven.CurrentRow.Cells(en_보험약재고내역_col.수량).Value
-            txt_Price.Text = grid_혼합제_inven.CurrentRow.Cells(en_보험약재고내역_col.단가).Value
+        Dim row As DataGridViewRow
+
+        If sender Is grid_혼합제재고 Then
+
+            row = grid_혼합제재고.CurrentRow
+
+            dtp_Received.Value = Convert.ToDateTime(row.Cells(en_재고_col.입고일자).Value)
+            txt_count.Text = row.Cells(en_재고_col.수량).Value
+            txt_Price.Text = row.Cells(en_재고_col.단가).Value
+
+            btn_New.Tag = idxModule.getValue(row.Cells(en_재고_col.인덱스).Value)
+
+        ElseIf sender Is grid_단미제재고 Then
+
+            row = grid_단미제재고.CurrentRow
+
+            dtp_received_sg.Value = Convert.ToDateTime(row.Cells(en_재고_col.입고일자).Value)
+            txt_count_sg.Text = row.Cells(en_재고_col.수량).Value
+            txt_price_sg.Text = row.Cells(en_재고_col.단가).Value
+
+            btn_new_sg.Tag = idxModule.getValue(row.Cells(en_재고_col.인덱스).Value)
+
+        ElseIf sender Is grid_치료대재고 Then
+
+            row = grid_치료대재고.CurrentRow
+
+            dtp_inven.Value = Convert.ToDateTime(row.Cells(en_재고_col.입고일자).Value)
+            txt_count_inven.Text = row.Cells(en_재고_col.수량).Value
+            txt_price_inven.Text = row.Cells(en_재고_col.단가).Value
+
+            btn_new_inven.Tag = idxModule.getValue(row.Cells(en_재고_col.인덱스).Value)
+
         End If
+
+        sD_btnTrue()
 
     End Sub
 
@@ -436,8 +535,10 @@ Public Class Form1
             Exit Sub
         End If
 
+        DirectCast(sender, Button).Tag = idxModule.getValue(0)
+
         sD_enableTrue()
-        'sD_btnFalse()
+        sD_btnFalse(False)
         sD_Return_Clear()
 
     End Sub
@@ -470,49 +571,46 @@ Public Class Form1
     ''' </summary>
     Private Sub sD_Save(sender As Object, e As EventArgs) Handles btn_Save.Click, btn_save_inven.Click, btn_save_sg.Click
 
-        Dim temp_grid As DataGridView
+        Dim temp_grid As DataGridViewRow
         Dim temp_dtp As DateTimePicker
         Dim temp_count As Double
         Dim temp_price As TextBox
 
-        Dim temp_index As Integer
-
-        Dim temp_code As Integer
-        Dim temp_name As Integer
-        Dim temp_comp As Integer
+        Dim temp_enum As List(Of Integer)
+        Dim temp_idx As Decimal
+        Dim temp_btn As Button
 
         Dim intD_IO_type As Integer
         Dim intD_item_type As Integer
 
-        If sender Is btn_Save Then 'Not grid_혼합제.CurrentRow Is Nothing AndAlso
+        If sender Is btn_Save Then
 
             If sD_checkInput(grid_혼합제.CurrentRow, txt_count, txt_Price) Then Exit Sub
 
-            temp_grid = grid_혼합제
-            temp_code = en_보험약_Col.코드
-            temp_name = en_보험약_Col.명칭
-            temp_comp = en_보험약_Col.제약사
+            temp_grid = grid_혼합제.CurrentRow
+            temp_enum = New List(Of Integer) From {en_보험약_Col.코드, en_보험약_Col.명칭, en_보험약_Col.제약사}
+            temp_btn = btn_New
+            temp_idx = idxModule.getValue(temp_btn.Tag)
 
             temp_dtp = dtp_Received
             temp_count = CDbl(txt_count.Text)
             temp_price = txt_Price
-            temp_index = grid_혼합제.CurrentRow.Cells(en_보험약재고내역_col.인덱스).Value
             intD_item_type = tab_페이지.SelectedIndex
             intD_IO_type = tab_혼합제재고.SelectedIndex
 
-        ElseIf Not grid_단미제 Is Nothing AndAlso sender Is btn_save_sg Then 'Or sender Is btn_o_save_sg 
+        ElseIf Not grid_단미제 Is Nothing AndAlso sender Is btn_save_sg Then
 
             If sD_checkInput(grid_단미제.CurrentRow, txt_count_sg, txt_price_sg) Then Exit Sub
 
-            temp_grid = grid_단미제
-            temp_code = en_보험약_Col.코드
-            temp_name = en_보험약_Col.명칭
-            temp_comp = en_보험약_Col.제약사
+            temp_grid = grid_단미제.CurrentRow
+            temp_enum = New List(Of Integer) From {en_보험약_Col.코드, en_보험약_Col.명칭, en_보험약_Col.제약사}
+
+            temp_btn = btn_new_sg
+            temp_idx = idxModule.getValue(temp_btn.Tag)
 
             temp_dtp = dtp_received_sg
             temp_count = CDbl(txt_count_sg.Text)
             temp_price = txt_price_sg
-            temp_index = grid_단미제.CurrentRow.Cells(en_보험약재고내역_col.인덱스).Value
             intD_item_type = tab_페이지.SelectedIndex
             intD_IO_type = tab_단미제재고.SelectedIndex
 
@@ -520,37 +618,38 @@ Public Class Form1
 
             If sD_checkInput(grid_치료재료대.CurrentRow, txt_count_inven, txt_price_inven) Then Exit Sub
 
-            temp_grid = grid_치료재료대
-            temp_code = en_치료재료대_Col.코드
-            temp_name = en_치료재료대_Col.명칭
-            temp_comp = en_치료재료대_Col.제조사
+            temp_grid = grid_치료재료대.CurrentRow
+            temp_enum = New List(Of Integer) From {en_치료재료대_Col.코드, en_치료재료대_Col.명칭, en_치료재료대_Col.제조사}
+
+            temp_btn = btn_new_inven
+            temp_idx = idxModule.getValue(temp_btn.Tag)
 
             temp_dtp = dtp_inven
             temp_count = CDbl(txt_count_inven.Text)
             temp_price = txt_price_inven
-            temp_index = grid_치료재료대.CurrentRow.Cells(en_치료재료대재고_Col.인덱스).Value
             intD_item_type = tab_페이지.SelectedIndex
             intD_IO_type = tab_치료재재고.SelectedIndex
 
         End If
 
-        Dim strL_code = temp_grid.CurrentRow.Cells(temp_code).Value?.ToString
-        Dim strL_name = temp_grid.CurrentRow.Cells(temp_name).Value?.ToString
-        Dim strL_comp = temp_grid.CurrentRow.Cells(temp_comp).Value?.ToString
+        Dim strL_code = temp_grid.Cells(temp_enum(0)).Value?.ToString
+        Dim strL_name = temp_grid.Cells(temp_enum(1)).Value?.ToString
+        Dim strL_comp = temp_grid.Cells(temp_enum(2)).Value?.ToString
 
         Dim strL_date As String = temp_dtp.Value.ToString("yyyy-MM-dd HH:mm:ss")
 
         Dim strL_count = temp_count
         Dim int_price As Integer = Convert.ToInt32(temp_price.Text)
 
-        If temp_index > 0 Then
+
+        If temp_idx > 0 Then
             clsG_DBmng.sql_Exec_Query(
                 $"
                     Update tb_재고 set 일자 = '{strL_date}', 수량 = '{strL_count}', 단가 = '{int_price}' 
-                    where idx = '{temp_index}'
+                    where idx = '{temp_idx}'
                 ")
         Else
-            temp_index = clsG_DBmng.sql_Exec_Query_returnindex(
+            temp_btn.Tag = clsG_DBmng.sql_Exec_Query_returnindex(
              $"
                 insert TB_재고 (처방코드,구분,입출고, 명칭, 업소, 일자,수량, 단가)
                 values('{strL_code}', '{intD_item_type}','{intD_IO_type}', '{strL_name}', '{strL_comp}', '{strL_date}', '{strL_count}', '{int_price}');
@@ -568,19 +667,19 @@ Public Class Form1
     ''' <summary>
     ''' 수정 버튼 클릭 이벤트
     ''' </summary>
-    Private Sub btn_Update_Click(sender As Object, e As EventArgs) Handles btn_Update.Click, btn_update_inven.Click, btn_update_sg.Click
+    'Private Sub btn_Update_Click(sender As Object, e As EventArgs) Handles btn_Update.Click, btn_update_inven.Click, btn_update_sg.Click
 
-        If sender Is btn_Update Then
-            If grid_혼합제_inven.CurrentRow Is Nothing Then Exit Sub
-        ElseIf sender Is btn_update_sg Then
-            If grid_단미제_inven.CurrentRow Is Nothing Then Exit Sub
-        ElseIf sender Is btn_update_inven Then
-            If grid_재료대재고내역.CurrentRow Is Nothing Then Exit Sub
-        End If
+    '    If sender Is btn_Update Then
+    '        If grid_혼합제재고.CurrentRow Is Nothing Then Exit Sub
+    '    ElseIf sender Is btn_update_sg Then
+    '        If grid_단미제재고.CurrentRow Is Nothing Then Exit Sub
+    '    ElseIf sender Is btn_update_inven Then
+    '        If grid_치료대재고.CurrentRow Is Nothing Then Exit Sub
+    '    End If
 
-        sD_enableTrue()
+    '    sD_enableTrue()
 
-    End Sub
+    'End Sub
 
 
     ''' <summary>
@@ -588,23 +687,25 @@ Public Class Form1
     ''' </summary>
     Private Sub btn_delete_Click(sender As Object, e As EventArgs) Handles btn_delete.Click, btn_del_inven.Click, btn_del_sg.Click
 
+        If (MessageBox.Show("해당 항목을 삭제하시겠습니까?", "재고삭제", MessageBoxButtons.YesNo, MessageBoxIcon.Question)) = DialogResult.No Then Exit Sub
+
         Dim temp_grid As DataGridView
         Dim temp_enum As Integer
         Dim temp_index As Integer
         Dim temp_table As String
 
         If sender Is btn_delete Then
-            temp_grid = grid_혼합제_inven
+            temp_grid = grid_혼합제재고
             temp_enum = en_보험약_Col.코드
-            temp_index = grid_혼합제_inven.CurrentRow.Cells(en_보험약재고내역_col.인덱스).Value
-        ElseIf sender Is btn_del_sg Then 'Or sender Is btn_o_del_sg
-            temp_grid = grid_단미제_inven
+            temp_index = grid_혼합제재고.CurrentRow.Cells(en_재고_col.인덱스).Value
+        ElseIf sender Is btn_del_sg Then
+            temp_grid = grid_단미제재고
             temp_enum = en_보험약_Col.코드
-            temp_index = grid_단미제_inven.CurrentRow.Cells(en_보험약재고내역_col.인덱스).Value
+            temp_index = grid_단미제재고.CurrentRow.Cells(en_재고_col.인덱스).Value
         ElseIf sender Is btn_del_inven Then
-            temp_grid = grid_재료대재고내역
-            temp_enum = en_치료재료대재고_Col.처방코드
-            temp_index = grid_재료대재고내역.CurrentRow.Cells(en_치료재료대재고_Col.인덱스).Value
+            temp_grid = grid_치료대재고
+            temp_enum = en_치료재료대_Col.코드
+            temp_index = grid_치료대재고.CurrentRow.Cells(en_재고_col.인덱스).Value
         End If
 
         clsG_DBmng.sql_Exec_Query(
@@ -618,112 +719,6 @@ Public Class Form1
 
     End Sub
 
-
-    ''' <summary>
-    ''' 단미제 항목 클릭 이벤트
-    ''' </summary>
-    Private Sub grid_단미제_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles grid_단미제.CellClick, grid_단미제.CellContentClick
-
-        '현재 단미제 컬럼 가지고와서 있는지 확인하고 조회 
-        If grid_단미제.CurrentRow Is Nothing Then Exit Sub
-
-        sD_Return_Clear()
-        txt_code_sg.Text = ""
-        txt_name_sg.Text = ""
-        txt_comp_sg.Text = ""
-
-        txt_code_sg.Text = grid_단미제.CurrentRow.Cells(en_보험약_Col.코드).Value?.ToString
-        txt_name_sg.Text = grid_단미제.CurrentRow.Cells(en_보험약_Col.명칭).Value?.ToString
-        txt_comp_sg.Text = grid_단미제.CurrentRow.Cells(en_보험약_Col.제약사).Value?.ToString
-
-        sD_load_invenList(txt_code_sg.Text)
-
-        sD_btnFalse()
-        sD_enableFalse()
-
-    End Sub
-
-
-    ''' <summary>
-    ''' 단미제 재고항목 클릭 이벤트
-    ''' </summary>
-    Private Sub grid_단미제_inven_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles grid_단미제_inven.CellClick
-
-        If grid_단미제_inven.CurrentRow Is Nothing Then
-            sD_btnFalse()
-            Exit Sub
-        Else
-            sD_btnTrue()
-            dtp_received_sg.Value = Convert.ToDateTime(grid_단미제_inven.CurrentRow.Cells(en_보험약재고내역_col.입고일자).Value)
-            txt_count_sg.Text = grid_단미제_inven.CurrentRow.Cells(en_보험약재고내역_col.수량).Value
-            txt_price_sg.Text = grid_단미제_inven.CurrentRow.Cells(en_보험약재고내역_col.단가).Value
-        End If
-
-    End Sub
-
-
-    ''' <summary>
-    '''   치료재료대 enum 
-    ''' </summary>
-    ''' 
-    Private Enum en_치료재료대_Col
-        코드 = 0
-        명칭
-        제조사
-        수입업소
-    End Enum
-    Private Enum en_치료재료대재고_Col
-        인덱스 = 0
-        처방코드
-        명칭
-        입고일자
-        수량
-        단가
-        입고일자_변환
-    End Enum
-
-
-    ''' <summary>
-    ''' 치료재료대 내역 클릭
-    ''' </summary>
-    Private Sub grid_치료재료대_CellClick(sender As Object, e As EventArgs) Handles grid_치료재료대.CellClick
-
-        If grid_치료재료대.CurrentRow Is Nothing Then Exit Sub
-
-        sD_Return_Clear()
-        txt_code_inven.Text = ""
-        txt_name_inven.Text = ""
-        txt_comp_inven.Text = ""
-
-        txt_code_inven.Text = grid_치료재료대.CurrentRow.Cells(en_치료재료대_Col.코드).Value?.ToString
-        txt_name_inven.Text = grid_치료재료대.CurrentRow.Cells(en_치료재료대_Col.명칭).Value?.ToString
-        txt_comp_inven.Text = grid_치료재료대.CurrentRow.Cells(en_치료재료대_Col.제조사).Value?.ToString
-        txt_수입업소.Text = grid_치료재료대.CurrentRow.Cells(en_치료재료대_Col.수입업소).Value?.ToString
-
-        sD_load_invenList(txt_code_inven.Text)
-
-        sD_btnFalse()
-        sD_enableFalse()
-
-    End Sub
-
-
-
-    ''' <summary>
-    ''' 치료재료대 재고내역 클릭
-    ''' </summary>
-    Private Sub grid_재료대재고내역_CellContentClick(sender As Object, e As EventArgs) Handles grid_재료대재고내역.CellClick
-
-        If grid_재료대재고내역.CurrentRow Is Nothing Then
-            sD_btnFalse()
-            Exit Sub
-        Else
-            sD_btnTrue()
-            dtp_inven.Value = Convert.ToDateTime(grid_재료대재고내역.CurrentRow.Cells(en_치료재료대재고_Col.입고일자).Value)
-            txt_count_inven.Text = grid_재료대재고내역.CurrentRow.Cells(en_치료재료대재고_Col.수량).Value
-            txt_price_inven.Text = grid_재료대재고내역.CurrentRow.Cells(en_치료재료대재고_Col.단가).Value
-        End If
-    End Sub
 
     Private Sub tab_재고_SelectedIndexChanged(sender As Object, e As EventArgs) Handles tab_단미제재고.SelectedIndexChanged, tab_혼합제재고.SelectedIndexChanged, tab_치료재재고.SelectedIndexChanged
 

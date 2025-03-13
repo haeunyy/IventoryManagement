@@ -32,7 +32,7 @@ MediManage
  btn 활성화 
  </summary>
 </member>
-<member name="M:MediManage.Form1.sD_btnFalse">
+<member name="M:MediManage.Form1.sD_btnFalse(System.Boolean)">
  <summary>
  btn 비활성화 
  </summary>
@@ -90,12 +90,12 @@ MediManage
  </summary>
  <param name="strL_Code">처방코드</param>
 </member>
-<member name="M:MediManage.Form1.grid_Medi_CellContentClick(System.Object,System.EventArgs)">
+<member name="M:MediManage.Form1.grid_CellContentClick(System.Object,System.EventArgs)">
  <summary>
- 기준처방 항목 클릭 이벤트
+ 기준 항목 클릭 이벤트
  </summary>
 </member>
-<member name="M:MediManage.Form1.grid_보험약_CellContentClick(System.Object,System.EventArgs)">
+<member name="M:MediManage.Form1.grid_inven_CellContentClick(System.Object,System.EventArgs)">
  <summary>
  재고 항목 클릭 이벤트
  </summary>
@@ -119,40 +119,9 @@ MediManage
  보험약 저장 버튼 클릭 이벤트
  </summary>
 </member>
-<member name="M:MediManage.Form1.btn_Update_Click(System.Object,System.EventArgs)">
- <summary>
- 수정 버튼 클릭 이벤트
- </summary>
-</member>
 <member name="M:MediManage.Form1.btn_delete_Click(System.Object,System.EventArgs)">
  <summary>
  삭제 버튼 클릭 이벤트
- </summary>
-</member>
-<member name="M:MediManage.Form1.grid_단미제_CellContentClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
- <summary>
- 단미제 항목 클릭 이벤트
- </summary>
-</member>
-<member name="M:MediManage.Form1.grid_단미제_inven_CellContentClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
- <summary>
- 단미제 재고항목 클릭 이벤트
- </summary>
-</member>
-<member name="T:MediManage.Form1.en_치료재료대_Col">
- <summary>
-   치료재료대 enum 
- </summary>
- 
-</member>
-<member name="M:MediManage.Form1.grid_치료재료대_CellClick(System.Object,System.EventArgs)">
- <summary>
- 치료재료대 내역 클릭
- </summary>
-</member>
-<member name="M:MediManage.Form1.grid_재료대재고내역_CellContentClick(System.Object,System.EventArgs)">
- <summary>
- 치료재료대 재고내역 클릭
  </summary>
 </member>
 </members>
