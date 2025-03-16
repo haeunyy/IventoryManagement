@@ -32,7 +32,7 @@ MediManage
  btn 활성화 
  </summary>
 </member>
-<member name="M:MediManage.Form1.sD_btnFalse(System.Boolean)">
+<member name="M:MediManage.Form1.sD_btnFalse">
  <summary>
  btn 비활성화 
  </summary>

@@ -549,12 +549,16 @@ Public Class Form1
 
         Dim int_result As Integer
 
-        If Not Integer.TryParse(count.Text, int_result) Or count.Text >= 0 Or Not int_result = Integer.TryParse(price.Text, int_result) Or price.Text >= 0 Then
+        If Not Integer.TryParse(count.Text, int_result) Or Not Integer.TryParse(price.Text, int_result)   Then
             MessageBox.Show("유효하지 않은 값입니다. 다시 확인해주세요.")
             Return True
         End If
 
     End Function
+
+
+
+
 
 
     ' 선택된 항목이 없는 경우 변환오류 날수있어서 오류 처리 어떻게 할지 생각해봐야함 
@@ -671,15 +675,12 @@ Public Class Form1
 
         If sender Is btn_delete Then
             temp_grid = grid_혼합제재고
-            temp_enum = en_보험약_Col.코드
             temp_index = grid_혼합제재고.CurrentRow.Cells(en_재고_col.인덱스).Value
         ElseIf sender Is btn_del_sg Then
             temp_grid = grid_단미제재고
-            temp_enum = en_보험약_Col.코드
             temp_index = grid_단미제재고.CurrentRow.Cells(en_재고_col.인덱스).Value
         ElseIf sender Is btn_del_inven Then
             temp_grid = grid_치료대재고
-            temp_enum = en_치료재료대_Col.코드
             temp_index = grid_치료대재고.CurrentRow.Cells(en_재고_col.인덱스).Value
         End If
 
@@ -690,7 +691,7 @@ Public Class Form1
 
         sD_Return_Clear()
 
-        sD_load_invenList(temp_grid.CurrentRow.Cells(temp_enum).Value?.ToString)
+        sD_load_invenList(temp_grid.CurrentRow.Cells(en_재고_col.코드).Value)
 
     End Sub
 
@@ -713,6 +714,7 @@ Public Class Form1
             End If
 
             btn_New.Tag = 0
+
         ElseIf sender Is tab_단미제재고 Then
             If tab_단미제재고.SelectedIndex = 0 Then
                 If Not pnl_단미제_입출고.Parent Is tp_단미제_입고 Then
@@ -729,6 +731,7 @@ Public Class Form1
             End If
 
             btn_new_sg.Tag = 0
+
         ElseIf sender Is tab_치료재재고 Then
             If tab_치료재재고.SelectedIndex = 0 Then
                 If Not pnl_치료대_입출고.Parent Is tp_치료대_입고 Then
@@ -745,10 +748,15 @@ Public Class Form1
             End If
 
             btn_new_inven.Tag = 0
+
         End If
 
         sD_Return_Clear()
     End Sub
 
-
+    Private Sub txt_count_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_count.KeyPress, txt_count_sg.KeyPress, txt_count_inven.KeyPress, txt_Price.KeyPress, txt_price_sg.KeyPress, txt_price_inven.KeyPress
+        If Not Char.IsDigit(e.KeyChar) AndAlso e.KeyChar <> ControlChars.Back Then
+            e.Handled = True
+        End If
+    End Sub
 End Class
