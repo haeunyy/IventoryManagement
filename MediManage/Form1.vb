@@ -78,28 +78,13 @@ Public Class Form1
     ''' <summary>
     ''' btn 비활성화 
     ''' </summary>
-    Private Sub sD_btnFalse(is기준 As Boolean)
+    Private Sub sD_btnFalse()
         If tab_페이지.SelectedIndex = 0 Then
-            If is기준 Then
-                btn_Save.Visible = False
-                btn_delete.Visible = False
-            Else
-                btn_delete.Visible = False
-            End If
+            btn_delete.Visible = False
         ElseIf tab_페이지.SelectedIndex = 1 Then
-            If is기준 Then
-                btn_save_sg.Visible = False
-                btn_del_sg.Visible = False
-            Else
-                btn_del_sg.Visible = False
-            End If
+            btn_del_sg.Visible = False
         ElseIf tab_페이지.SelectedIndex = 2 Then
-            If is기준 Then
-                btn_save_inven.Visible = False
-                btn_del_inven.Visible = False
-            Else
-                btn_del_inven.Visible = False
-            End If
+            btn_del_inven.Visible = False
         End If
     End Sub
 
@@ -133,36 +118,19 @@ Public Class Form1
             txt_Code.Enabled = False
             txt_Name.Enabled = False
             txt_comp.Enabled = False
-            'dtp_Received.Enabled = False
-            'txt_count.Enabled = False
-            'txt_Price.Enabled = False
         ElseIf tab_페이지.SelectedIndex = 1 Then
             txt_code_sg.Enabled = False
             txt_name_sg.Enabled = False
             txt_comp_sg.Enabled = False
-            'dtp_received_sg.Enabled = False
-            'txt_count_sg.Enabled = False
-            'txt_price_sg.Enabled = False
         ElseIf tab_페이지.SelectedIndex = 2 Then
             txt_code_inven.Enabled = False
             txt_name_inven.Enabled = False
             txt_comp_inven.Enabled = False
             txt_수입업소.Enabled = False
-            'dtp_inven.Enabled = False
-            'txt_count_inven.Enabled = False
-            'txt_price_inven.Enabled = False
         End If
     End Sub
 
-    'Private Sub sD_btnSave_True()
-    '    If tab_페이지.SelectedIndex = 0 Then
-    '        btn_Save.Enabled = True
-    '    ElseIf tab_페이지.SelectedIndex = 1 Then
-    '        btn_save_sg.Enabled = True
-    '    ElseIf tab_페이지.SelectedIndex = 2 Then
-    '        btn_save_inven.Enabled = True
-    '    End If
-    'End Sub
+
 
     Private Sub sD_btnSave_False()
         If tab_페이지.SelectedIndex = 0 Then
@@ -301,7 +269,7 @@ Public Class Form1
 
             If dtL_data.Columns.Contains("일자") AndAlso Not row("일자") Is Nothing Then
                 Dim strL_date = row("일자").ToString()
-                row("일자") = CDate(strL_date).ToString("yyyy-MM-dd HH:mm") 'strL_date.Substring(0, strL_date.Length - 3)
+                row("일자") = CDate(strL_date).ToString("yyyy-MM-dd HH:mm")
             End If
 
             If dtL_data.Columns.Contains("수량") AndAlso IsNumeric(row("수량")?.ToString) Then
@@ -320,7 +288,7 @@ Public Class Form1
                 End If
             End If
 
-            If Not dtL_data.Columns.Contains("입출고_변환") Then
+            If dtL_data.Columns.Contains("입출고") AndAlso Not dtL_data.Columns.Contains("입출고_변환") Then '재고 테이블에서만 입출고_변환 컬럼이 생성되기 위한 조건
                 dtL_data.Columns.Add("입출고_변환", GetType(String))
             End If
 
@@ -463,8 +431,7 @@ Public Class Form1
 
         sD_load_invenList(temp_code.Text)
 
-        sD_btnFalse(True)
-        'sD_enableFalse()
+        sD_btnFalse()
 
     End Sub
 
@@ -482,6 +449,12 @@ Public Class Form1
 
             row = grid_혼합제재고.CurrentRow
 
+            If Not row Is Nothing AndAlso row.Cells(en_재고_col.입출고).Value = 0 Then
+                tab_혼합제재고.SelectedIndex = 0
+            ElseIf Not row Is Nothing AndAlso row.Cells(en_재고_col.입출고).Value = 1 Then
+                tab_혼합제재고.SelectedIndex = 1
+            End If
+
             dtp_Received.Value = Convert.ToDateTime(row.Cells(en_재고_col.입고일자).Value)
             txt_count.Text = row.Cells(en_재고_col.수량).Value
             txt_Price.Text = row.Cells(en_재고_col.단가).Value
@@ -492,6 +465,12 @@ Public Class Form1
 
             row = grid_단미제재고.CurrentRow
 
+            If Not row Is Nothing AndAlso row.Cells(en_재고_col.입출고).Value = 0 Then
+                tab_단미제재고.SelectedIndex = 0
+            ElseIf Not row Is Nothing AndAlso row.Cells(en_재고_col.입출고).Value = 1 Then
+                tab_단미제재고.SelectedIndex = 1
+            End If
+
             dtp_received_sg.Value = Convert.ToDateTime(row.Cells(en_재고_col.입고일자).Value)
             txt_count_sg.Text = row.Cells(en_재고_col.수량).Value
             txt_price_sg.Text = row.Cells(en_재고_col.단가).Value
@@ -501,6 +480,12 @@ Public Class Form1
         ElseIf sender Is grid_치료대재고 Then
 
             row = grid_치료대재고.CurrentRow
+
+            If Not row Is Nothing AndAlso row.Cells(en_재고_col.입출고).Value = 0 Then
+                tab_치료재재고.SelectedIndex = 0
+            ElseIf Not row Is Nothing AndAlso row.Cells(en_재고_col.입출고).Value = 1 Then
+                tab_치료재재고.SelectedIndex = 1
+            End If
 
             dtp_inven.Value = Convert.ToDateTime(row.Cells(en_재고_col.입고일자).Value)
             txt_count_inven.Text = row.Cells(en_재고_col.수량).Value
@@ -538,7 +523,7 @@ Public Class Form1
         DirectCast(sender, Button).Tag = idxModule.getValue(0)
 
         sD_enableTrue()
-        sD_btnFalse(False)
+        sD_btnFalse()
         sD_Return_Clear()
 
     End Sub
@@ -561,6 +546,14 @@ Public Class Form1
             MessageBox.Show("항목을 입력해주세요.")
             Return True
         End If
+
+        Dim int_result As Integer
+
+        If Not Integer.TryParse(count.Text, int_result) Or count.Text >= 0 Or Not int_result = Integer.TryParse(price.Text, int_result) Or price.Text >= 0 Then
+            MessageBox.Show("유효하지 않은 값입니다. 다시 확인해주세요.")
+            Return True
+        End If
+
     End Function
 
 
@@ -657,29 +650,11 @@ Public Class Form1
              ")
         End If
 
-        sD_Return_Clear()
+        'sD_Return_Clear()
 
         sD_load_invenList(strL_code)
 
     End Sub
-
-
-    ''' <summary>
-    ''' 수정 버튼 클릭 이벤트
-    ''' </summary>
-    'Private Sub btn_Update_Click(sender As Object, e As EventArgs) Handles btn_Update.Click, btn_update_inven.Click, btn_update_sg.Click
-
-    '    If sender Is btn_Update Then
-    '        If grid_혼합제재고.CurrentRow Is Nothing Then Exit Sub
-    '    ElseIf sender Is btn_update_sg Then
-    '        If grid_단미제재고.CurrentRow Is Nothing Then Exit Sub
-    '    ElseIf sender Is btn_update_inven Then
-    '        If grid_치료대재고.CurrentRow Is Nothing Then Exit Sub
-    '    End If
-
-    '    sD_enableTrue()
-
-    'End Sub
 
 
     ''' <summary>
@@ -722,67 +697,58 @@ Public Class Form1
 
     Private Sub tab_재고_SelectedIndexChanged(sender As Object, e As EventArgs) Handles tab_단미제재고.SelectedIndexChanged, tab_혼합제재고.SelectedIndexChanged, tab_치료재재고.SelectedIndexChanged
 
-        Dim isSender As String = ""
-
         If sender Is tab_혼합제재고 Then
-            isSender = "혼합제"
+            If tab_혼합제재고.SelectedIndex = 0 Then
+                If Not pnl_혼합제_입출고.Parent Is tp_혼합제_입고 Then
+                    tp_혼합제_입고.Controls.Add(pnl_혼합제_입출고)
+                    lbl_혼합제_입출고_수량.Text = "입고수량(g)"
+                    lbl_혼합제_입출고_일자.Text = "입고일자"
+                End If
+            Else
+                If Not pnl_혼합제_입출고.Parent Is tp_혼합제_출고 Then
+                    tp_혼합제_출고.Controls.Add(pnl_혼합제_입출고)
+                    lbl_혼합제_입출고_수량.Text = "출고수량(g)"
+                    lbl_혼합제_입출고_일자.Text = "출고일자"
+                End If
+            End If
+
+            btn_New.Tag = 0
         ElseIf sender Is tab_단미제재고 Then
-            isSender = "단미제"
+            If tab_단미제재고.SelectedIndex = 0 Then
+                If Not pnl_단미제_입출고.Parent Is tp_단미제_입고 Then
+                    tp_단미제_입고.Controls.Add(pnl_단미제_입출고)
+                    lbl_단미제_입출고_수량.Text = "입고수량(g)"
+                    lbl_단미제_입출고_일자.Text = "입고일자"
+                End If
+            Else
+                If Not pnl_단미제_입출고.Parent Is tp_단미제_출고 Then
+                    tp_단미제_출고.Controls.Add(pnl_단미제_입출고)
+                    lbl_단미제_입출고_수량.Text = "출고수량(g)"
+                    lbl_단미제_입출고_일자.Text = "출고일자"
+                End If
+            End If
+
+            btn_new_sg.Tag = 0
         ElseIf sender Is tab_치료재재고 Then
-            isSender = "치료재료대"
+            If tab_치료재재고.SelectedIndex = 0 Then
+                If Not pnl_치료대_입출고.Parent Is tp_치료대_입고 Then
+                    tp_치료대_입고.Controls.Add(pnl_치료대_입출고)
+                    lbl_치료대_입출고_수량.Text = "입고수량(g)"
+                    lbl_치료대_입출고_일자.Text = "입고일자"
+                End If
+            Else
+                If Not pnl_치료대_입출고.Parent Is tp_치료대_출고 Then
+                    tp_치료대_출고.Controls.Add(pnl_치료대_입출고)
+                    lbl_치료대_입출고_수량.Text = "출고수량(g)"
+                    lbl_치료대_입출고_일자.Text = "출고일자"
+                End If
+            End If
+
+            btn_new_inven.Tag = 0
         End If
 
-        Select Case isSender
-
-            Case "혼합제"
-
-                If tab_혼합제재고.SelectedIndex = 0 Then
-                    If Not pnl_혼합제_입출고.Parent Is tp_혼합제_입고 Then
-                        tp_혼합제_입고.Controls.Add(pnl_혼합제_입출고)
-                        lbl_혼합제_입출고_수량.Text = "입고수량(g)"
-                        lbl_혼합제_입출고_일자.Text = "입고일자"
-                    End If
-                Else
-                    If Not pnl_혼합제_입출고.Parent Is tp_혼합제_출고 Then
-                        tp_혼합제_출고.Controls.Add(pnl_혼합제_입출고)
-                        lbl_혼합제_입출고_수량.Text = "출고수량(g)"
-                        lbl_혼합제_입출고_일자.Text = "출고일자"
-                    End If
-                End If
-
-            Case "단미제"
-
-                If tab_단미제재고.SelectedIndex = 0 Then
-                    If Not pnl_단미제_입출고.Parent Is tp_단미제_입고 Then
-                        tp_단미제_입고.Controls.Add(pnl_단미제_입출고)
-                        lbl_단미제_입출고_수량.Text = "입고수량(g)"
-                        lbl_단미제_입출고_일자.Text = "입고일자"
-                    End If
-                Else
-                    If Not pnl_단미제_입출고.Parent Is tp_단미제_출고 Then
-                        tp_단미제_출고.Controls.Add(pnl_단미제_입출고)
-                        lbl_단미제_입출고_수량.Text = "출고수량(g)"
-                        lbl_단미제_입출고_일자.Text = "출고일자"
-                    End If
-                End If
-
-            Case "치료재료대"
-
-                If tab_치료재재고.SelectedIndex = 0 Then
-                    If Not pnl_치료대_입출고.Parent Is tp_치료대_입고 Then
-                        tp_치료대_입고.Controls.Add(pnl_치료대_입출고)
-                        lbl_치료대_입출고_수량.Text = "입고수량(g)"
-                        lbl_치료대_입출고_일자.Text = "입고일자"
-                    End If
-                Else
-                    If Not pnl_치료대_입출고.Parent Is tp_치료대_출고 Then
-                        tp_치료대_출고.Controls.Add(pnl_치료대_입출고)
-                        lbl_치료대_입출고_수량.Text = "출고수량(g)"
-                        lbl_치료대_입출고_일자.Text = "출고일자"
-                    End If
-                End If
-
-        End Select
+        sD_Return_Clear()
     End Sub
+
 
 End Class
