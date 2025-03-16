@@ -1,4 +1,5 @@
 ﻿Imports System.CodeDom
+Imports System.ComponentModel
 Imports System.Diagnostics.Eventing.Reader
 Imports System.Globalization
 Imports System.Reflection
@@ -549,7 +550,7 @@ Public Class Form1
 
         Dim int_result As Integer
 
-        If Not Integer.TryParse(count.Text, int_result) Or Not Integer.TryParse(price.Text, int_result)   Then
+        If Not Integer.TryParse(count.Text, int_result) Or Not Integer.TryParse(price.Text, int_result) Then
             MessageBox.Show("유효하지 않은 값입니다. 다시 확인해주세요.")
             Return True
         End If
@@ -557,11 +558,16 @@ Public Class Form1
     End Function
 
 
+    ''' <summary>
+    ''' TextBox의 수량과 단가가 입력될때마다 event 발생하여 문자입력 제한 
+    ''' </summary>
+    Private Sub txt_count_price_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_count.KeyPress, txt_count_sg.KeyPress, txt_count_inven.KeyPress, txt_Price.KeyPress, txt_price_sg.KeyPress, txt_price_inven.KeyPress
+        If Not Char.IsDigit(e.KeyChar) AndAlso e.KeyChar <> ControlChars.Back Then
+            e.Handled = True
+        End If
+    End Sub
 
 
-
-
-    ' 선택된 항목이 없는 경우 변환오류 날수있어서 오류 처리 어떻게 할지 생각해봐야함 
 
     ''' <summary>
     ''' 보험약 저장 버튼 클릭 이벤트
@@ -654,8 +660,6 @@ Public Class Form1
              ")
         End If
 
-        'sD_Return_Clear()
-
         sD_load_invenList(strL_code)
 
     End Sub
@@ -696,6 +700,11 @@ Public Class Form1
     End Sub
 
 
+    ''' <summary>
+    ''' 1. tab_재고 인덱스에 따라 panel 추가 
+    ''' 2. 수량,일자 text 변경
+    ''' 3. btn_새로입력 Tag 초기화 
+    ''' </summary>
     Private Sub tab_재고_SelectedIndexChanged(sender As Object, e As EventArgs) Handles tab_단미제재고.SelectedIndexChanged, tab_혼합제재고.SelectedIndexChanged, tab_치료재재고.SelectedIndexChanged
 
         If sender Is tab_혼합제재고 Then
@@ -754,9 +763,46 @@ Public Class Form1
         sD_Return_Clear()
     End Sub
 
-    Private Sub txt_count_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_count.KeyPress, txt_count_sg.KeyPress, txt_count_inven.KeyPress, txt_Price.KeyPress, txt_price_sg.KeyPress, txt_price_inven.KeyPress
-        If Not Char.IsDigit(e.KeyChar) AndAlso e.KeyChar <> ControlChars.Back Then
-            e.Handled = True
+
+    ''' <summary>
+    ''' tab_페이지 인덱스를 관리하기 위한 변수 선언
+    ''' </summary>
+    Private intL_tabIndex As Integer
+
+    Private frmL_form2 As Form2 '============================================================ form 종료하고 재실행 안됨 
+
+    ''' <summary>
+    ''' 1. 재고현황 탭을 눌렀을 떄 Form2를 실행 <br/>
+    ''' 2. 탭을 누르기 이전 인덱스로 돌아가기
+    ''' </summary>
+    Private Sub tab_페이지_SelectedIndexChanged(sender As Object, e As EventArgs) Handles tab_페이지.SelectedIndexChanged
+
+        If tab_페이지.SelectedIndex = 3 Then
+
+            tab_페이지.SelectedIndex = intL_tabIndex
+
+            If frmL_form2 Is Nothing Then
+                frmL_form2 = New Form2()
+                frmL_form2.Show()
+                Exit Sub
+            End If
+
         End If
+
+        intL_tabIndex = tab_페이지.SelectedIndex
     End Sub
+
+    ''' <summary>
+    ''' 1. Form1이 종료될 때 재고현황도 같이 종료
+    ''' </summary>
+    Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        If frmL_form2 Is Nothing Then Exit Sub
+        frmL_form2.Close()
+    End Sub
+    'Private Sub frmL_form2_FormClosed(sender As Object, e As FormClosedEventArgs) Handles frmL_form2.FormClosed
+    '    frmL_form2.Dispose()
+    '    frmL_form2 = Nothing ' 메모리에서 완전히 제거
+    'End Sub
+
+
 End Class

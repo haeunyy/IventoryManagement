@@ -154,3 +154,4 @@ C:\output\MediManage_250312\MediManage\obj\Debug\MediManage.vbproj.CoreCompileIn
 C:\output\MediManage_250312\MediManage\obj\Debug\MediManage.exe
 C:\output\MediManage_250312\MediManage\obj\Debug\MediManage.xml
 C:\output\MediManage_250312\MediManage\obj\Debug\MediManage.pdb
+C:\output\MediManage_250312\MediManage\obj\Debug\MediManage.Form2.resources

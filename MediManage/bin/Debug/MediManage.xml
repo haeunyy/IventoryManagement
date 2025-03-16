@@ -8,18 +8,33 @@ MediManage
 <members>
 <member name="T:MediManage.My.Resources.Resources">
 <summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
+  지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
 </summary>
 </member>
 <member name="P:MediManage.My.Resources.Resources.ResourceManager">
 <summary>
-  Returns the cached ResourceManager instance used by this class.
+  이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
 </summary>
 </member>
 <member name="P:MediManage.My.Resources.Resources.Culture">
 <summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
+  이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대해 현재 스레드의 CurrentUICulture 속성을
+  재정의합니다.
+</summary>
+</member>
+<member name="P:MediManage.My.Resources.Resources.Group_6">
+<summary>
+  System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+</summary>
+</member>
+<member name="P:MediManage.My.Resources.Resources.Group_8">
+<summary>
+  System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+</summary>
+</member>
+<member name="P:MediManage.My.Resources.Resources.Group_81">
+<summary>
+  System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
 </summary>
 </member>
 <member name="M:MediManage.Form1.sD_Return_Clear">
@@ -114,6 +129,11 @@ MediManage
  <param name="price">단가</param>
  <returns>검증실패한 경우 True 반환</returns>
 </member>
+<member name="M:MediManage.Form1.txt_count_price_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+ <summary>
+ TextBox의 수량과 단가가 입력될때마다 event 발생하여 문자입력 제한 
+ </summary>
+</member>
 <member name="M:MediManage.Form1.sD_Save(System.Object,System.EventArgs)">
  <summary>
  보험약 저장 버튼 클릭 이벤트
@@ -123,6 +143,41 @@ MediManage
  <summary>
  삭제 버튼 클릭 이벤트
  </summary>
+</member>
+<member name="M:MediManage.Form1.tab_재고_SelectedIndexChanged(System.Object,System.EventArgs)">
+ <summary>
+ 1. tab_재고 인덱스에 따라 panel 추가 
+ 2. 수량,일자 text 변경
+ 3. btn_새로입력 Tag 초기화 
+ </summary>
+</member>
+<member name="F:MediManage.Form1.intL_tabIndex">
+ <summary>
+ tab_페이지 인덱스를 관리하기 위한 변수 선언
+ </summary>
+</member>
+<member name="M:MediManage.Form1.tab_페이지_SelectedIndexChanged(System.Object,System.EventArgs)">
+ <summary>
+ 1. 재고현황 탭을 눌렀을 떄 Form2를 실행 <br/>
+ 2. 탭을 누르기 이전 인덱스로 돌아가기
+ </summary>
+</member>
+<member name="M:MediManage.Form1.Form1_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+ <summary>
+ 1. Form1이 종료될 때 재고현황도 같이 종료
+ </summary>
+</member>
+<member name="M:MediManage.Form2.Form2_Load(System.Object,System.EventArgs)">
+ <summary>
+ 1. 폼이 로드되면 sD_get_mainList 함수에 구분코드를 매개변수로 전달하여 DataGridView에 로드
+ </summary>
+</member>
+<member name="M:MediManage.Form2.sD_get_mainList(System.Int32)">
+ <summary>
+ 1. 구분코드에 따라 조회 구문 실행<br/>
+ 2. DataGridView에 update
+ </summary>
+ <param name="code">구분 (0-혼합제/1-단미제/2-치료재료대)</param>
 </member>
 </members>
 </doc>
