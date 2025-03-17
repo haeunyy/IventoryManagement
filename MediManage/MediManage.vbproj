@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>MediManage.My.MyApplication</StartupObject>
+    <StartupObject>MediManage.Form2</StartupObject>
     <RootNamespace>MediManage</RootNamespace>
     <AssemblyName>MediManage</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -90,10 +90,6 @@
     <Compile Include="mdlClass.vb" />
     <Compile Include="idxModule.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile Include="My Project\Application.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Application.myapp</DependentUpon>
-    </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -122,7 +118,6 @@
   <ItemGroup>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
-      <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
