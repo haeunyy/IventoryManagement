@@ -155,3 +155,29 @@ C:\output\MediManage_250312\MediManage\obj\Debug\MediManage.exe
 C:\output\MediManage_250312\MediManage\obj\Debug\MediManage.xml
 C:\output\MediManage_250312\MediManage\obj\Debug\MediManage.pdb
 C:\output\MediManage_250312\MediManage\obj\Debug\MediManage.Form2.resources
+D:\Git소스\교육용샘플\MediManage_250318\MediManage_250312\MediManage\bin\Debug\MediManage.exe.config
+D:\Git소스\교육용샘플\MediManage_250318\MediManage_250312\MediManage\bin\Debug\MediManage.exe
+D:\Git소스\교육용샘플\MediManage_250318\MediManage_250312\MediManage\bin\Debug\MediManage.pdb
+D:\Git소스\교육용샘플\MediManage_250318\MediManage_250312\MediManage\bin\Debug\MediManage.xml
+D:\Git소스\교육용샘플\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.vbproj.AssemblyReference.cache
+D:\Git소스\교육용샘플\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.Form1.resources
+D:\Git소스\교육용샘플\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.Form2.resources
+D:\Git소스\교육용샘플\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.Resources.resources
+D:\Git소스\교육용샘플\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.vbproj.GenerateResource.cache
+D:\Git소스\교육용샘플\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.vbproj.CoreCompileInputs.cache
+D:\Git소스\교육용샘플\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.exe
+D:\Git소스\교육용샘플\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.xml
+D:\Git소스\교육용샘플\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.pdb
+C:\output\MediManage_250318 (2)\MediManage_250318\MediManage_250312\MediManage\bin\Debug\MediManage.exe.config
+C:\output\MediManage_250318 (2)\MediManage_250318\MediManage_250312\MediManage\bin\Debug\MediManage.exe
+C:\output\MediManage_250318 (2)\MediManage_250318\MediManage_250312\MediManage\bin\Debug\MediManage.pdb
+C:\output\MediManage_250318 (2)\MediManage_250318\MediManage_250312\MediManage\bin\Debug\MediManage.xml
+C:\output\MediManage_250318 (2)\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.vbproj.AssemblyReference.cache
+C:\output\MediManage_250318 (2)\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.Form1.resources
+C:\output\MediManage_250318 (2)\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.Form2.resources
+C:\output\MediManage_250318 (2)\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.Resources.resources
+C:\output\MediManage_250318 (2)\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.vbproj.GenerateResource.cache
+C:\output\MediManage_250318 (2)\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.vbproj.CoreCompileInputs.cache
+C:\output\MediManage_250318 (2)\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.exe
+C:\output\MediManage_250318 (2)\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.xml
+C:\output\MediManage_250318 (2)\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.pdb

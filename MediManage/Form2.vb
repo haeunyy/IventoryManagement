@@ -4,6 +4,13 @@ Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class Form2
 
+    Private Enum en_기준항목_Col
+        코드 = 1
+        명칭
+        업소
+        수량
+    End Enum
+
     Private Enum en_입출고_Col
         일자 = 0
         입출고
@@ -47,14 +54,12 @@ Public Class Form2
                 group by 
 	                처방코드, 명칭, 업소
             ")
-        '{fD_queryDate()}
 
         If code = 0 Then
             grid_기준항목_혼합제.DataSource = dtL_data
             grid_기준항목_혼합제.Update()
             grid_기준항목_혼합제.ClearSelection()
-
-            sD_Get_InOutList()
+            sD_Get_mediList()
         ElseIf code = 1 Then
             grid_기준항목_단미제.DataSource = dtL_data
             grid_기준항목_단미제.Update()
@@ -69,7 +74,65 @@ Public Class Form2
 
     Private Sub sD_Get_InOutList()
 
-        grid_입출고_혼합제.DataSource = clsG_DBmng.sql_Get_Datatable(
+        Dim invenQuery As String
+        Dim mediQuery As String
+        Dim typeQuery As String
+        Dim temp_startDate As DateTimePicker
+        Dim temp_endDate As DateTimePicker
+        Dim temp_grid As DataGridView
+
+        If tab_재고현황.SelectedIndex = 0 Then
+
+            temp_startDate = dtp_시작일자_혼합제
+            temp_endDate = dtp_종료일자_혼합제
+
+            Dim row = grid_기준항목_혼합제.CurrentRow
+
+            If rb_기준항목_혼합.Checked Then
+                If row Is Nothing Then Exit Sub
+                invenQuery = "and 처방코드 = '" + row.Cells(en_기준항목_Col.코드).Value + "'"
+                mediQuery = "and b.처방코드 = '" + row.Cells(en_기준항목_Col.코드).Value + "'"
+            End If
+
+            typeQuery = "b.등록구분 = 29 and"
+
+            temp_grid = grid_입출고_혼합제
+
+        ElseIf tab_재고현황.SelectedIndex = 1 Then
+
+            temp_startDate = dtp_시작일자_단미
+            temp_endDate = dtp_종료일자_단미
+
+            Dim row = grid_기준항목_단미제.CurrentRow
+
+            If rb_기준항목_단미.Checked Then
+                invenQuery = "and 처방코드 = '" + row.Cells(en_기준항목_Col.코드).Value + "'"
+                mediQuery = "and b.처방코드 = '" + row.Cells(en_기준항목_Col.코드).Value + "'"
+            End If
+
+            typeQuery = "b.등록구분 in(25,26,28) and"
+
+            temp_grid = grid_입출고_단미제
+
+        ElseIf tab_재고현황.SelectedIndex = 2 Then
+
+            temp_startDate = dtp_시작일자_치료대
+            temp_endDate = dtp_종료일자_치료대
+
+            Dim row = grid_기준항목_치료대.CurrentRow
+
+            If rb_기준항목_치료대.Checked Then
+                invenQuery = "and 처방코드 = '" + row.Cells(en_기준항목_Col.코드).Value + "'"
+                mediQuery = "and b.처방코드 = '" + row.Cells(en_기준항목_Col.코드).Value + "'"
+            End If
+
+            typeQuery = "b.코드구분 = 8 and"
+
+            temp_grid = grid_입출고_치료대
+
+        End If
+
+        Dim dtL_data = clsG_DBmng.sql_Get_Datatable(
             $"
 
                 Select 
@@ -77,13 +140,14 @@ Public Class Form2
                 from
                     TB_재고 a
                 where
-                    일자 between '{CDate(dtp_시작일자_혼합제.Value).ToString("yyyy-MM-dd")}' and '{CDate(dtp_종료일자_혼합제.Value).ToString("yyyy-MM-dd")}' and
-                    구분 = 0
+                    구분 = {tab_재고현황.SelectedIndex} and 
+                    일자 between '{CDate(temp_startDate.Value).ToString("yyyy-MM-dd")}' and '{CDate(temp_endDate.Value).ToString("yyyy-MM-dd")}' 
+                    {invenQuery}
 
                 Union ALL
 
                 Select
-                    a.진료일자 as 일자, '진료입력 출고', b.처방코드 as 코드, b.명칭 as 명칭,sum(b.투여량 * b.일수) as 수량, sum(cast(b.단가 as int) )as 단가, sum(cast(b.투여량 * b.일수 * b.단가 as bigint)) as 금액
+                    a.진료일자 as 일자, '진료입력 출고' as 입출고, b.처방코드 as 코드, b.명칭 as 명칭,sum(b.투여량 * b.일수) as 수량, cast(b.단가 as int) as 단가, cast(sum(b.투여량 * b.일수 * b.단가) as bigint) as 금액
                 from
                     TB_진료기본 a
                 inner join
@@ -95,47 +159,75 @@ Public Class Form2
                     a.진료번호 = b.진료번호 and
                     a.챠트번호 = b.챠트번호
                 where
-                    b.등록구분 = 29 and
-                    a.진료상태 <> 4 and
-                    a.진료일자 between convert(date,'{CDate(dtp_시작일자_혼합제.Value).ToString("yyyy-MM-dd")}') and convert(date,'{CDate(dtp_종료일자_혼합제.Value).ToString("yyyy-MM-dd")}')
+                    {typeQuery}
+                    a.진료상태 <> 4 and 
+                    a.진료일자 between convert(date,'{CDate(temp_startDate.Value).ToString("yyyy-MM-dd")}') and convert(date,'{CDate(temp_endDate.Value).ToString("yyyy-MM-dd")}')
+                    {mediQuery}
                 group by
-	                a.진료일자,  b.처방코드, b.명칭,  b.투여량 ,  b.일수, b.단가
+	                a.진료일자,  b.처방코드, b.명칭, b.단가
                 order by
                     일자
             ")
-        grid_입출고_혼합제.Refresh()
-    End Sub
 
-    Private Sub btn_조회_Click(sender As Object, e As EventArgs) Handles btn_조회.Click
-        sD_get_mainList(tab_재고현황.SelectedIndex)
+        If dtL_data.Rows.Count = 0 Then Exit Sub
 
-    End Sub
+        Dim dr_row As DataRow
 
-    Private Sub grid_입출고_혼합제_ColumnHeadersHeightSizeModeChanged(sender As Object, e As EventArgs) Handles grid_입출고_혼합제.DataSourceChanged
-        Dim count = 0
-        Dim price = 0
-        Dim totalPrice = 0
-        For Each row As DataGridViewRow In grid_입출고_혼합제.Rows
-            If Not row.IsNewRow AndAlso Not String.IsNullOrEmpty(row.Cells(4).Value?.ToString()) Then
-                count += Convert.ToDouble(row.Cells(en_입출고_Col.수량).Value)
-                price += Convert.ToDouble(row.Cells(en_입출고_Col.단가).Value)
-                totalPrice += Convert.ToDouble(row.Cells(en_입출고_Col.금액).Value)
-            End If
+        dr_row = dtL_data.NewRow
+
+        dr_row("일자") = "합계"
+        dr_row("수량") = dtL_data.AsEnumerable.Sum(Function(x) x("수량"))
+        dr_row("단가") = dtL_data.AsEnumerable.Sum(Function(x) x("단가"))
+        dr_row("금액") = dtL_data.AsEnumerable.Sum(Function(x) CDbl(x("금액")))
+
+        dtL_data.Rows.Add(dr_row)
+
+        temp_grid.DataSource = dtL_data
+
+        Dim Arr_Temp = {en_입출고_Col.일자.GetHashCode, en_입출고_Col.수량.GetHashCode, en_입출고_Col.단가.GetHashCode, en_입출고_Col.금액.GetHashCode}
+
+        For intL_i As Integer = 0 To temp_grid.ColumnCount - 1
+            temp_grid.Rows(temp_grid.RowCount - 1).Cells(intL_i).Style.BackColor = Color.Yellow
+            temp_grid.Rows(temp_grid.RowCount - 1).Cells(intL_i).Style.Font = New Font("맑은 고딕", 9, FontStyle.Bold)
         Next
 
-        If grid_입출고_혼합제.Rows.Count > 0 Then 'AndAlso grid_입출고_혼합제.Rows(grid_입출고_혼합제.Rows.Count - 1).Cells(1).Value?.ToString() = "Total Sales" 
-            'Dim summaryRow As DataGridViewRow = 
-            'grid_입출고_혼합제.Rows(
-            'grid_입출고_혼합제.Rows.Add()
-            ')
-            'summaryRow.Cells(1).Value = "Total Sales"
-            'summaryRow.Cells(2).Value = myTotal.ToString("C")
-            'summaryRow.DefaultCellStyle.BackColor = Color.LightGray 
-            txt_수량.Text = Format(count, "#,##0.##")
-            txt_단가.Text = Format(price, "#,##0")
-            txt_금액.Text = Format(totalPrice, "#,##0")
-        End If
+        temp_grid.Refresh()
     End Sub
+
+    Private Sub btn_조회_Click(sender As Object, e As EventArgs) Handles btn_조회_혼합.Click, btn_조회_단미.Click, btn_조회_치료대.Click
+        sD_Get_InOutList()
+    End Sub
+
+
+
+    ''' <summary>
+    ''' 조회만 됨 
+    ''' 동적쿼리로 바꿔야함 
+    ''' 
+    ''' 조건 - 진료년월일
+    ''' 
+    ''' </summary>
+    Private Sub sD_Get_mediList()
+        Dim dtL_data = clsG_DBmng.sql_Get_Datatable(
+            $"
+                select 
+				    (a.진료년 +'-'+ a.진료월 + '-' + a.진료일) as 일자, b.수진자명, a.명칭 ,sum(a.투여량 * a.일수) as 수량, cast(a.단가 as int) as 단가, cast(sum(a.투여량 * a.일수 * a.단가) as bigint) as 금액 
+			    from 
+				    tb_h_진료내역 a 
+			    left join 
+				    TB_인적사항 as b 
+			    on 
+				    a.챠트번호 = b.챠트번호
+			    where 
+				    a.처방코드 = '655001150' 
+			    group by 
+				    a.진료년 ,a.진료월 ,a.진료일, b.수진자명, a.단가, a.명칭
+            ")
+
+        grid_처방_혼합제.DataSource = dtL_data
+        grid_처방_혼합제.Refresh()
+    End Sub
+
 
 End Class
 
