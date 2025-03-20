@@ -1,6 +1,6 @@
 ﻿Module idxModule
 
-    Public Function getValue(data As Decimal)
+    Public Function getValue(data As Decimal) As Decimal
 
         If Not data = 0 AndAlso Not IsDBNull(data) AndAlso IsNumeric(data) Then
             Return data
