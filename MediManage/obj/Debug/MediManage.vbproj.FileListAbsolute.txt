@@ -207,3 +207,126 @@ C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250320 (2)\MediMa
 C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250320 (2)\MediManage_250320\MediManage_250318 (2)\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.exe
 C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250320 (2)\MediManage_250320\MediManage_250318 (2)\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.xml
 C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250320 (2)\MediManage_250320\MediManage_250318 (2)\MediManage_250318\MediManage_250312\MediManage\obj\Debug\MediManage.pdb
+D:\Git소스\교육용샘플\MediManage_250321\MediManage_250312\MediManage\bin\Debug\MediManage.exe.config
+D:\Git소스\교육용샘플\MediManage_250321\MediManage_250312\MediManage\bin\Debug\MediManage.exe
+D:\Git소스\교육용샘플\MediManage_250321\MediManage_250312\MediManage\bin\Debug\MediManage.pdb
+D:\Git소스\교육용샘플\MediManage_250321\MediManage_250312\MediManage\bin\Debug\MediManage.xml
+D:\Git소스\교육용샘플\MediManage_250321\MediManage_250312\MediManage\obj\Debug\MediManage.vbproj.AssemblyReference.cache
+D:\Git소스\교육용샘플\MediManage_250321\MediManage_250312\MediManage\obj\Debug\MediManage.Form1.resources
+D:\Git소스\교육용샘플\MediManage_250321\MediManage_250312\MediManage\obj\Debug\MediManage.Form2.resources
+D:\Git소스\교육용샘플\MediManage_250321\MediManage_250312\MediManage\obj\Debug\MediManage.Resources.resources
+D:\Git소스\교육용샘플\MediManage_250321\MediManage_250312\MediManage\obj\Debug\MediManage.vbproj.GenerateResource.cache
+D:\Git소스\교육용샘플\MediManage_250321\MediManage_250312\MediManage\obj\Debug\MediManage.vbproj.CoreCompileInputs.cache
+D:\Git소스\교육용샘플\MediManage_250321\MediManage_250312\MediManage\obj\Debug\MediManage.exe
+D:\Git소스\교육용샘플\MediManage_250321\MediManage_250312\MediManage\obj\Debug\MediManage.xml
+D:\Git소스\교육용샘플\MediManage_250321\MediManage_250312\MediManage\obj\Debug\MediManage.pdb
+C:\Users\정보통신사업팀\Desktop\MediManage_250321 (2)\MediManage_250321\MediManage_250312\MediManage\bin\Debug\MediManage.exe.config
+C:\Users\정보통신사업팀\Desktop\MediManage_250321 (2)\MediManage_250321\MediManage_250312\MediManage\bin\Debug\MediManage.exe
+C:\Users\정보통신사업팀\Desktop\MediManage_250321 (2)\MediManage_250321\MediManage_250312\MediManage\bin\Debug\MediManage.pdb
+C:\Users\정보통신사업팀\Desktop\MediManage_250321 (2)\MediManage_250321\MediManage_250312\MediManage\bin\Debug\MediManage.xml
+C:\Users\정보통신사업팀\Desktop\MediManage_250321 (2)\MediManage_250321\MediManage_250312\MediManage\obj\Debug\MediManage.vbproj.AssemblyReference.cache
+C:\Users\정보통신사업팀\Desktop\MediManage_250321 (2)\MediManage_250321\MediManage_250312\MediManage\obj\Debug\MediManage.Form1.resources
+C:\Users\정보통신사업팀\Desktop\MediManage_250321 (2)\MediManage_250321\MediManage_250312\MediManage\obj\Debug\MediManage.Form2.resources
+C:\Users\정보통신사업팀\Desktop\MediManage_250321 (2)\MediManage_250321\MediManage_250312\MediManage\obj\Debug\MediManage.Resources.resources
+C:\Users\정보통신사업팀\Desktop\MediManage_250321 (2)\MediManage_250321\MediManage_250312\MediManage\obj\Debug\MediManage.vbproj.GenerateResource.cache
+C:\Users\정보통신사업팀\Desktop\MediManage_250321 (2)\MediManage_250321\MediManage_250312\MediManage\obj\Debug\MediManage.vbproj.CoreCompileInputs.cache
+C:\Users\정보통신사업팀\Desktop\MediManage_250321 (2)\MediManage_250321\MediManage_250312\MediManage\obj\Debug\MediManage.exe
+C:\Users\정보통신사업팀\Desktop\MediManage_250321 (2)\MediManage_250321\MediManage_250312\MediManage\obj\Debug\MediManage.xml
+C:\Users\정보통신사업팀\Desktop\MediManage_250321 (2)\MediManage_250321\MediManage_250312\MediManage\obj\Debug\MediManage.pdb
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250324\MediManage\bin\Debug\MediManage.exe.config
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250324\MediManage\bin\Debug\MediManage.exe
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250324\MediManage\bin\Debug\MediManage.pdb
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250324\MediManage\bin\Debug\MediManage.xml
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250324\MediManage\obj\Debug\MediManage.vbproj.AssemblyReference.cache
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250324\MediManage\obj\Debug\MediManage.Form1.resources
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250324\MediManage\obj\Debug\MediManage.Form2.resources
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250324\MediManage\obj\Debug\MediManage.Resources.resources
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250324\MediManage\obj\Debug\MediManage.vbproj.GenerateResource.cache
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250324\MediManage\obj\Debug\MediManage.vbproj.CoreCompileInputs.cache
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250324\MediManage\obj\Debug\MediManage.exe
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250324\MediManage\obj\Debug\MediManage.xml
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250324\MediManage\obj\Debug\MediManage.pdb
+D:\Git소스\교육용샘플\MediManage_250325\MediManage_250324\MediManage\bin\Debug\MediManage.exe.config
+D:\Git소스\교육용샘플\MediManage_250325\MediManage_250324\MediManage\bin\Debug\MediManage.exe
+D:\Git소스\교육용샘플\MediManage_250325\MediManage_250324\MediManage\bin\Debug\MediManage.pdb
+D:\Git소스\교육용샘플\MediManage_250325\MediManage_250324\MediManage\bin\Debug\MediManage.xml
+D:\Git소스\교육용샘플\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.vbproj.AssemblyReference.cache
+D:\Git소스\교육용샘플\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.Form1.resources
+D:\Git소스\교육용샘플\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.Form2.resources
+D:\Git소스\교육용샘플\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.Resources.resources
+D:\Git소스\교육용샘플\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.vbproj.GenerateResource.cache
+D:\Git소스\교육용샘플\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.vbproj.CoreCompileInputs.cache
+D:\Git소스\교육용샘플\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.exe
+D:\Git소스\교육용샘플\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.xml
+D:\Git소스\교육용샘플\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.pdb
+D:\Git소스\교육용샘플\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.frm_Main.resources
+C:\Users\정보통신사업팀\Documents\네이트온 받은 파일\MediManage_250325 (2)\MediManage_250325\MediManage_250324\MediManage\bin\Debug\MediManage.exe.config
+C:\Users\정보통신사업팀\Documents\네이트온 받은 파일\MediManage_250325 (2)\MediManage_250325\MediManage_250324\MediManage\bin\Debug\MediManage.exe
+C:\Users\정보통신사업팀\Documents\네이트온 받은 파일\MediManage_250325 (2)\MediManage_250325\MediManage_250324\MediManage\bin\Debug\MediManage.pdb
+C:\Users\정보통신사업팀\Documents\네이트온 받은 파일\MediManage_250325 (2)\MediManage_250325\MediManage_250324\MediManage\bin\Debug\MediManage.xml
+C:\Users\정보통신사업팀\Documents\네이트온 받은 파일\MediManage_250325 (2)\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.vbproj.AssemblyReference.cache
+C:\Users\정보통신사업팀\Documents\네이트온 받은 파일\MediManage_250325 (2)\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.Form1.resources
+C:\Users\정보통신사업팀\Documents\네이트온 받은 파일\MediManage_250325 (2)\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.Form2.resources
+C:\Users\정보통신사업팀\Documents\네이트온 받은 파일\MediManage_250325 (2)\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.frm_Main.resources
+C:\Users\정보통신사업팀\Documents\네이트온 받은 파일\MediManage_250325 (2)\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.Resources.resources
+C:\Users\정보통신사업팀\Documents\네이트온 받은 파일\MediManage_250325 (2)\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.vbproj.GenerateResource.cache
+C:\Users\정보통신사업팀\Documents\네이트온 받은 파일\MediManage_250325 (2)\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.vbproj.CoreCompileInputs.cache
+C:\Users\정보통신사업팀\Documents\네이트온 받은 파일\MediManage_250325 (2)\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.exe
+C:\Users\정보통신사업팀\Documents\네이트온 받은 파일\MediManage_250325 (2)\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.xml
+C:\Users\정보통신사업팀\Documents\네이트온 받은 파일\MediManage_250325 (2)\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.pdb
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250325_수정\MediManage_250325_수정\MediManage_250325\MediManage_250324\MediManage\bin\Debug\MediManage.exe.config
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250325_수정\MediManage_250325_수정\MediManage_250325\MediManage_250324\MediManage\bin\Debug\MediManage.exe
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250325_수정\MediManage_250325_수정\MediManage_250325\MediManage_250324\MediManage\bin\Debug\MediManage.pdb
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250325_수정\MediManage_250325_수정\MediManage_250325\MediManage_250324\MediManage\bin\Debug\MediManage.xml
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250325_수정\MediManage_250325_수정\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.vbproj.AssemblyReference.cache
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250325_수정\MediManage_250325_수정\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.Form1.resources
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250325_수정\MediManage_250325_수정\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.Form2.resources
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250325_수정\MediManage_250325_수정\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.frm_Main.resources
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250325_수정\MediManage_250325_수정\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.Resources.resources
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250325_수정\MediManage_250325_수정\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.vbproj.GenerateResource.cache
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250325_수정\MediManage_250325_수정\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.vbproj.CoreCompileInputs.cache
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250325_수정\MediManage_250325_수정\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.exe
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250325_수정\MediManage_250325_수정\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.xml
+C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250325_수정\MediManage_250325_수정\MediManage_250325\MediManage_250324\MediManage\obj\Debug\MediManage.pdb
+C:\Users\정보통신사업팀\Desktop\MediManage_250324\MediManage\bin\Debug\MediManage.exe.config
+C:\Users\정보통신사업팀\Desktop\MediManage_250324\MediManage\bin\Debug\MediManage.exe
+C:\Users\정보통신사업팀\Desktop\MediManage_250324\MediManage\bin\Debug\MediManage.pdb
+C:\Users\정보통신사업팀\Desktop\MediManage_250324\MediManage\bin\Debug\MediManage.xml
+C:\Users\정보통신사업팀\Desktop\MediManage_250324\MediManage\obj\Debug\MediManage.vbproj.AssemblyReference.cache
+C:\Users\정보통신사업팀\Desktop\MediManage_250324\MediManage\obj\Debug\MediManage.Form1.resources
+C:\Users\정보통신사업팀\Desktop\MediManage_250324\MediManage\obj\Debug\MediManage.Form2.resources
+C:\Users\정보통신사업팀\Desktop\MediManage_250324\MediManage\obj\Debug\MediManage.frm_Main.resources
+C:\Users\정보통신사업팀\Desktop\MediManage_250324\MediManage\obj\Debug\MediManage.Resources.resources
+C:\Users\정보통신사업팀\Desktop\MediManage_250324\MediManage\obj\Debug\MediManage.vbproj.GenerateResource.cache
+C:\Users\정보통신사업팀\Desktop\MediManage_250324\MediManage\obj\Debug\MediManage.vbproj.CoreCompileInputs.cache
+C:\Users\정보통신사업팀\Desktop\MediManage_250324\MediManage\obj\Debug\MediManage.exe
+C:\Users\정보통신사업팀\Desktop\MediManage_250324\MediManage\obj\Debug\MediManage.xml
+C:\Users\정보통신사업팀\Desktop\MediManage_250324\MediManage\obj\Debug\MediManage.pdb
+C:\Users\정보통신사업팀\Desktop\MediManage_250326_am\MediManage\bin\Debug\MediManage.exe.config
+C:\Users\정보통신사업팀\Desktop\MediManage_250326_am\MediManage\bin\Debug\MediManage.exe
+C:\Users\정보통신사업팀\Desktop\MediManage_250326_am\MediManage\bin\Debug\MediManage.pdb
+C:\Users\정보통신사업팀\Desktop\MediManage_250326_am\MediManage\bin\Debug\MediManage.xml
+C:\Users\정보통신사업팀\Desktop\MediManage_250326_am\MediManage\obj\Debug\MediManage.vbproj.AssemblyReference.cache
+C:\Users\정보통신사업팀\Desktop\MediManage_250326_am\MediManage\obj\Debug\MediManage.Form1.resources
+C:\Users\정보통신사업팀\Desktop\MediManage_250326_am\MediManage\obj\Debug\MediManage.Form2.resources
+C:\Users\정보통신사업팀\Desktop\MediManage_250326_am\MediManage\obj\Debug\MediManage.frm_Main.resources
+C:\Users\정보통신사업팀\Desktop\MediManage_250326_am\MediManage\obj\Debug\MediManage.Resources.resources
+C:\Users\정보통신사업팀\Desktop\MediManage_250326_am\MediManage\obj\Debug\MediManage.vbproj.GenerateResource.cache
+C:\Users\정보통신사업팀\Desktop\MediManage_250326_am\MediManage\obj\Debug\MediManage.vbproj.CoreCompileInputs.cache
+C:\Users\정보통신사업팀\Desktop\MediManage_250326_am\MediManage\obj\Debug\MediManage.exe
+C:\Users\정보통신사업팀\Desktop\MediManage_250326_am\MediManage\obj\Debug\MediManage.xml
+C:\Users\정보통신사업팀\Desktop\MediManage_250326_am\MediManage\obj\Debug\MediManage.pdb
+C:\Users\ibbih\Desktop\MediManage_250326_am\MediManage_250326_am\MediManage\bin\Debug\MediManage.exe.config
+C:\Users\ibbih\Desktop\MediManage_250326_am\MediManage_250326_am\MediManage\bin\Debug\MediManage.exe
+C:\Users\ibbih\Desktop\MediManage_250326_am\MediManage_250326_am\MediManage\bin\Debug\MediManage.pdb
+C:\Users\ibbih\Desktop\MediManage_250326_am\MediManage_250326_am\MediManage\bin\Debug\MediManage.xml
+C:\Users\ibbih\Desktop\MediManage_250326_am\MediManage_250326_am\MediManage\obj\Debug\MediManage.vbproj.AssemblyReference.cache
+C:\Users\ibbih\Desktop\MediManage_250326_am\MediManage_250326_am\MediManage\obj\Debug\MediManage.Form1.resources
+C:\Users\ibbih\Desktop\MediManage_250326_am\MediManage_250326_am\MediManage\obj\Debug\MediManage.Form2.resources
+C:\Users\ibbih\Desktop\MediManage_250326_am\MediManage_250326_am\MediManage\obj\Debug\MediManage.frm_Main.resources
+C:\Users\ibbih\Desktop\MediManage_250326_am\MediManage_250326_am\MediManage\obj\Debug\MediManage.Resources.resources
+C:\Users\ibbih\Desktop\MediManage_250326_am\MediManage_250326_am\MediManage\obj\Debug\MediManage.vbproj.GenerateResource.cache
+C:\Users\ibbih\Desktop\MediManage_250326_am\MediManage_250326_am\MediManage\obj\Debug\MediManage.vbproj.CoreCompileInputs.cache
+C:\Users\ibbih\Desktop\MediManage_250326_am\MediManage_250326_am\MediManage\obj\Debug\MediManage.exe
+C:\Users\ibbih\Desktop\MediManage_250326_am\MediManage_250326_am\MediManage\obj\Debug\MediManage.xml
+C:\Users\ibbih\Desktop\MediManage_250326_am\MediManage_250326_am\MediManage\obj\Debug\MediManage.pdb

@@ -203,6 +203,9 @@ Public Class Form1
             ")
 
         grid_혼합제.DataSource = fD_formatData(dtL_data)
+
+        sD_girdWidthSet(grid_혼합제)
+
         grid_혼합제.Update()
 
         grid_혼합제.ClearSelection()
@@ -223,6 +226,9 @@ Public Class Form1
             ")
 
         grid_단미제.DataSource = fD_formatData(dtL_data)
+
+        sD_girdWidthSet(grid_단미제)
+
         grid_단미제.Update()
 
         grid_단미제.ClearSelection()
@@ -243,11 +249,49 @@ Public Class Form1
             ")
 
         grid_치료재료대.DataSource = dtL_data
+
+        sD_girdWidthSet(grid_치료재료대)
+
         grid_치료재료대.Update()
 
         grid_치료재료대.ClearSelection()
 
     End Sub
+
+
+    ''' <summary>
+    ''' 문자 수 기반으로 DataGridView 컬럼 너비 조정
+    ''' </summary>
+    Private Sub sD_girdWidthSet(temp_grid As DataGridView)
+
+        Dim font As Font = temp_grid.DefaultCellStyle.Font  ' 현재 그리드 폰트 가져오기
+        Dim graphics As Graphics = temp_grid.CreateGraphics() ' 글자 폭 계산용 그래픽 객체
+
+        For Each col As DataGridViewColumn In temp_grid.Columns
+
+            col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None
+
+            Dim maxTextWidth As Integer = 0  ' 해당 컬럼에서 가장 긴 텍스트의 너비
+
+            ' 컬럼 헤더 텍스트 길이 측정
+            maxTextWidth = Math.Max(maxTextWidth, TextRenderer.MeasureText(col.HeaderText, font).Width)
+
+            ' 각 셀의 텍스트 길이 측정
+            For Each row As DataGridViewRow In temp_grid.Rows
+                If Not row.Cells(col.Index).Value Is Nothing Then
+                    Dim text As String = row.Cells(col.Index).Value.ToString()
+                    Dim textWidth As Integer = TextRenderer.MeasureText(text, font).Width
+                    maxTextWidth = Math.Max(maxTextWidth, textWidth)
+                End If
+            Next
+
+            ' 최종 너비 설정 (여백 포함)
+            col.Width = If(col.DataPropertyName <> "수량", maxTextWidth + 15, maxTextWidth + 27)
+        Next
+
+        graphics.Dispose()  ' 리소스 해제
+    End Sub
+
 
 
     ''' <summary>
@@ -311,7 +355,8 @@ Public Class Form1
 
         For Each row In grid_data.Rows
             If row.Cells(en_재고_col.입출고).value = 0 Then
-                row.DefaultCellStyle.BackColor = Color.LightCyan
+                row.DefaultCellStyle.BackColor = SystemColors.GradientInactiveCaption
+                row.DefaultCellStyle.ForeColor = SystemColors.Highlight
             End If
         Next
 
@@ -331,57 +376,32 @@ Public Class Form1
                     where 처방코드 = '{strL_Code}'
                 ")
 
+        Dim temp_gird As DataGridView
+
         If tab_페이지.SelectedIndex = 0 Then
-
-            grid_혼합제재고.DataSource = fD_formatData(dtL_dataList)
-            grid_혼합제재고.Columns("수량").DefaultCellStyle.Format = "#,##0.##"
-            grid_혼합제재고.Columns("단가").DefaultCellStyle.Format = "#,##0"
-
-            If Not grid_혼합제재고.Columns("입출고_변환") Is Nothing Then
-                grid_혼합제재고.Columns("입출고_변환").DisplayIndex = 0
-                grid_혼합제재고.Columns("입출고_변환").AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
-                grid_혼합제재고.Columns("입출고_변환").HeaderText = "입출고"
-                grid_혼합제재고.Update()
-            End If
-
-            sD_inout(grid_혼합제재고)
-
+            temp_gird = grid_혼합제재고
         ElseIf tab_페이지.SelectedIndex = 1 Then
-
-            grid_단미제재고.DataSource = fD_formatData(dtL_dataList)
-            grid_단미제재고.Columns("수량_단미").DefaultCellStyle.Format = "#,##0.##"
-            grid_단미제재고.Columns("단가_단미").DefaultCellStyle.Format = "#,##0"
-
-            If Not grid_단미제재고.Columns("입출고_변환") Is Nothing Then
-                grid_단미제재고.Columns("입출고_변환").DisplayIndex = 0
-                grid_단미제재고.Columns("입출고_변환").AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
-                grid_단미제재고.Columns("입출고_변환").HeaderText = "입출고"
-                grid_단미제재고.Update()
-            End If
-
-            sD_inout(grid_단미제재고)
-
-            grid_단미제재고.Update()
-
+            temp_gird = grid_단미제재고
         ElseIf tab_페이지.SelectedIndex = 2 Then
-
-            grid_치료대재고.DataSource = fD_formatData(dtL_dataList)
-            grid_치료대재고.Columns("수량_재료").DefaultCellStyle.Format = "#,##0.##"
-            grid_치료대재고.Columns("단가_재료").DefaultCellStyle.Format = "#,##0"
-
-            If Not grid_치료대재고.Columns("입출고_변환") Is Nothing Then
-                grid_치료대재고.Columns("입출고_변환").DisplayIndex = 0
-                grid_치료대재고.Columns("입출고_변환").AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
-                grid_치료대재고.Columns("입출고_변환").HeaderText = "입출고"
-                grid_치료대재고.Update()
-            End If
-
-            sD_inout(grid_치료대재고)
-
-            grid_치료대재고.Update()
-
+            temp_gird = grid_치료대재고
         End If
 
+        With temp_gird
+            .DataSource = fD_formatData(dtL_dataList)
+            .Columns(en_재고_col.수량).DefaultCellStyle.Format = "#,##0.00"
+            .Columns(en_재고_col.단가).DefaultCellStyle.Format = "#,##0"
+
+            If Not .Columns("입출고_변환") Is Nothing Then
+                .Columns(en_재고_col.입출고_변환).DisplayIndex = 0
+                .Columns(en_재고_col.입출고_변환).AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+                .Columns(en_재고_col.입출고_변환).HeaderText = "입출고"
+                .Columns(en_재고_col.입출고_변환).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+            End If
+
+            sD_inout(temp_gird)
+            sD_girdWidthSet(temp_gird)
+            .Update()
+        End With
 
     End Sub
 
@@ -531,30 +551,60 @@ Public Class Form1
 
 
     ''' <summary>
-    ''' 1. 셀 선택여부 및 Input으로 입력된 값을 검증하여 반환값이 True인 경우 함수 종료
+    ''' 1. grid 행 선택여부 및 Input 입력값의 유효성 검증
     ''' </summary>
     ''' <param name="currentRow">grid에서 선택된 현재 row </param>
     ''' <param name="count">수량</param>
     ''' <param name="price">단가</param>
     ''' <returns>검증실패한 경우 True 반환</returns>
     Private Function sD_checkInput(currentRow As DataGridViewRow, count As TextBox, price As TextBox) As Boolean
+
         If currentRow Is Nothing Then
             MessageBox.Show("기준 항목을 선택해주세요.")
             Return True
         End If
 
-        If count.Text = "" Or price.Text = "" Then
+        ' 빈 입력값 체크
+        If String.IsNullOrWhiteSpace(count.Text) Or String.IsNullOrWhiteSpace(price.Text) Then
             MessageBox.Show("항목을 입력해주세요.")
             Return True
         End If
 
-        Dim int_result As Integer
-
-        If Not Integer.TryParse(count.Text, int_result) Or Not Integer.TryParse(price.Text, int_result) Then
-            MessageBox.Show("유효하지 않은 값입니다. 다시 확인해주세요.")
+        ' Decimal(10,2) 형식의 유효성 검사
+        If Not IsValidDecimal(count.Text) Or Not IsValidDecimal(price.Text) Then
+            MessageBox.Show("유효하지 않은 값입니다. ")
             Return True
         End If
 
+        Return False ' 유효한 경우 False 반환
+    End Function
+
+
+    ' Decimal(10,2) 유효성 검사 함수
+    Private Function IsValidDecimal(input As String) As Boolean
+
+        Dim decimalValue As Decimal
+
+        ' 숫자 형식으로 변환 가능한지 검사
+        If Not Decimal.TryParse(input, decimalValue) Then
+            Return False
+        End If
+
+        Dim numericPart As String = input.Replace(".", "")
+
+        ' 전체 자리수 10자리 이하 확인 (소수점 제외)
+        If numericPart.Length > 10 Then
+            Return False
+        End If
+
+        Dim parts() As String = input.Split("."c)
+
+        ' 소수점 이하 2자리까지만 허용
+        If parts.Length = 2 AndAlso parts(1).Length > 2 Then
+            Return False
+        End If
+
+        Return True
     End Function
 
 
@@ -562,7 +612,14 @@ Public Class Form1
     ''' TextBox의 수량과 단가가 입력될때마다 event 발생하여 문자입력 제한 
     ''' </summary>
     Private Sub txt_count_price_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_count.KeyPress, txt_count_sg.KeyPress, txt_count_inven.KeyPress, txt_Price.KeyPress, txt_price_sg.KeyPress, txt_price_inven.KeyPress
-        If Not Char.IsDigit(e.KeyChar) AndAlso e.KeyChar <> ControlChars.Back Then
+        ' 숫자, 백스페이스 또는 소수점(.)만 입력 허용
+        If Not Char.IsDigit(e.KeyChar) AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "."c Then
+            e.Handled = True
+        End If
+
+        ' 소수점이 이미 한 번 입력되었다면 두 번째 소수점은 허용하지 않음
+        Dim txtBox As TextBox = CType(sender, TextBox)
+        If e.KeyChar = "."c AndAlso txtBox.Text.Contains(".") Then
             e.Handled = True
         End If
     End Sub
@@ -799,6 +856,8 @@ Public Class Form1
         If frmL_form2 Is Nothing Then Exit Sub
         frmL_form2.Close()
     End Sub
+
+
     'Private Sub frmL_form2_FormClosed(sender As Object, e As FormClosedEventArgs) Handles frmL_form2.FormClosed
     '    frmL_form2.Dispose()
     '    frmL_form2 = Nothing ' 메모리에서 완전히 제거
