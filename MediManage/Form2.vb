@@ -471,5 +471,16 @@ Public Class Form2
 
     End Sub
 
+    Private Sub tbn_입출고_MouseHover(sender As Object, e As EventArgs) Handles rb_기준항목_혼합.MouseHover, rb_기준항목_단미.MouseHover, rb_기준항목_치료대.MouseHover, rb_전체항목_혼합.MouseHover, rb_전체항목_단미.MouseHover, rb_전체항목_치료대.MouseHover, chk_혼합.MouseHover, chk_단미.MouseHover, chk_치료대.MouseHover
+        If Not dicG_helper.ContainsKey(DirectCast(sender, ToolStripButton).Name) Then Exit Sub
+        Dim strL_value = dicG_helper(DirectCast(sender, ToolStripButton).Name)
+        frm_Main.lbl_도움말.Text = strL_value
+    End Sub
+
+    Private Sub tbn_입출고_MouseLeave(sender As Object, e As EventArgs) Handles rb_기준항목_혼합.MouseLeave, rb_기준항목_단미.MouseLeave, rb_기준항목_치료대.MouseHover, rb_전체항목_혼합.MouseLeave, rb_전체항목_단미.MouseLeave, rb_전체항목_치료대.MouseLeave, chk_혼합.MouseLeave, chk_단미.MouseLeave, chk_치료대.MouseLeave
+        frm_Main.lbl_도움말.Text = ""
+    End Sub
+
+
 End Class
 

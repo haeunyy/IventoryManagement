@@ -1,30 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\",
+  "WorkspaceRootPath": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|c:\\users\\ibbih\\desktop\\medimanage_250326_am\\medimanage_250326_am\\medimanage\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|solutionrelative:medimanage\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|c:\\users\\ibbih\\documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\medimanage_250401 (2)\\medimanage_250401\\medimanage\\mdlhelper.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|solutionrelative:medimanage\\mdlhelper.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\medimanage\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\medimanage\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|solutionrelative:medimanage\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|c:\\users\\ibbih\\desktop\\medimanage_250326_am\\medimanage_250326_am\\medimanage\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\medimanage\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|solutionrelative:medimanage\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\medimanage\\frm_main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\medimanage\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|solutionrelative:medimanage\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|c:\\users\\ibbih\\documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\medimanage_250401 (2)\\medimanage_250401\\medimanage\\frm_main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|solutionrelative:medimanage\\frm_main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\medimanage\\frm_main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\medimanage\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|solutionrelative:medimanage\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|c:\\users\\ibbih\\documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\medimanage_250401 (2)\\medimanage_250401\\medimanage\\frm_main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|solutionrelative:medimanage\\frm_main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\medimanage\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|solutionrelative:medimanage\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|MediManage||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\medimanage\\class1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|solutionrelative:medimanage\\class1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\medimanage\\form2.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|solutionrelative:medimanage\\form2.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ibbih\\AppData\\Local\\Temp\\.vsdbgsrc\\bae34a7cb145e7ef976d9fc11c1603a53a21c2bbb5c2fc0dc62e3fba3fc3e065\\DataGridView.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -34,10 +49,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ibbih\\AppData\\Local\\Temp\\.vsdbgsrc\\d908bbccc6bb45ef879c281db5fce48e0b1704470c45417f6a5cd5cd73b33b76\\AppDomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\medimanage\\form2.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}|MediManage\\MediManage.vbproj|solutionrelative:medimanage\\form2.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,16 +57,16 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 176,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 114,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "frm_Main.vb [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\MediManage\\frm_Main.vb",
+              "DocumentMoniker": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\frm_Main.vb",
               "RelativeDocumentMoniker": "MediManage\\frm_Main.vb",
-              "ToolTip": "C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\MediManage\\frm_Main.vb [\uB514\uC790\uC778]",
+              "ToolTip": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\frm_Main.vb [\uB514\uC790\uC778]",
               "RelativeToolTip": "MediManage\\frm_Main.vb [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-03-25T16:07:52.285Z",
@@ -64,43 +75,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form2.vb [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\MediManage\\Form2.vb",
-              "RelativeDocumentMoniker": "MediManage\\Form2.vb",
-              "ToolTip": "C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\MediManage\\Form2.vb [\uB514\uC790\uC778]",
-              "RelativeToolTip": "MediManage\\Form2.vb [\uB514\uC790\uC778]",
+              "DocumentIndex": 2,
+              "Title": "Form1.vb [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\Form1.vb",
+              "RelativeDocumentMoniker": "MediManage\\Form1.vb",
+              "ToolTip": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\Form1.vb [\uB514\uC790\uC778]",
+              "RelativeToolTip": "MediManage\\Form1.vb [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-03-24T22:46:53.13Z",
+              "WhenOpened": "2025-03-24T22:47:02.013Z",
               "EditorCaption": " [\uB514\uC790\uC778]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.vb [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\MediManage\\Form1.vb",
-              "RelativeDocumentMoniker": "MediManage\\Form1.vb",
-              "ToolTip": "C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\MediManage\\Form1.vb [\uB514\uC790\uC778]",
-              "RelativeToolTip": "MediManage\\Form1.vb [\uB514\uC790\uC778]",
+              "DocumentIndex": 5,
+              "Title": "Form2.vb [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\Form2.vb",
+              "RelativeDocumentMoniker": "MediManage\\Form2.vb",
+              "ToolTip": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\Form2.vb [\uB514\uC790\uC778]",
+              "RelativeToolTip": "MediManage\\Form2.vb [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-03-24T22:47:02.013Z",
+              "WhenOpened": "2025-03-24T22:46:53.13Z",
               "EditorCaption": " [\uB514\uC790\uC778]"
             }
           ]
         },
         {
-          "DockedWidth": 224,
+          "DockedWidth": 286,
           "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form2.vb",
-              "DocumentMoniker": "C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\MediManage\\Form2.vb",
+              "DocumentMoniker": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\Form2.vb",
               "RelativeDocumentMoniker": "MediManage\\Form2.vb",
-              "ToolTip": "C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\MediManage\\Form2.vb",
+              "ToolTip": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\Form2.vb",
               "RelativeToolTip": "MediManage\\Form2.vb",
-              "ViewState": "AgIAAA8BAAAAAAAAAAD4v4kAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAM0BAAAAAAAAAAAAAOIBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-03-24T22:37:46.561Z",
               "IsPinned": true,
@@ -109,12 +120,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "mdlHelper.vb",
+              "DocumentMoniker": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\mdlHelper.vb",
+              "RelativeDocumentMoniker": "MediManage\\mdlHelper.vb",
+              "ToolTip": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\mdlHelper.vb",
+              "RelativeToolTip": "MediManage\\mdlHelper.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-04-01T13:07:23.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Form1.vb",
-              "DocumentMoniker": "C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\MediManage\\Form1.vb",
+              "DocumentMoniker": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\Form1.vb",
               "RelativeDocumentMoniker": "MediManage\\Form1.vb",
-              "ToolTip": "C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\MediManage\\Form1.vb",
+              "ToolTip": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\Form1.vb",
               "RelativeToolTip": "MediManage\\Form1.vb",
-              "ViewState": "AgIAAAkBAAAAAAAAAAASwCMBAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAC4DAAAAAAAAAAAAADwDAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-03-25T08:33:17.684Z",
               "EditorCaption": ""
@@ -122,24 +146,47 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Control.cs",
-              "DocumentMoniker": "C:\\Users\\ibbih\\AppData\\Local\\Temp\\.vsdbgsrc\\5ea9484a0b58021c623a3a9ff21bf482fe7299bfce20536bb6d0b335e7683cce\\Control.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5ea9484a0b58021c623a3a9ff21bf482fe7299bfce20536bb6d0b335e7683cce\\Control.cs",
-              "ToolTip": "C:\\Users\\ibbih\\AppData\\Local\\Temp\\.vsdbgsrc\\5ea9484a0b58021c623a3a9ff21bf482fe7299bfce20536bb6d0b335e7683cce\\Control.cs [\uC77D\uAE30 \uC804\uC6A9]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5ea9484a0b58021c623a3a9ff21bf482fe7299bfce20536bb6d0b335e7683cce\\Control.cs [\uC77D\uAE30 \uC804\uC6A9]",
-              "ViewState": "AgIAAE8tAAAAAAAAAADgv2wtAAACAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T14:46:59.809Z",
-              "EditorCaption": " [\uC77D\uAE30 \uC804\uC6A9]"
+              "Title": "MediManage",
+              "DocumentMoniker": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\MediManage.vbproj",
+              "RelativeDocumentMoniker": "MediManage\\MediManage.vbproj",
+              "ToolTip": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\MediManage.vbproj",
+              "RelativeToolTip": "MediManage\\MediManage.vbproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-01T06:52:52.92Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "Class1.vb",
+              "DocumentMoniker": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\Class1.vb",
+              "RelativeDocumentMoniker": "MediManage\\Class1.vb",
+              "ToolTip": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\Class1.vb",
+              "RelativeToolTip": "MediManage\\Class1.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-03-31T23:31:50.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frm_Main.vb",
+              "DocumentMoniker": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\frm_Main.vb",
+              "RelativeDocumentMoniker": "MediManage\\frm_Main.vb",
+              "ToolTip": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\frm_Main.vb",
+              "RelativeToolTip": "MediManage\\frm_Main.vb",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAwGoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-03-24T23:01:29.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "AppDomain.cs",
               "DocumentMoniker": "C:\\Users\\ibbih\\AppData\\Local\\Temp\\.vsdbgsrc\\d908bbccc6bb45ef879c281db5fce48e0b1704470c45417f6a5cd5cd73b33b76\\AppDomain.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d908bbccc6bb45ef879c281db5fce48e0b1704470c45417f6a5cd5cd73b33b76\\AppDomain.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d908bbccc6bb45ef879c281db5fce48e0b1704470c45417f6a5cd5cd73b33b76\\AppDomain.cs",
               "ToolTip": "C:\\Users\\ibbih\\AppData\\Local\\Temp\\.vsdbgsrc\\d908bbccc6bb45ef879c281db5fce48e0b1704470c45417f6a5cd5cd73b33b76\\AppDomain.cs [\uC77D\uAE30 \uC804\uC6A9]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d908bbccc6bb45ef879c281db5fce48e0b1704470c45417f6a5cd5cd73b33b76\\AppDomain.cs [\uC77D\uAE30 \uC804\uC6A9]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d908bbccc6bb45ef879c281db5fce48e0b1704470c45417f6a5cd5cd73b33b76\\AppDomain.cs [\uC77D\uAE30 \uC804\uC6A9]",
               "ViewState": "AgIAALIAAAAAAAAAAADgv8kAAAAeAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T10:52:25.208Z",
@@ -147,42 +194,41 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Control.cs",
+              "DocumentMoniker": "C:\\Users\\ibbih\\AppData\\Local\\Temp\\.vsdbgsrc\\5ea9484a0b58021c623a3a9ff21bf482fe7299bfce20536bb6d0b335e7683cce\\Control.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5ea9484a0b58021c623a3a9ff21bf482fe7299bfce20536bb6d0b335e7683cce\\Control.cs",
+              "ToolTip": "C:\\Users\\ibbih\\AppData\\Local\\Temp\\.vsdbgsrc\\5ea9484a0b58021c623a3a9ff21bf482fe7299bfce20536bb6d0b335e7683cce\\Control.cs [\uC77D\uAE30 \uC804\uC6A9]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5ea9484a0b58021c623a3a9ff21bf482fe7299bfce20536bb6d0b335e7683cce\\Control.cs [\uC77D\uAE30 \uC804\uC6A9]",
+              "ViewState": "AgIAAE8tAAAAAAAAAADgv2wtAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T14:46:59.809Z",
+              "EditorCaption": " [\uC77D\uAE30 \uC804\uC6A9]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Form2.Designer.vb",
-              "DocumentMoniker": "C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\MediManage\\Form2.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\Form2.Designer.vb",
               "RelativeDocumentMoniker": "MediManage\\Form2.Designer.vb",
-              "ToolTip": "C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\MediManage\\Form2.Designer.vb",
+              "ToolTip": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\MediManage_250401 (2)\\MediManage_250401\\MediManage\\Form2.Designer.vb",
               "RelativeToolTip": "MediManage\\Form2.Designer.vb",
-              "ViewState": "AgIAAMoAAAAAAAAAAAAswMoAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAMoAAAAAAAAAAAAswNgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-03-26T22:47:39.672Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frm_Main.vb",
-              "DocumentMoniker": "C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\MediManage\\frm_Main.vb",
-              "RelativeDocumentMoniker": "MediManage\\frm_Main.vb",
-              "ToolTip": "C:\\Users\\ibbih\\Desktop\\MediManage_250326_am\\MediManage_250326_am\\MediManage\\frm_Main.vb",
-              "RelativeToolTip": "MediManage\\frm_Main.vb",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAvwDMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-03-24T23:01:29.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "DataGridView.cs",
               "DocumentMoniker": "C:\\Users\\ibbih\\AppData\\Local\\Temp\\.vsdbgsrc\\bae34a7cb145e7ef976d9fc11c1603a53a21c2bbb5c2fc0dc62e3fba3fc3e065\\DataGridView.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\bae34a7cb145e7ef976d9fc11c1603a53a21c2bbb5c2fc0dc62e3fba3fc3e065\\DataGridView.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\bae34a7cb145e7ef976d9fc11c1603a53a21c2bbb5c2fc0dc62e3fba3fc3e065\\DataGridView.cs",
               "ToolTip": "C:\\Users\\ibbih\\AppData\\Local\\Temp\\.vsdbgsrc\\bae34a7cb145e7ef976d9fc11c1603a53a21c2bbb5c2fc0dc62e3fba3fc3e065\\DataGridView.cs",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\bae34a7cb145e7ef976d9fc11c1603a53a21c2bbb5c2fc0dc62e3fba3fc3e065\\DataGridView.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\bae34a7cb145e7ef976d9fc11c1603a53a21c2bbb5c2fc0dc62e3fba3fc3e065\\DataGridView.cs",
               "ViewState": "AgIAAJFfAAAAAAAAAADgv6ZfAAADAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T14:47:46.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T14:47:46.222Z"
             }
           ]
         }

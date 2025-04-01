@@ -11,7 +11,7 @@ Public Class Form1
 
 
     Private Enum en_보험약_Col
-        코드 = 1
+        코드 = 0
         명칭
         제약사
     End Enum
@@ -23,15 +23,14 @@ Public Class Form1
     End Enum
 
     Private Enum en_재고_col
-        인덱스 = 0
-        입출고
+        입출고 = 0
         코드
         명칭
         입고일자
         수량
         단가
+        인덱스
         구분
-        입출고_변환
     End Enum
 
     ''' <summary>
@@ -189,6 +188,61 @@ Public Class Form1
 
     End Sub
 
+
+    ''' <summary>
+    ''' grid 넓이 길이에 따라 여백 주기 
+    ''' </summary>
+    Private Sub sD_girdWidthSet(temp_grid As DataGridView)
+        Dim font As Font = temp_grid.DefaultCellStyle.Font  ' 현재 그리드 폰트 가져오기
+        Dim graphics As Graphics = temp_grid.CreateGraphics() ' 글자 폭 계산용 그래픽 객체
+
+        For Each col As DataGridViewColumn In temp_grid.Columns
+
+            col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None
+
+            Dim maxTextWidth As Integer = 0  ' 해당 컬럼에서 가장 긴 텍스트의 너비
+
+            ' 컬럼 헤더 텍스트 길이 측정
+            maxTextWidth = Math.Max(maxTextWidth, TextRenderer.MeasureText(col.HeaderText, font).Width)
+
+            ' 각 셀의 텍스트 길이 측정
+            For Each row As DataGridViewRow In temp_grid.Rows
+                If row.Cells(col.Index).Value IsNot Nothing Then
+                    Dim text As String = row.Cells(col.Index).Value.ToString()
+                    Dim textWidth As Integer = TextRenderer.MeasureText(text, font).Width
+                    maxTextWidth = Math.Max(maxTextWidth, textWidth)
+                End If
+            Next
+
+            ' 최종 너비 설정 (여백 포함)
+            col.Width = maxTextWidth + 20
+            If col.HeaderText = " " Then col.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+        Next
+
+        graphics.Dispose()  ' 리소스 해제
+
+    End Sub
+
+
+    ''' <summary>
+    ''' DataTable 데이터를 DataGridView에 추가하는 프로시저 
+    ''' </summary>
+    Private Sub sD_mainRowAdd(temp_grid As DataGridView, dtL_data As DataTable)
+
+        For Each row As DataRow In dtL_data.Rows
+            Dim intL_rowIndex = temp_grid.Rows.Add(row(0), row(1), row(2))
+            If temp_grid.Columns.Contains("수입업소") Then ' 치료재료대는 수입업소 컬럼에 값 추가 
+                temp_grid.Rows(intL_rowIndex).Cells(en_치료재료대_Col.수입업소).Value = row(3).ToString
+            End If
+        Next
+
+        sD_girdWidthSet(temp_grid)
+        temp_grid.ClearSelection()
+
+    End Sub
+
+
+
     ''' <summary>
     ''' 복합제 리스트 조회 쿼리 
     ''' </summary>
@@ -201,17 +255,8 @@ Public Class Form1
 	            on a.기준코드 = b.코드
                 where a.청구코드 = '' and a.가감구분 <> '10' and b.적용일자 = (Select max(적용일자) from TB_H_마스터혼합제  where 코드 = a.기준코드 and 적용일자 NOT LIKE '%[^0-9]%' AND LEN(적용일자) = 8   and 적용일자 <= convert(char(8), getdate(), 112))
             ")
-
-        grid_혼합제.DataSource = fD_formatData(dtL_data)
-
-        sD_girdWidthSet(grid_혼합제)
-
-        grid_혼합제.Update()
-
-        grid_혼합제.ClearSelection()
-
+        sD_mainRowAdd(grid_혼합제, dtL_data)
     End Sub
-
 
     ''' <summary>
     ''' 단미제 리스트 조회 쿼리 
@@ -225,13 +270,7 @@ Public Class Form1
                 where a.청구코드 <> ''
             ")
 
-        grid_단미제.DataSource = fD_formatData(dtL_data)
-
-        sD_girdWidthSet(grid_단미제)
-
-        grid_단미제.Update()
-
-        grid_단미제.ClearSelection()
+        sD_mainRowAdd(grid_단미제, dtL_data)
 
     End Sub
 
@@ -248,50 +287,8 @@ Public Class Form1
                 where 코드구분 = 8 and b.적용일자 = (Select MAX(적용일자) from TB_마스터재료 where 코드 = a.처방코드 and 적용일자 <= convert(date, getdate(), 13))
             ")
 
-        grid_치료재료대.DataSource = dtL_data
-
-        sD_girdWidthSet(grid_치료재료대)
-
-        grid_치료재료대.Update()
-
-        grid_치료재료대.ClearSelection()
-
+        sD_mainRowAdd(grid_치료재료대, dtL_data)
     End Sub
-
-
-    ''' <summary>
-    ''' 문자 수 기반으로 DataGridView 컬럼 너비 조정
-    ''' </summary>
-    Private Sub sD_girdWidthSet(temp_grid As DataGridView)
-
-        Dim font As Font = temp_grid.DefaultCellStyle.Font  ' 현재 그리드 폰트 가져오기
-        Dim graphics As Graphics = temp_grid.CreateGraphics() ' 글자 폭 계산용 그래픽 객체
-
-        For Each col As DataGridViewColumn In temp_grid.Columns
-
-            col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None
-
-            Dim maxTextWidth As Integer = 0  ' 해당 컬럼에서 가장 긴 텍스트의 너비
-
-            ' 컬럼 헤더 텍스트 길이 측정
-            maxTextWidth = Math.Max(maxTextWidth, TextRenderer.MeasureText(col.HeaderText, font).Width)
-
-            ' 각 셀의 텍스트 길이 측정
-            For Each row As DataGridViewRow In temp_grid.Rows
-                If Not row.Cells(col.Index).Value Is Nothing Then
-                    Dim text As String = row.Cells(col.Index).Value.ToString()
-                    Dim textWidth As Integer = TextRenderer.MeasureText(text, font).Width
-                    maxTextWidth = Math.Max(maxTextWidth, textWidth)
-                End If
-            Next
-
-            ' 최종 너비 설정 (여백 포함)
-            col.Width = If(col.DataPropertyName <> "수량", maxTextWidth + 15, maxTextWidth + 27)
-        Next
-
-        graphics.Dispose()  ' 리소스 해제
-    End Sub
-
 
 
     ''' <summary>
@@ -332,18 +329,6 @@ Public Class Form1
                     row("명칭") = strL_split_name(0)
                 End If
             End If
-
-            If dtL_data.Columns.Contains("입출고") AndAlso Not dtL_data.Columns.Contains("입출고_변환") Then '재고 테이블에서만 입출고_변환 컬럼이 생성되기 위한 조건
-                dtL_data.Columns.Add("입출고_변환", GetType(String))
-            End If
-
-            If dtL_data.Columns.Contains("입출고") AndAlso Not row("입출고") Is Nothing Then
-                If row("입출고").ToString = "0" Then
-                    row("입출고_변환") = "입고"
-                Else
-                    row("입출고_변환") = "출고"
-                End If
-            End If
         Next
 
         Return dtL_data
@@ -364,44 +349,53 @@ Public Class Form1
 
 
     ''' <summary>
+    ''' DataTable 데이터를 DataGridView에 추가하는 프로시저 
+    ''' </summary>
+    Private Sub sD_invenRowAdd(temp_grid As DataGridView, dtL_data As DataTable)
+
+        temp_grid.RowCount = 0
+
+        Dim strL_type As String
+
+        For Each row As DataRow In dtL_data.Rows
+            Dim intL_rowIndex = temp_grid.Rows.Add(If(row("입출고") = 0, "입고", "출고"), row(1), row(2), row(3), row(4), row(5), row(6), row(7))
+        Next
+
+        With temp_grid.Columns(en_재고_col.입출고)
+            .Visible = True
+            .AutoSizeMode = DataGridViewAutoSizeColumnMode.None ' 크기 자동 조정 해제
+            .DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter ' 중앙 정렬 적용
+        End With
+
+        sD_girdWidthSet(temp_grid)
+        temp_grid.ClearSelection()
+
+    End Sub
+
+    ''' <summary>
     ''' 1. 페이지 인덱스에 따라 재고리스트 조회 <br/>
     ''' 2. grid에 load
     ''' </summary>
     ''' <param name="strL_Code">처방코드</param>
     Private Sub sD_load_invenList(ByVal strL_Code As String)
 
-        Dim dtL_dataList As DataTable = clsG_DBmng.sql_Get_Datatable(
+        Dim dtL_data As DataTable = clsG_DBmng.sql_Get_Datatable(
                 $"
-                    select idx as 인덱스, 입출고, 처방코드 as 코드, 명칭, 일자,  수량, 단가, 구분  from TB_재고
+                    select 입출고, 처방코드 as 코드, 명칭, 일자,  수량, 단가,idx as 인덱스, 구분  from TB_재고
                     where 처방코드 = '{strL_Code}'
                 ")
 
-        Dim temp_gird As DataGridView
-
         If tab_페이지.SelectedIndex = 0 Then
-            temp_gird = grid_혼합제재고
+            sD_invenRowAdd(grid_혼합제재고, dtL_data)
+            grid_혼합제재고.Update()
+            'fD_formatData(dtL_data)
         ElseIf tab_페이지.SelectedIndex = 1 Then
-            temp_gird = grid_단미제재고
+            sD_invenRowAdd(grid_단미제재고, dtL_data)
+            grid_단미제재고.Update()
         ElseIf tab_페이지.SelectedIndex = 2 Then
-            temp_gird = grid_치료대재고
+            sD_invenRowAdd(grid_치료대재고, dtL_data)
+            grid_치료대재고.Update()
         End If
-
-        With temp_gird
-            .DataSource = fD_formatData(dtL_dataList)
-            .Columns(en_재고_col.수량).DefaultCellStyle.Format = "#,##0.00"
-            .Columns(en_재고_col.단가).DefaultCellStyle.Format = "#,##0"
-
-            If Not .Columns("입출고_변환") Is Nothing Then
-                .Columns(en_재고_col.입출고_변환).DisplayIndex = 0
-                .Columns(en_재고_col.입출고_변환).AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
-                .Columns(en_재고_col.입출고_변환).HeaderText = "입출고"
-                .Columns(en_재고_col.입출고_변환).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
-            End If
-
-            sD_inout(temp_gird)
-            sD_girdWidthSet(temp_gird)
-            .Update()
-        End With
 
     End Sub
 
@@ -464,57 +458,30 @@ Public Class Form1
     ''' </summary>
     Private Sub grid_inven_CellContentClick(sender As Object, e As EventArgs) Handles grid_혼합제재고.CellClick, grid_단미제재고.CellClick, grid_치료대재고.CellClick
 
-        Dim row As DataGridViewRow
+        Dim temp_tab As TabControl
 
         If sender Is grid_혼합제재고 Then
-
-            row = grid_혼합제재고.CurrentRow
-
-            If Not row Is Nothing AndAlso row.Cells(en_재고_col.입출고).Value = 0 Then
-                tab_혼합제재고.SelectedIndex = 0
-            ElseIf Not row Is Nothing AndAlso row.Cells(en_재고_col.입출고).Value = 1 Then
-                tab_혼합제재고.SelectedIndex = 1
-            End If
-
-            dtp_Received.Value = Convert.ToDateTime(row.Cells(en_재고_col.입고일자).Value)
-            txt_count.Text = row.Cells(en_재고_col.수량).Value
-            txt_Price.Text = row.Cells(en_재고_col.단가).Value
-
-            btn_New.Tag = idxModule.getValue(row.Cells(en_재고_col.인덱스).Value)
-
+            temp_tab = tab_혼합제재고
         ElseIf sender Is grid_단미제재고 Then
-
-            row = grid_단미제재고.CurrentRow
-
-            If Not row Is Nothing AndAlso row.Cells(en_재고_col.입출고).Value = 0 Then
-                tab_단미제재고.SelectedIndex = 0
-            ElseIf Not row Is Nothing AndAlso row.Cells(en_재고_col.입출고).Value = 1 Then
-                tab_단미제재고.SelectedIndex = 1
-            End If
-
-            dtp_received_sg.Value = Convert.ToDateTime(row.Cells(en_재고_col.입고일자).Value)
-            txt_count_sg.Text = row.Cells(en_재고_col.수량).Value
-            txt_price_sg.Text = row.Cells(en_재고_col.단가).Value
-
-            btn_new_sg.Tag = idxModule.getValue(row.Cells(en_재고_col.인덱스).Value)
-
+            temp_tab = tab_단미제재고
         ElseIf sender Is grid_치료대재고 Then
+            temp_tab = tab_치료재재고
+        End If
 
-            row = grid_치료대재고.CurrentRow
+        With DirectCast(sender, DataGridView)
 
-            If Not row Is Nothing AndAlso row.Cells(en_재고_col.입출고).Value = 0 Then
-                tab_치료재재고.SelectedIndex = 0
-            ElseIf Not row Is Nothing AndAlso row.Cells(en_재고_col.입출고).Value = 1 Then
-                tab_치료재재고.SelectedIndex = 1
+            If Not .CurrentRow Is Nothing AndAlso .CurrentRow.Cells(en_재고_col.입출고).Value = "입고" Then
+                temp_tab.SelectedIndex = 0
+            ElseIf Not .CurrentRow Is Nothing AndAlso .CurrentRow.Cells(en_재고_col.입출고).Value = "출고" Then
+                temp_tab.SelectedIndex = 1
             End If
 
-            dtp_inven.Value = Convert.ToDateTime(row.Cells(en_재고_col.입고일자).Value)
-            txt_count_inven.Text = row.Cells(en_재고_col.수량).Value
-            txt_price_inven.Text = row.Cells(en_재고_col.단가).Value
+            dtp_Received.Value = Convert.ToDateTime(.CurrentRow.Cells(en_재고_col.입고일자).Value)
+            txt_count.Text = .CurrentRow.Cells(en_재고_col.수량).Value
+            txt_Price.Text = .CurrentRow.Cells(en_재고_col.단가).Value
 
-            btn_new_inven.Tag = idxModule.getValue(row.Cells(en_재고_col.인덱스).Value)
-
-        End If
+            btn_New.Tag = idxModule.getValue(.CurrentRow.Cells(en_재고_col.인덱스).Value)
+        End With
 
         sD_btnTrue()
 
@@ -857,11 +824,6 @@ Public Class Form1
         frmL_form2.Close()
     End Sub
 
-
-    'Private Sub frmL_form2_FormClosed(sender As Object, e As FormClosedEventArgs) Handles frmL_form2.FormClosed
-    '    frmL_form2.Dispose()
-    '    frmL_form2 = Nothing ' 메모리에서 완전히 제거
-    'End Sub
 
 
 End Class
