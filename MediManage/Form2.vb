@@ -50,6 +50,9 @@ Public Class Form2
         sD_get_mainList(tab_재고현황.SelectedIndex + 1)
         sD_get_mainList(tab_재고현황.SelectedIndex + 2)
 
+        bgWorker.WorkerReportsProgress = True
+        bgWorker.WorkerSupportsCancellation = True
+
     End Sub
 
 
@@ -141,11 +144,55 @@ Public Class Form2
 
     End Sub
 
+
+    Private Async Function sD_ProgressBar() As Task
+        Dim maxCount As Integer = 100
+        For i As Integer = 1 To maxCount
+            frm_Main.prg_상태바.Value = CInt((i / maxCount) * 100)
+            'Application.DoEvents() ' UI 갱신을 위해 필요
+            'Await Task.Delay(50)
+        Next
+    End Function
+
+
+    Private WithEvents bgWorker As New BackgroundWorker()
+
+    ' 백그라운드 작업 (실제 조회 작업 실행)
+    Private Sub bgWorker_DoWork(sender As Object, e As DoWorkEventArgs) Handles bgWorker.DoWork
+        Dim maxCount As Integer = 10
+        For i As Integer = 1 To maxCount
+            Threading.Thread.Sleep(50) ' 작업 시뮬레이션
+            bgWorker.ReportProgress(CInt((i / maxCount) * 100)) ' 진행률 보고
+
+            ' 취소 요청 확인
+            If bgWorker.CancellationPending Then
+                e.Cancel = True
+                Exit For
+            End If
+        Next
+    End Sub
+
+    ' 진행률 업데이트
+    Private Sub bgWorker_ProgressChanged(sender As Object, e As ProgressChangedEventArgs) Handles bgWorker.ProgressChanged
+        frm_Main.prg_상태바.Value = e.ProgressPercentage
+        frm_Main.lbl_상태.Text = "준비"
+    End Sub
+
+    ' 작업 완료 후 처리
+    Private Sub bgWorker_RunWorkerCompleted(sender As Object, e As RunWorkerCompletedEventArgs) Handles bgWorker.RunWorkerCompleted
+        If Not e.Cancelled Then frm_Main.lbl_상태.Text = "조회완료"
+    End Sub
+
     ''' <summary>
     ''' 입출고내역 조회
     ''' </summary>
     ''' <param name="index">구분 (0-혼합제/1-단미제/2-치료재료대)</param>
-    Private Sub sD_Get_InOutList(index As Integer)
+    Private Async Sub sD_Get_InOutList(index As Integer)
+
+        If Not bgWorker.IsBusy Then
+            frm_Main.prg_상태바.Value = 0 ' 진행률 초기화
+            bgWorker.RunWorkerAsync() ' 작업 시작
+        End If
 
         Dim invenQuery As String
         Dim mediQuery As String
@@ -276,6 +323,8 @@ Public Class Form2
         temp_grid.ResumeLayout()
         Me.ResumeLayout()
 
+        frm_Main.prg_상태바.Value = 0
+
     End Sub
 
     ''' <summary>
@@ -392,8 +441,11 @@ Public Class Form2
 				    a.진료년 ,a.진료월 ,a.진료일, b.수진자명, a.단가, a.명칭
             ")
 
-        sD_girdWidthSet(DirectCast(sender.Tag, DataGridView))
         sD_Total(DirectCast(sender.Tag, DataGridView), dtL_data, False)
+        sD_girdWidthSet(DirectCast(sender.Tag, DataGridView))
+
+        DirectCast(sender.Tag, DataGridView).Update()
+        DirectCast(sender.Tag, DataGridView).ClearSelection()
 
     End Sub
 
@@ -471,13 +523,13 @@ Public Class Form2
 
     End Sub
 
-    Private Sub tbn_입출고_MouseHover(sender As Object, e As EventArgs) Handles rb_기준항목_혼합.MouseHover, rb_기준항목_단미.MouseHover, rb_기준항목_치료대.MouseHover, rb_전체항목_혼합.MouseHover, rb_전체항목_단미.MouseHover, rb_전체항목_치료대.MouseHover, chk_혼합.MouseHover, chk_단미.MouseHover, chk_치료대.MouseHover
-        If Not dicG_helper.ContainsKey(DirectCast(sender, ToolStripButton).Name) Then Exit Sub
-        Dim strL_value = dicG_helper(DirectCast(sender, ToolStripButton).Name)
+    Private Sub tbn_입출고_MouseHover(sender As Object, e As EventArgs) Handles rb_기준항목_혼합.MouseHover, rb_기준항목_단미.MouseHover, rb_기준항목_치료대.MouseHover, rb_전체항목_혼합.MouseHover, rb_전체항목_단미.MouseHover, rb_전체항목_치료대.MouseHover, chk_혼합.MouseHover, chk_단미.MouseHover, chk_치료대.MouseHover, btn_조회_치료대.MouseHover, btn_조회_단미.MouseHover, btn_조회_혼합.MouseHover
+        If Not dicG_helper.ContainsKey(sender.Name) Then Exit Sub
+        Dim strL_value = dicG_helper(sender.Name)
         frm_Main.lbl_도움말.Text = strL_value
     End Sub
 
-    Private Sub tbn_입출고_MouseLeave(sender As Object, e As EventArgs) Handles rb_기준항목_혼합.MouseLeave, rb_기준항목_단미.MouseLeave, rb_기준항목_치료대.MouseHover, rb_전체항목_혼합.MouseLeave, rb_전체항목_단미.MouseLeave, rb_전체항목_치료대.MouseLeave, chk_혼합.MouseLeave, chk_단미.MouseLeave, chk_치료대.MouseLeave
+    Private Sub tbn_입출고_MouseLeave(sender As Object, e As EventArgs) Handles rb_기준항목_혼합.MouseLeave, rb_기준항목_단미.MouseLeave, rb_기준항목_치료대.MouseLeave, rb_전체항목_혼합.MouseLeave, rb_전체항목_단미.MouseLeave, rb_전체항목_치료대.MouseLeave, chk_혼합.MouseLeave, chk_단미.MouseLeave, chk_치료대.MouseLeave, btn_조회_치료대.MouseLeave, btn_조회_단미.MouseLeave, btn_조회_혼합.MouseLeave
         frm_Main.lbl_도움말.Text = ""
     End Sub
 

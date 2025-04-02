@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frm_Main
     Inherits System.Windows.Forms.Form
 
     'Form은 Dispose를 재정의하여 구성 요소 목록을 정리합니다.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frm_Main
     '참고: 다음 프로시저는 Windows Form 디자이너에 필요합니다.
     '수정하려면 Windows Form 디자이너를 사용하십시오.  
     '코드 편집기에서는 수정하지 마세요.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_Main))
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
@@ -104,7 +104,7 @@ Partial Class frm_Main
         'lbl_도움말
         '
         Me.lbl_도움말.Name = "lbl_도움말"
-        Me.lbl_도움말.Size = New System.Drawing.Size(1196, 17)
+        Me.lbl_도움말.Size = New System.Drawing.Size(1165, 17)
         Me.lbl_도움말.Spring = True
         Me.lbl_도움말.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -135,6 +135,6 @@ Partial Class frm_Main
     Friend WithEvents pnl_main As Panel
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents lbl_상태 As ToolStripStatusLabel
-    Friend WithEvents prg_상태바 As ToolStripProgressBar
     Friend WithEvents lbl_도움말 As ToolStripStatusLabel
+    Friend WithEvents prg_상태바 As ToolStripProgressBar
 End Class

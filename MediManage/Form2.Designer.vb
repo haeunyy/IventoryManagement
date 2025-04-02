@@ -201,6 +201,7 @@ Partial Class Form2
         Me.Label6 = New System.Windows.Forms.Label()
         Me.dtp_시작일자_치료대 = New System.Windows.Forms.DateTimePicker()
         Me.dtp_종료일자_치료대 = New System.Windows.Forms.DateTimePicker()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.tab_재고현황.SuspendLayout()
         Me.tp_혼합제.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -315,7 +316,7 @@ Partial Class Form2
         Me.GroupBox4.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.GroupBox4.Location = New System.Drawing.Point(785, 40)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(544, 622)
+        Me.GroupBox4.Size = New System.Drawing.Size(544, 631)
         Me.GroupBox4.TabIndex = 42
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "진료처방내역"
@@ -364,7 +365,7 @@ Partial Class Form2
         Me.grid_처방_혼합제.RowHeadersWidth = 15
         Me.grid_처방_혼합제.RowTemplate.Height = 30
         Me.grid_처방_혼합제.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grid_처방_혼합제.Size = New System.Drawing.Size(534, 601)
+        Me.grid_처방_혼합제.Size = New System.Drawing.Size(534, 610)
         Me.grid_처방_혼합제.TabIndex = 7
         '
         'Column16
@@ -450,7 +451,7 @@ Partial Class Form2
         Me.gb_입출고.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.gb_입출고.Location = New System.Drawing.Point(295, 40)
         Me.gb_입출고.Name = "gb_입출고"
-        Me.gb_입출고.Size = New System.Drawing.Size(484, 622)
+        Me.gb_입출고.Size = New System.Drawing.Size(484, 631)
         Me.gb_입출고.TabIndex = 43
         Me.gb_입출고.TabStop = False
         Me.gb_입출고.Text = "입출고내역"
@@ -499,7 +500,7 @@ Partial Class Form2
         Me.grid_입출고_혼합제.RowHeadersWidth = 15
         Me.grid_입출고_혼합제.RowTemplate.Height = 30
         Me.grid_입출고_혼합제.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grid_입출고_혼합제.Size = New System.Drawing.Size(474, 601)
+        Me.grid_입출고_혼합제.Size = New System.Drawing.Size(474, 610)
         Me.grid_입출고_혼합제.TabIndex = 8
         Me.grid_입출고_혼합제.Tag = ""
         '
@@ -599,7 +600,7 @@ Partial Class Form2
         Me.GroupBox6.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.GroupBox6.Location = New System.Drawing.Point(8, 40)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(281, 622)
+        Me.GroupBox6.Size = New System.Drawing.Size(281, 631)
         Me.GroupBox6.TabIndex = 41
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "기준항목"
@@ -649,7 +650,7 @@ Partial Class Form2
         Me.grid_기준항목_혼합제.RowHeadersWidth = 15
         Me.grid_기준항목_혼합제.RowTemplate.Height = 30
         Me.grid_기준항목_혼합제.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grid_기준항목_혼합제.Size = New System.Drawing.Size(272, 601)
+        Me.grid_기준항목_혼합제.Size = New System.Drawing.Size(272, 610)
         Me.grid_기준항목_혼합제.TabIndex = 7
         '
         '코드
@@ -824,7 +825,7 @@ Partial Class Form2
         Me.GroupBox1.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(785, 40)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(544, 622)
+        Me.GroupBox1.Size = New System.Drawing.Size(544, 631)
         Me.GroupBox1.TabIndex = 53
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "진료처방내역"
@@ -873,7 +874,7 @@ Partial Class Form2
         Me.grid_처방_단미제.RowHeadersWidth = 15
         Me.grid_처방_단미제.RowTemplate.Height = 30
         Me.grid_처방_단미제.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grid_처방_단미제.Size = New System.Drawing.Size(534, 601)
+        Me.grid_처방_단미제.Size = New System.Drawing.Size(534, 610)
         Me.grid_처방_단미제.TabIndex = 7
         '
         'DataGridViewTextBoxColumn1
@@ -959,7 +960,7 @@ Partial Class Form2
         Me.GroupBox2.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(295, 40)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(484, 622)
+        Me.GroupBox2.Size = New System.Drawing.Size(484, 631)
         Me.GroupBox2.TabIndex = 54
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "입출고내역"
@@ -1008,7 +1009,7 @@ Partial Class Form2
         Me.grid_입출고_단미제.RowHeadersWidth = 15
         Me.grid_입출고_단미제.RowTemplate.Height = 30
         Me.grid_입출고_단미제.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grid_입출고_단미제.Size = New System.Drawing.Size(474, 601)
+        Me.grid_입출고_단미제.Size = New System.Drawing.Size(474, 610)
         Me.grid_입출고_단미제.TabIndex = 8
         '
         'DataGridViewTextBoxColumn25
@@ -1107,7 +1108,7 @@ Partial Class Form2
         Me.GroupBox3.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.GroupBox3.Location = New System.Drawing.Point(8, 40)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(281, 622)
+        Me.GroupBox3.Size = New System.Drawing.Size(281, 631)
         Me.GroupBox3.TabIndex = 52
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "기준항목"
@@ -1157,7 +1158,7 @@ Partial Class Form2
         Me.grid_기준항목_단미제.RowHeadersWidth = 15
         Me.grid_기준항목_단미제.RowTemplate.Height = 30
         Me.grid_기준항목_단미제.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grid_기준항목_단미제.Size = New System.Drawing.Size(272, 601)
+        Me.grid_기준항목_단미제.Size = New System.Drawing.Size(272, 610)
         Me.grid_기준항목_단미제.TabIndex = 7
         '
         'DataGridViewTextBoxColumn34
@@ -1331,7 +1332,7 @@ Partial Class Form2
         Me.GroupBox7.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.GroupBox7.Location = New System.Drawing.Point(785, 40)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(544, 622)
+        Me.GroupBox7.Size = New System.Drawing.Size(544, 631)
         Me.GroupBox7.TabIndex = 53
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "진료처방내역"
@@ -1378,7 +1379,7 @@ Partial Class Form2
         Me.grid_처방_치료대.RowHeadersWidth = 15
         Me.grid_처방_치료대.RowTemplate.Height = 30
         Me.grid_처방_치료대.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grid_처방_치료대.Size = New System.Drawing.Size(534, 601)
+        Me.grid_처방_치료대.Size = New System.Drawing.Size(534, 610)
         Me.grid_처방_치료대.TabIndex = 7
         '
         'DataGridViewTextBoxColumn16
@@ -1461,7 +1462,7 @@ Partial Class Form2
         Me.GroupBox8.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.GroupBox8.Location = New System.Drawing.Point(295, 40)
         Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(484, 622)
+        Me.GroupBox8.Size = New System.Drawing.Size(484, 631)
         Me.GroupBox8.TabIndex = 54
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "입출고내역"
@@ -1509,7 +1510,7 @@ Partial Class Form2
         Me.grid_입출고_치료대.RowHeadersWidth = 15
         Me.grid_입출고_치료대.RowTemplate.Height = 30
         Me.grid_입출고_치료대.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grid_입출고_치료대.Size = New System.Drawing.Size(474, 601)
+        Me.grid_입출고_치료대.Size = New System.Drawing.Size(474, 610)
         Me.grid_입출고_치료대.TabIndex = 8
         '
         'DataGridViewTextBoxColumn22
@@ -1606,7 +1607,7 @@ Partial Class Form2
         Me.GroupBox9.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.GroupBox9.Location = New System.Drawing.Point(8, 40)
         Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Size = New System.Drawing.Size(281, 622)
+        Me.GroupBox9.Size = New System.Drawing.Size(281, 631)
         Me.GroupBox9.TabIndex = 52
         Me.GroupBox9.TabStop = False
         Me.GroupBox9.Text = "기준항목"
@@ -1654,7 +1655,7 @@ Partial Class Form2
         Me.grid_기준항목_치료대.RowHeadersWidth = 15
         Me.grid_기준항목_치료대.RowTemplate.Height = 30
         Me.grid_기준항목_치료대.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grid_기준항목_치료대.Size = New System.Drawing.Size(272, 601)
+        Me.grid_기준항목_치료대.Size = New System.Drawing.Size(272, 610)
         Me.grid_기준항목_치료대.TabIndex = 7
         '
         'DataGridViewTextBoxColumn44
@@ -1747,6 +1748,9 @@ Partial Class Form2
         Me.dtp_종료일자_치료대.Name = "dtp_종료일자_치료대"
         Me.dtp_종료일자_치료대.Size = New System.Drawing.Size(110, 23)
         Me.dtp_종료일자_치료대.TabIndex = 50
+        '
+        'BackgroundWorker1
+        '
         '
         'Form2
         '
@@ -1892,4 +1896,5 @@ Partial Class Form2
     Friend WithEvents DataGridViewTextBoxColumn36 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn37 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn38 As DataGridViewTextBoxColumn
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
 End Class

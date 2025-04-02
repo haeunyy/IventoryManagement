@@ -37,6 +37,11 @@ Partial Class Form1
         Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -52,11 +57,6 @@ Partial Class Form1
         Dim DataGridViewCellStyle34 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle35 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.치료재료대 = New System.Windows.Forms.TabPage()
         Me.tab_단미제재고 = New System.Windows.Forms.TabControl()
@@ -116,6 +116,15 @@ Partial Class Form1
         Me.txt_Name = New System.Windows.Forms.TextBox()
         Me.tp_혼합제_출고 = New System.Windows.Forms.TabPage()
         Me.grid_혼합제재고 = New System.Windows.Forms.DataGridView()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.수량 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.단가 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.col_idx = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.구분 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.grid_혼합제 = New System.Windows.Forms.DataGridView()
         Me.grid_Code = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -162,15 +171,6 @@ Partial Class Form1
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.수입업소 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.수량 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.단가 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.col_idx = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.구분 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.치료재료대.SuspendLayout()
         Me.tab_단미제재고.SuspendLayout()
         Me.tp_단미제_입고.SuspendLayout()
@@ -692,7 +692,7 @@ Partial Class Form1
         '
         'pnl_혼합제_입출고
         '
-        Me.pnl_혼합제_입출고.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.pnl_혼합제_입출고.BackColor = System.Drawing.Color.Transparent
         Me.pnl_혼합제_입출고.Controls.Add(Me.txt_count)
         Me.pnl_혼합제_입출고.Controls.Add(Me.dtp_Received)
         Me.pnl_혼합제_입출고.Controls.Add(Me.lbl_혼합제_입출고_일자)
@@ -877,11 +877,11 @@ Partial Class Form1
         '
         'tp_혼합제_출고
         '
-        Me.tp_혼합제_출고.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.tp_혼합제_출고.Location = New System.Drawing.Point(4, 22)
+        Me.tp_혼합제_출고.BackColor = System.Drawing.Color.Transparent
+        Me.tp_혼합제_출고.Location = New System.Drawing.Point(4, 24)
         Me.tp_혼합제_출고.Name = "tp_혼합제_출고"
         Me.tp_혼합제_출고.Padding = New System.Windows.Forms.Padding(3)
-        Me.tp_혼합제_출고.Size = New System.Drawing.Size(292, 245)
+        Me.tp_혼합제_출고.Size = New System.Drawing.Size(292, 243)
         Me.tp_혼합제_출고.TabIndex = 1
         Me.tp_혼합제_출고.Text = " 출고  "
         '
@@ -927,6 +927,107 @@ Partial Class Form1
         Me.grid_혼합제재고.Size = New System.Drawing.Size(1000, 251)
         Me.grid_혼합제재고.StandardTab = True
         Me.grid_혼합제재고.TabIndex = 21
+        '
+        'Column4
+        '
+        Me.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Column4.DataPropertyName = "입출고"
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.Column4.DefaultCellStyle = DataGridViewCellStyle14
+        Me.Column4.HeaderText = "입출고"
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
+        Me.Column4.Width = 68
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "코드"
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle15
+        Me.DataGridViewTextBoxColumn1.FillWeight = 61.54822!
+        Me.DataGridViewTextBoxColumn1.HeaderText = "코드"
+        Me.DataGridViewTextBoxColumn1.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        Me.DataGridViewTextBoxColumn1.Width = 56
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "명칭"
+        Me.DataGridViewTextBoxColumn2.FillWeight = 100.5482!
+        Me.DataGridViewTextBoxColumn2.HeaderText = "명칭"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        Me.DataGridViewTextBoxColumn2.Width = 56
+        '
+        'DataGridViewTextBoxColumn
+        '
+        Me.DataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn.DataPropertyName = "일자"
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle16
+        Me.DataGridViewTextBoxColumn.FillWeight = 103.8071!
+        Me.DataGridViewTextBoxColumn.HeaderText = "일자"
+        Me.DataGridViewTextBoxColumn.MinimumWidth = 50
+        Me.DataGridViewTextBoxColumn.Name = "DataGridViewTextBoxColumn"
+        Me.DataGridViewTextBoxColumn.ReadOnly = True
+        Me.DataGridViewTextBoxColumn.Width = 56
+        '
+        '수량
+        '
+        Me.수량.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.수량.DataPropertyName = "수량"
+        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle17.Format = "#,##0"
+        DataGridViewCellStyle17.NullValue = Nothing
+        Me.수량.DefaultCellStyle = DataGridViewCellStyle17
+        Me.수량.FillWeight = 61.54822!
+        Me.수량.HeaderText = "수량"
+        Me.수량.MinimumWidth = 8
+        Me.수량.Name = "수량"
+        Me.수량.ReadOnly = True
+        Me.수량.Width = 56
+        '
+        '단가
+        '
+        Me.단가.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.단가.DataPropertyName = "단가"
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.단가.DefaultCellStyle = DataGridViewCellStyle18
+        Me.단가.FillWeight = 61.54822!
+        Me.단가.HeaderText = "단가"
+        Me.단가.MinimumWidth = 8
+        Me.단가.Name = "단가"
+        Me.단가.ReadOnly = True
+        Me.단가.Width = 56
+        '
+        'col_idx
+        '
+        Me.col_idx.DataPropertyName = "인덱스"
+        Me.col_idx.HeaderText = "인덱스"
+        Me.col_idx.MinimumWidth = 8
+        Me.col_idx.Name = "col_idx"
+        Me.col_idx.ReadOnly = True
+        Me.col_idx.Visible = False
+        Me.col_idx.Width = 150
+        '
+        '구분
+        '
+        Me.구분.DataPropertyName = "구분"
+        Me.구분.HeaderText = "구분"
+        Me.구분.Name = "구분"
+        Me.구분.ReadOnly = True
+        Me.구분.Visible = False
+        '
+        'Column10
+        '
+        Me.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column10.HeaderText = " "
+        Me.Column10.Name = "Column10"
+        Me.Column10.ReadOnly = True
         '
         'GroupBox2
         '
@@ -1511,107 +1612,6 @@ Partial Class Form1
         Me.Column12.HeaderText = " "
         Me.Column12.Name = "Column12"
         Me.Column12.ReadOnly = True
-        '
-        'Column4
-        '
-        Me.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Column4.DataPropertyName = "입출고"
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.Column4.DefaultCellStyle = DataGridViewCellStyle14
-        Me.Column4.HeaderText = "입출고"
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
-        Me.Column4.Width = 68
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "코드"
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle15
-        Me.DataGridViewTextBoxColumn1.FillWeight = 61.54822!
-        Me.DataGridViewTextBoxColumn1.HeaderText = "코드"
-        Me.DataGridViewTextBoxColumn1.MinimumWidth = 8
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        Me.DataGridViewTextBoxColumn1.Width = 56
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "명칭"
-        Me.DataGridViewTextBoxColumn2.FillWeight = 100.5482!
-        Me.DataGridViewTextBoxColumn2.HeaderText = "명칭"
-        Me.DataGridViewTextBoxColumn2.MinimumWidth = 8
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        Me.DataGridViewTextBoxColumn2.Width = 56
-        '
-        'DataGridViewTextBoxColumn
-        '
-        Me.DataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.DataGridViewTextBoxColumn.DataPropertyName = "일자"
-        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle16
-        Me.DataGridViewTextBoxColumn.FillWeight = 103.8071!
-        Me.DataGridViewTextBoxColumn.HeaderText = "일자"
-        Me.DataGridViewTextBoxColumn.MinimumWidth = 50
-        Me.DataGridViewTextBoxColumn.Name = "DataGridViewTextBoxColumn"
-        Me.DataGridViewTextBoxColumn.ReadOnly = True
-        Me.DataGridViewTextBoxColumn.Width = 56
-        '
-        '수량
-        '
-        Me.수량.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.수량.DataPropertyName = "수량"
-        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle17.Format = "#,##0"
-        DataGridViewCellStyle17.NullValue = Nothing
-        Me.수량.DefaultCellStyle = DataGridViewCellStyle17
-        Me.수량.FillWeight = 61.54822!
-        Me.수량.HeaderText = "수량"
-        Me.수량.MinimumWidth = 8
-        Me.수량.Name = "수량"
-        Me.수량.ReadOnly = True
-        Me.수량.Width = 56
-        '
-        '단가
-        '
-        Me.단가.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.단가.DataPropertyName = "단가"
-        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.단가.DefaultCellStyle = DataGridViewCellStyle18
-        Me.단가.FillWeight = 61.54822!
-        Me.단가.HeaderText = "단가"
-        Me.단가.MinimumWidth = 8
-        Me.단가.Name = "단가"
-        Me.단가.ReadOnly = True
-        Me.단가.Width = 56
-        '
-        'col_idx
-        '
-        Me.col_idx.DataPropertyName = "인덱스"
-        Me.col_idx.HeaderText = "인덱스"
-        Me.col_idx.MinimumWidth = 8
-        Me.col_idx.Name = "col_idx"
-        Me.col_idx.ReadOnly = True
-        Me.col_idx.Visible = False
-        Me.col_idx.Width = 150
-        '
-        '구분
-        '
-        Me.구분.DataPropertyName = "구분"
-        Me.구분.HeaderText = "구분"
-        Me.구분.Name = "구분"
-        Me.구분.ReadOnly = True
-        Me.구분.Visible = False
-        '
-        'Column10
-        '
-        Me.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column10.HeaderText = " "
-        Me.Column10.Name = "Column10"
-        Me.Column10.ReadOnly = True
         '
         'Form1
         '

@@ -823,6 +823,16 @@ Public Class Form1
         If frmL_form2 Is Nothing Then Exit Sub
         frmL_form2.Close()
     End Sub
+    Private Sub helper_MouseHover(sender As Object, e As EventArgs) Handles btn_new_sg.MouseHover, btn_del_sg.MouseHover, btn_save_sg.MouseHover, btn_New.MouseHover, btn_delete.MouseHover, btn_Save.MouseHover, btn_new_inven.MouseHover, btn_del_inven.MouseHover, btn_save_inven.MouseHover
+        If Not dicG_helper.ContainsKey(sender.Name) Then Exit Sub
+        Dim strL_value = dicG_helper(sender.Name)
+        frm_Main.lbl_도움말.Text = strL_value
+    End Sub
+
+    Private Sub helper_MouseLeave(sender As Object, e As EventArgs) Handles btn_new_sg.MouseLeave, btn_del_sg.MouseLeave, btn_save_sg.MouseHover, btn_New.MouseLeave, btn_delete.MouseLeave, btn_Save.MouseLeave, btn_new_inven.MouseLeave, btn_del_inven.MouseLeave, btn_save_inven.MouseLeave
+        frm_Main.lbl_도움말.Text = ""
+    End Sub
+
 
 
 

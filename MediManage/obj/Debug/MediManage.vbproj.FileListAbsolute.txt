@@ -386,3 +386,17 @@ C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250401 (2)\MediMa
 C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250401 (2)\MediManage_250401\MediManage\obj\Debug\MediManage.exe
 C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250401 (2)\MediManage_250401\MediManage\obj\Debug\MediManage.xml
 C:\Users\ibbih\Documents\네이트온 받은 파일\MediManage_250401 (2)\MediManage_250401\MediManage\obj\Debug\MediManage.pdb
+C:\Users\ibbih\Desktop\MediManage_250402\MediManage\bin\Debug\MediManage.exe.config
+C:\Users\ibbih\Desktop\MediManage_250402\MediManage\bin\Debug\MediManage.exe
+C:\Users\ibbih\Desktop\MediManage_250402\MediManage\bin\Debug\MediManage.pdb
+C:\Users\ibbih\Desktop\MediManage_250402\MediManage\bin\Debug\MediManage.xml
+C:\Users\ibbih\Desktop\MediManage_250402\MediManage\obj\Debug\MediManage.vbproj.AssemblyReference.cache
+C:\Users\ibbih\Desktop\MediManage_250402\MediManage\obj\Debug\MediManage.Form1.resources
+C:\Users\ibbih\Desktop\MediManage_250402\MediManage\obj\Debug\MediManage.Form2.resources
+C:\Users\ibbih\Desktop\MediManage_250402\MediManage\obj\Debug\MediManage.frm_Main.resources
+C:\Users\ibbih\Desktop\MediManage_250402\MediManage\obj\Debug\MediManage.Resources.resources
+C:\Users\ibbih\Desktop\MediManage_250402\MediManage\obj\Debug\MediManage.vbproj.GenerateResource.cache
+C:\Users\ibbih\Desktop\MediManage_250402\MediManage\obj\Debug\MediManage.vbproj.CoreCompileInputs.cache
+C:\Users\ibbih\Desktop\MediManage_250402\MediManage\obj\Debug\MediManage.exe
+C:\Users\ibbih\Desktop\MediManage_250402\MediManage\obj\Debug\MediManage.xml
+C:\Users\ibbih\Desktop\MediManage_250402\MediManage\obj\Debug\MediManage.pdb

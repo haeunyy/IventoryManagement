@@ -1,4 +1,6 @@
-﻿Public Class frm_Main
+﻿Imports System.ComponentModel
+
+Public Class frm_Main
 
     Private Class cls_forms
         Private mForms As Form
@@ -74,7 +76,7 @@
         lstD_Forms(0).Button.PerformClick()
 
         sD_CreateTable()
-        sD_loadHelper()
+        'sD_loadHelper()
     End Sub
 
     Private Sub frm_Main_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -86,26 +88,27 @@
         'Me.Visible = False
     End Sub
 
-    Public dicG_helper As New Dictionary(Of String, String)
 
     Private Sub sD_loadHelper()
-        Dim dtL_data As DataTable = clsG_DBmng.sql_Get_Datatable(
-            $"
-		        select 항목, 설명 from TB_도움말 where 숨김 = 0
-            ")
+        'Dim dtL_data As DataTable = clsG_DBmng.sql_Get_Datatable(
+        '    $"
+        '  select 항목, 설명 from TB_도움말 where 숨김 = 0
+        '    ")
 
-        For Each row In dtL_data.Rows
-            dicG_helper.Add(row("항목"), row("설명"))
-        Next
+        'For Each row In dtL_data.Rows
+        '    dicG_helper.Add(row("항목"), row("설명"))
+        'Next
     End Sub
 
     Private Sub tbn_입출고_MouseHover(sender As Object, e As EventArgs) Handles tbn_입출고.MouseHover, tbn_현황.MouseHover
-        If Not dicG_helper.ContainsKey(DirectCast(sender, ToolStripButton).Name) Then Exit Sub
-        Dim strL_value = dicG_helper(DirectCast(sender, ToolStripButton).Name)
+        If Not dicG_helper.ContainsKey(sender.Name) Then Exit Sub
+        Dim strL_value = dicG_helper(sender.Name)
         lbl_도움말.Text = strL_value
     End Sub
 
     Private Sub tbn_입출고_MouseLeave(sender As Object, e As EventArgs) Handles tbn_입출고.MouseLeave
         lbl_도움말.Text = ""
     End Sub
+
+
 End Class
