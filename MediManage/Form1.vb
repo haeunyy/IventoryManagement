@@ -2,14 +2,15 @@
 Imports System.ComponentModel
 Imports System.Diagnostics.Eventing.Reader
 Imports System.Globalization
+Imports System.Net.Sockets
 Imports System.Reflection
 Imports System.Reflection.Emit
+Imports System.Text.RegularExpressions
+Imports System.Windows.Forms
 
 
 
 Public Class Form1
-
-
     Private Enum en_보험약_Col
         코드 = 0
         명칭
@@ -33,28 +34,23 @@ Public Class Form1
         구분
     End Enum
 
+
     ''' <summary>
     ''' 페이지인덱스에 따라 폼 value 초기화
     ''' </summary>
     Private Sub sD_Return_Clear()
         If tab_페이지.SelectedIndex = 0 Then
-
             dtp_Received.Value = Now
             txt_count.Text = ""
             txt_Price.Text = ""
-
         ElseIf tab_페이지.SelectedIndex = 1 Then
-
             dtp_received_sg.Value = Now
             txt_count_sg.Text = ""
             txt_price_sg.Text = ""
-
         ElseIf tab_페이지.SelectedIndex = 2 Then
-
             dtp_inven.Value = Now
             txt_count_inven.Text = ""
             txt_price_inven.Text = ""
-
         End If
     End Sub
 
@@ -75,6 +71,7 @@ Public Class Form1
         End If
     End Sub
 
+
     ''' <summary>
     ''' btn 비활성화 
     ''' </summary>
@@ -87,6 +84,7 @@ Public Class Form1
             btn_del_inven.Visible = False
         End If
     End Sub
+
 
     ''' <summary>
     ''' textBox 및 save 버튼 활성화 
@@ -110,6 +108,7 @@ Public Class Form1
         End If
     End Sub
 
+
     ''' <summary>
     ''' textBox 비활성화 
     ''' </summary>
@@ -129,7 +128,6 @@ Public Class Form1
             txt_수입업소.Enabled = False
         End If
     End Sub
-
 
 
     Private Sub sD_btnSave_False()
@@ -174,18 +172,18 @@ Public Class Form1
         '    ")
     End Sub
 
+
     ''' <summary>
     '''  Form 로드되면 기준처방 리스트 조회
     ''' </summary>
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         clsG_DBmng.sql_connection_open()
+        clsApiConnection.GetDrugDataAsync()
 
         sD_CreateTable()
-
         sD_sql_get_mixList()
         sD_sql_get_singleList()
         sD_sql_get_treatList()
-
     End Sub
 
 
@@ -207,10 +205,14 @@ Public Class Form1
 
             ' 각 셀의 텍스트 길이 측정
             For Each row As DataGridViewRow In temp_grid.Rows
-                If row.Cells(col.Index).Value IsNot Nothing Then
-                    Dim text As String = row.Cells(col.Index).Value.ToString()
-                    Dim textWidth As Integer = TextRenderer.MeasureText(text, font).Width
-                    maxTextWidth = Math.Max(maxTextWidth, textWidth)
+                If Not row.Cells(col.Index).Value Is Nothing Then
+                    If col.HeaderText = "코드" Then ' 처방코드 Column은 열너비 고정
+                        maxTextWidth = 70
+                    Else
+                        Dim text As String = row.Cells(col.Index).Value.ToString()
+                        Dim textWidth As Integer = TextRenderer.MeasureText(text, font).Width
+                        maxTextWidth = Math.Max(maxTextWidth, textWidth)
+                    End If
                 End If
             Next
 
@@ -220,7 +222,6 @@ Public Class Form1
         Next
 
         graphics.Dispose()  ' 리소스 해제
-
     End Sub
 
 
@@ -230,17 +231,15 @@ Public Class Form1
     Private Sub sD_mainRowAdd(temp_grid As DataGridView, dtL_data As DataTable)
 
         For Each row As DataRow In dtL_data.Rows
-            Dim intL_rowIndex = temp_grid.Rows.Add(row(0), row(1), row(2))
+            Dim intL_rowIndex = temp_grid.Rows.Add(row(en_보험약_Col.코드), row(en_보험약_Col.명칭), row(en_보험약_Col.제약사))
             If temp_grid.Columns.Contains("수입업소") Then ' 치료재료대는 수입업소 컬럼에 값 추가 
-                temp_grid.Rows(intL_rowIndex).Cells(en_치료재료대_Col.수입업소).Value = row(3).ToString
+                temp_grid.Rows(intL_rowIndex).Cells(en_치료재료대_Col.수입업소).Value = row(en_치료재료대_Col.수입업소).ToString
             End If
         Next
 
         sD_girdWidthSet(temp_grid)
         temp_grid.ClearSelection()
-
     End Sub
-
 
 
     ''' <summary>
@@ -250,13 +249,19 @@ Public Class Form1
 
         Dim dtL_data As DataTable = clsG_DBmng.sql_Get_Datatable(
             $"
-		        select distinct a.기준코드, b.명칭 as 기준코드명칭, a.기준코드제약사 from TB_H_보험처방 a
+		        select distinct 
+                    a.기준코드, b.명칭 as 기준코드명칭, 
+                    a.기준코드제약사 
+                from 
+                    TB_H_보험처방 a
 	            inner join TB_H_마스터혼합제 b
 	            on a.기준코드 = b.코드
                 where a.청구코드 = '' and a.가감구분 <> '10' and b.적용일자 = (Select max(적용일자) from TB_H_마스터혼합제  where 코드 = a.기준코드 and 적용일자 NOT LIKE '%[^0-9]%' AND LEN(적용일자) = 8   and 적용일자 <= convert(char(8), getdate(), 112))
             ")
-        sD_mainRowAdd(grid_혼합제, dtL_data)
+
+        sD_mainRowAdd(grid_혼합제, fD_formatData(dtL_data))
     End Sub
+
 
     ''' <summary>
     ''' 단미제 리스트 조회 쿼리 
@@ -270,8 +275,7 @@ Public Class Form1
                 where a.청구코드 <> ''
             ")
 
-        sD_mainRowAdd(grid_단미제, dtL_data)
-
+        sD_mainRowAdd(grid_단미제, fD_formatData(dtL_data))
     End Sub
 
 
@@ -287,7 +291,7 @@ Public Class Form1
                 where 코드구분 = 8 and b.적용일자 = (Select MAX(적용일자) from TB_마스터재료 where 코드 = a.처방코드 and 적용일자 <= convert(date, getdate(), 13))
             ")
 
-        sD_mainRowAdd(grid_치료재료대, dtL_data)
+        sD_mainRowAdd(grid_치료재료대, fD_formatData(dtL_data))
     End Sub
 
 
@@ -314,15 +318,6 @@ Public Class Form1
                 row("일자") = CDate(strL_date).ToString("yyyy-MM-dd HH:mm")
             End If
 
-            If dtL_data.Columns.Contains("수량") AndAlso IsNumeric(row("수량")?.ToString) Then
-                'row("입고수량") = 0
-                Dim dblL_수량 As Double = row("수량")?.ToString
-
-                If dblL_수량 Mod 1 = 0 Then
-                    row("수량") = Math.Truncate(dblL_수량)
-                End If
-            End If
-
             If dtL_data.Columns.Contains("명칭") AndAlso Not row("명칭") Is Nothing Then
                 If row("명칭").ToString.Contains("(") Then
                     Dim strL_split_name As String() = row("명칭").ToString.Split("(")
@@ -332,19 +327,17 @@ Public Class Form1
         Next
 
         Return dtL_data
-
     End Function
 
 
     Private Sub sD_inout(grid_data As DataGridView)
-
         For Each row In grid_data.Rows
-            If row.Cells(en_재고_col.입출고).value = 0 Then
-                row.DefaultCellStyle.BackColor = SystemColors.GradientInactiveCaption
-                row.DefaultCellStyle.ForeColor = SystemColors.Highlight
+            If row.Cells(en_재고_col.입출고).value.ToString Is "입고" Then
+                row.Cells(en_재고_col.입출고).Style.ForeColor = SystemColors.Highlight
+            Else
+                row.Cells(en_재고_col.입출고).Style.ForeColor = Color.OrangeRed
             End If
         Next
-
     End Sub
 
 
@@ -358,19 +351,22 @@ Public Class Form1
         Dim strL_type As String
 
         For Each row As DataRow In dtL_data.Rows
-            Dim intL_rowIndex = temp_grid.Rows.Add(If(row("입출고") = 0, "입고", "출고"), row(1), row(2), row(3), row(4), row(5), row(6), row(7))
+            temp_grid.Rows.Add(If(row("입출고") = 0, "입고", "출고"), row(1), row(2), row(3), row(4), row(5), row(6), row(7))
         Next
 
-        With temp_grid.Columns(en_재고_col.입출고)
-            .Visible = True
-            .AutoSizeMode = DataGridViewAutoSizeColumnMode.None ' 크기 자동 조정 해제
-            .DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter ' 중앙 정렬 적용
+        With temp_grid
+            .Columns(en_재고_col.입출고).Visible = True
+            .Columns(en_재고_col.입출고).AutoSizeMode = DataGridViewAutoSizeColumnMode.None
+            .Columns(en_재고_col.입출고).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+
+            .Columns(en_재고_col.단가).DefaultCellStyle.Format = "#,##0"
         End With
 
         sD_girdWidthSet(temp_grid)
         temp_grid.ClearSelection()
 
     End Sub
+
 
     ''' <summary>
     ''' 1. 페이지 인덱스에 따라 재고리스트 조회 <br/>
@@ -387,26 +383,24 @@ Public Class Form1
 
         If tab_페이지.SelectedIndex = 0 Then
             sD_invenRowAdd(grid_혼합제재고, dtL_data)
+            sD_inout(grid_혼합제재고)
             grid_혼합제재고.Update()
-            'fD_formatData(dtL_data)
         ElseIf tab_페이지.SelectedIndex = 1 Then
             sD_invenRowAdd(grid_단미제재고, dtL_data)
+            sD_inout(grid_단미제재고)
             grid_단미제재고.Update()
         ElseIf tab_페이지.SelectedIndex = 2 Then
             sD_invenRowAdd(grid_치료대재고, dtL_data)
+            sD_inout(grid_치료대재고)
             grid_치료대재고.Update()
         End If
-
     End Sub
 
 
     ''' <summary>
     ''' 기준 항목 클릭 이벤트
     ''' </summary>
-
     Private Sub grid_CellContentClick(sender As Object, e As EventArgs) Handles grid_혼합제.CellClick, grid_단미제.CellClick, grid_치료재료대.CellClick
-
-        'If grid_혼합제.CurrentRow Is Nothing Then Exit Sub
 
         Dim temp_grid As DataGridView
         Dim temp_code As TextBox
@@ -435,6 +429,8 @@ Public Class Form1
             temp_enum = New List(Of Integer) From {en_치료재료대_Col.코드, en_치료재료대_Col.명칭, en_치료재료대_Col.제조사}
         End If
 
+        If temp_grid.CurrentRow Is Nothing Then Exit Sub
+
         temp_code.Text = ""
         temp_name.Text = ""
         temp_comp.Text = ""
@@ -445,18 +441,16 @@ Public Class Form1
         temp_comp.Text = temp_grid.CurrentRow.Cells(temp_enum(2)).Value?.ToString
 
         sD_load_invenList(temp_code.Text)
-
         sD_btnFalse()
-
     End Sub
-
-
 
 
     ''' <summary>
     ''' 재고 항목 클릭 이벤트
     ''' </summary>
     Private Sub grid_inven_CellContentClick(sender As Object, e As EventArgs) Handles grid_혼합제재고.CellClick, grid_단미제재고.CellClick, grid_치료대재고.CellClick
+
+        If DirectCast(sender, DataGridView).RowCount = 0 Then Exit Sub
 
         Dim temp_tab As TabControl
 
@@ -484,7 +478,6 @@ Public Class Form1
         End With
 
         sD_btnTrue()
-
     End Sub
 
 
@@ -592,7 +585,6 @@ Public Class Form1
     End Sub
 
 
-
     ''' <summary>
     ''' 보험약 저장 버튼 클릭 이벤트
     ''' </summary>
@@ -604,7 +596,7 @@ Public Class Form1
         Dim temp_price As TextBox
 
         Dim temp_enum As List(Of Integer)
-        Dim temp_idx As Decimal
+        Dim temp_idx As Decimal = 0
         Dim temp_btn As Button
 
         Dim intD_IO_type As Integer
@@ -664,26 +656,24 @@ Public Class Form1
         Dim strL_comp = temp_grid.Cells(temp_enum(2)).Value?.ToString
 
         Dim strL_date As String = temp_dtp.Value.ToString("yyyy-MM-dd HH:mm:ss")
-
-        Dim strL_count = temp_count
         Dim int_price As Integer = Convert.ToInt32(temp_price.Text)
-
 
         If temp_idx > 0 Then
             clsG_DBmng.sql_Exec_Query(
                 $"
-                    Update tb_재고 set 일자 = '{strL_date}', 수량 = '{strL_count}', 단가 = '{int_price}' 
+                    Update tb_재고 set 일자 = '{strL_date}', 수량 = '{temp_count}', 단가 = '{int_price}' 
                     where idx = '{temp_idx}'
                 ")
         Else
             temp_btn.Tag = clsG_DBmng.sql_Exec_Query_returnindex(
              $"
                 insert TB_재고 (처방코드,구분,입출고, 명칭, 업소, 일자,수량, 단가)
-                values('{strL_code}', '{intD_item_type}','{intD_IO_type}', '{strL_name}', '{strL_comp}', '{strL_date}', '{strL_count}', '{int_price}');
+                values('{strL_code}', '{intD_item_type}','{intD_IO_type}', '{strL_name}', '{strL_comp}', '{strL_date}', '{temp_count}', '{int_price}');
                 SELECT @@IDENTITY
              ")
         End If
 
+        temp_btn.Tag = 0
         sD_load_invenList(strL_code)
 
     End Sub
@@ -799,41 +789,124 @@ Public Class Form1
     ''' 1. 재고현황 탭을 눌렀을 떄 Form2를 실행 <br/>
     ''' 2. 탭을 누르기 이전 인덱스로 돌아가기
     ''' </summary>
-    Private Sub tab_페이지_SelectedIndexChanged(sender As Object, e As EventArgs) Handles tab_페이지.SelectedIndexChanged
+    'Private Sub tab_페이지_SelectedIndexChanged(sender As Object, e As EventArgs) Handles tab_페이지.SelectedIndexChanged
 
-        If tab_페이지.SelectedIndex = 3 Then
+    '    If tab_페이지.SelectedIndex = 3 Then
 
-            tab_페이지.SelectedIndex = intL_tabIndex
+    '        tab_페이지.SelectedIndex = intL_tabIndex
 
-            If frmL_form2 Is Nothing Then
-                frmL_form2 = New Form2()
-                frmL_form2.Show()
-                Exit Sub
-            End If
+    '        If frmL_form2 Is Nothing Then
+    '            frmL_form2 = New Form2()
+    '            frmL_form2.Show()
+    '            Exit Sub
+    '        End If
 
-        End If
+    '    End If
 
-        intL_tabIndex = tab_페이지.SelectedIndex
-    End Sub
+    '    intL_tabIndex = tab_페이지.SelectedIndex
+    'End Sub
 
     ''' <summary>
     ''' 1. Form1이 종료될 때 재고현황도 같이 종료
     ''' </summary>
-    Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        If frmL_form2 Is Nothing Then Exit Sub
-        frmL_form2.Close()
-    End Sub
+    'Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+    '    If frmL_form2 Is Nothing Then Exit Sub
+    '    frmL_form2.Close()
+    'End Sub
+
     Private Sub helper_MouseHover(sender As Object, e As EventArgs) Handles btn_new_sg.MouseHover, btn_del_sg.MouseHover, btn_save_sg.MouseHover, btn_New.MouseHover, btn_delete.MouseHover, btn_Save.MouseHover, btn_new_inven.MouseHover, btn_del_inven.MouseHover, btn_save_inven.MouseHover
+
         If Not dicG_helper.ContainsKey(sender.Name) Then Exit Sub
-        Dim strL_value = dicG_helper(sender.Name)
-        frm_Main.lbl_도움말.Text = strL_value
+
+        Dim strL_HelpText = dicG_helper(sender.Name)
+        Dim Arr_txt() As String
+
+        If strL_HelpText.Contains("@명칭") Then
+            Arr_txt = Regex.Split(strL_HelpText, "@명칭")
+            MainForm.lbl_도움말.Text = Arr_txt(0) + If(sender.name.ToString.Contains("sg"), txt_name_sg.Text, (If(sender.name.ToString.Contains("inven"), txt_name_inven.Text, txt_Name.Text))) + Arr_txt(1)
+        Else
+            MainForm.lbl_도움말.Text = strL_HelpText
+        End If
+
     End Sub
 
     Private Sub helper_MouseLeave(sender As Object, e As EventArgs) Handles btn_new_sg.MouseLeave, btn_del_sg.MouseLeave, btn_save_sg.MouseHover, btn_New.MouseLeave, btn_delete.MouseLeave, btn_Save.MouseLeave, btn_new_inven.MouseLeave, btn_del_inven.MouseLeave, btn_save_inven.MouseLeave
-        frm_Main.lbl_도움말.Text = ""
+        MainForm.lbl_도움말.Text = ""
     End Sub
 
+    Private Sub btn_바코드_Click(sender As Object, e As EventArgs) Handles btn_바코드.Click
 
+        Dim pnl As New System.Windows.Forms.Panel
 
+        pnl.Size = New Size(400, 250)
+        pnl.Visible = True
+        Me.Controls.Add(pnl)
+        pnl.BorderStyle = BorderStyle.FixedSingle
+        pnl.BringToFront()
+        pnl.Location = New Point((Me.Width / 2) - (pnl.Width / 2), (Me.Height / 2) - (pnl.Height / 2))
 
+        Dim label As New System.Windows.Forms.Label
+        label.Text = "바코드를 스캔해 주세요."
+        label.Font = New Font("맑은 고딕", 11, FontStyle.Bold)
+        label.Visible = True
+        label.AutoSize = True
+        pnl.Controls.Add(label)
+        label.Location = New Point((pnl.Width / 2) - (label.Width / 2), (pnl.Height / 2) - (label.Height / 2))
+
+        Dim text As New System.Windows.Forms.TextBox
+        text.Text = ""
+        text.Visible = True
+        pnl.Controls.Add(text)
+        text.Location = New Point(-100, -100)
+
+        Dim tmr As New Timer()
+        tmr.Interval = 100
+        AddHandler tmr.Tick, Sub()
+                                 text.Focus()
+                             End Sub
+
+        Dim button As New System.Windows.Forms.Button
+        button.Text = "닫기"
+        button.Visible = True
+        pnl.Controls.Add(button)
+        button.Location = New Point((pnl.Width / 2) - (button.Width / 2), (pnl.Height / 1.2) - (button.Height / 2))
+
+        AddHandler button.Click, Sub()
+                                     tmr.Dispose()
+                                     text.Dispose()
+                                     label.Dispose()
+                                     button.Dispose()
+                                     pnl.Dispose()
+                                 End Sub
+
+        AddHandler text.TextChanged, Sub()
+                                         If text.Text.Length = 13 Then
+
+                                             Using dtL_data As DataTable = clsG_DBmng.sql_Get_Datatable(
+                                             $" 
+                                                select Top 1 코드, 명칭, 업소 from TB_H_마스터혼합제_바코드 where 바코드 = '{text.Text}' order by 적용일자 desc
+                                              ")
+
+                                                 If dtL_data.Rows.Count > 0 Then
+                                                     txt_Code.Text = dtL_data.Rows(0)("코드").ToString
+                                                     txt_Name.Text = dtL_data.Rows(0)("명칭").ToString
+                                                     txt_comp.Text = dtL_data.Rows(0)("업소").ToString
+                                                 Else
+                                                     label.Text = "존재하지않는 혼합제 입니다. 다시 스캔해 주세요."
+                                                     label.Location = New Point((pnl.Width / 2) - (label.Width / 2), (pnl.Height / 2) - (label.Height / 2))
+                                                     text.Text = ""
+                                                     Exit Sub
+                                                 End If
+
+                                             End Using
+
+                                             tmr.Dispose()
+                                             text.Dispose()
+                                             label.Dispose()
+                                             pnl.Dispose()
+                                         End If
+                                     End Sub
+
+        tmr.Enabled = True
+    End Sub
 End Class

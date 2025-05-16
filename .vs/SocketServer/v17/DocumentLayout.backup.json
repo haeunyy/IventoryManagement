@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\SocketServer_20250425\\SocketServer_20250425\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\HanimacData\\socket\\drug_20250502.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB59766B-05C0-48D4-89F5-805867389FBC}|SocketServer\\SocketServer.vbproj|c:\\users\\ibbih\\documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\socketserver_20250425\\socketserver_20250425\\socketserver\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{FB59766B-05C0-48D4-89F5-805867389FBC}|SocketServer\\SocketServer.vbproj|solutionrelative:socketserver\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB59766B-05C0-48D4-89F5-805867389FBC}|SocketServer\\SocketServer.vbproj|C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\SocketServer_20250425\\SocketServer_20250425\\socketserver\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{FB59766B-05C0-48D4-89F5-805867389FBC}|SocketServer\\SocketServer.vbproj|solutionrelative:socketserver\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "drug_20250502.json",
+              "DocumentMoniker": "C:\\HanimacData\\socket\\drug_20250502.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\HanimacData\\socket\\drug_20250502.json",
+              "ToolTip": "C:\\HanimacData\\socket\\drug_20250502.json",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\HanimacData\\socket\\drug_20250502.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-01T16:58:38.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\SocketServer_20250425\\SocketServer_20250425\\SocketServer\\Form1.vb",
+              "RelativeDocumentMoniker": "SocketServer\\Form1.vb",
+              "ToolTip": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\SocketServer_20250425\\SocketServer_20250425\\SocketServer\\Form1.vb [Design]",
+              "RelativeToolTip": "SocketServer\\Form1.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-04-29T22:42:01.614Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\SocketServer_20250425\\SocketServer_20250425\\SocketServer\\Form1.vb",
+              "RelativeDocumentMoniker": "SocketServer\\Form1.vb",
+              "ToolTip": "C:\\Users\\ibbih\\Documents\\\uB124\uC774\uD2B8\uC628 \uBC1B\uC740 \uD30C\uC77C\\SocketServer_20250425\\SocketServer_20250425\\SocketServer\\Form1.vb",
+              "RelativeToolTip": "SocketServer\\Form1.vb",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAkwBkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-04-29T22:39:42.567Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

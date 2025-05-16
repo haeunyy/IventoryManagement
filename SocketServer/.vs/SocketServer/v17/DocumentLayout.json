@@ -1,0 +1,51 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\uC815\uBCF4\uD1B5\uC2E0\uC0AC\uC5C5\uD300\\Desktop\\MediManage2025-05-15\\SocketServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB59766B-05C0-48D4-89F5-805867389FBC}|SocketServer\\SocketServer.vbproj|c:\\users\\\uC815\uBCF4\uD1B5\uC2E0\uC0AC\uC5C5\uD300\\desktop\\medimanage2025-05-15\\socketserver\\socketserver\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{FB59766B-05C0-48D4-89F5-805867389FBC}|SocketServer\\SocketServer.vbproj|solutionrelative:socketserver\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB59766B-05C0-48D4-89F5-805867389FBC}|SocketServer\\SocketServer.vbproj|C:\\Users\\\uC815\uBCF4\uD1B5\uC2E0\uC0AC\uC5C5\uD300\\Desktop\\MediManage2025-05-15\\SocketServer\\socketserver\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{FB59766B-05C0-48D4-89F5-805867389FBC}|SocketServer\\SocketServer.vbproj|solutionrelative:socketserver\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "C:\\Users\\\uC815\uBCF4\uD1B5\uC2E0\uC0AC\uC5C5\uD300\\Desktop\\MediManage2025-05-15\\SocketServer\\SocketServer\\Form1.vb",
+              "RelativeDocumentMoniker": "SocketServer\\Form1.vb",
+              "ToolTip": "C:\\Users\\\uC815\uBCF4\uD1B5\uC2E0\uC0AC\uC5C5\uD300\\Desktop\\MediManage2025-05-15\\SocketServer\\SocketServer\\Form1.vb",
+              "RelativeToolTip": "SocketServer\\Form1.vb",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAkwHMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-11T22:45:31.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.vb [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\\uC815\uBCF4\uD1B5\uC2E0\uC0AC\uC5C5\uD300\\Desktop\\MediManage2025-05-15\\SocketServer\\SocketServer\\Form1.vb",
+              "RelativeDocumentMoniker": "SocketServer\\Form1.vb",
+              "ToolTip": "D:\\Git\uC18C\uC2A4\\\uAD50\uC721\uC6A9\uC0D8\uD50C\\20250512\\IventoryManagement-main\\IventoryManagement-main\\SocketServer\\SocketServer\\Form1.vb [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-11T22:45:27.914Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

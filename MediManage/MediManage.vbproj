@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D44FC3C2-591C-4F08-BAD5-13FE22179CCE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>MediManage.frm_Main</StartupObject>
+    <StartupObject>MediManage.mdlClass</StartupObject>
     <RootNamespace>MediManage</RootNamespace>
     <AssemblyName>MediManage</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -66,6 +66,9 @@
     <ApplicationIcon>first-aid-box.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -91,7 +94,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.vb" />
+    <Compile Include="clsApi.vb" />
     <Compile Include="clsDBmng.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -114,6 +117,7 @@
     </Compile>
     <Compile Include="mdlClass.vb" />
     <Compile Include="idxModule.vb" />
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -156,6 +160,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\Group 6.png" />
   </ItemGroup>
   <ItemGroup>

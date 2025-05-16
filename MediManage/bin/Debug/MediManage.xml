@@ -156,33 +156,10 @@ MediManage
  tab_페이지 인덱스를 관리하기 위한 변수 선언
  </summary>
 </member>
-<member name="M:MediManage.Form1.tab_페이지_SelectedIndexChanged(System.Object,System.EventArgs)">
- <summary>
- 1. 재고현황 탭을 눌렀을 떄 Form2를 실행 <br/>
- 2. 탭을 누르기 이전 인덱스로 돌아가기
- </summary>
-</member>
-<member name="M:MediManage.Form1.Form1_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
- <summary>
- 1. Form1이 종료될 때 재고현황도 같이 종료
- </summary>
-</member>
 <member name="M:MediManage.Form2.Form2_Load(System.Object,System.EventArgs)">
  <summary>
  1. 폼이 로드되면 sD_get_mainList 함수에 구분코드를 매개변수로 전달하여 DataGridView에 로드
  </summary>
-</member>
-<member name="M:MediManage.Form2.sD_iniControl">
- <summary>
- load시에 grid_처방 Object를 grid_입출고 태그에 선언
- </summary>
-</member>
-<member name="M:MediManage.Form2.sD_get_mainList(System.Int32)">
- <summary>
- 1. 구분코드에 따라 조회 구문 실행<br/>
- 2. DataGridView에 update
- </summary>
- <param name="index">구분 (0-혼합제/1-단미제/2-치료재료대)</param>
 </member>
 <member name="M:MediManage.Form2.sD_girdWidthSet(System.Windows.Forms.DataGridView)">
  <summary>
@@ -216,11 +193,6 @@ MediManage
 <member name="M:MediManage.Form2.grid_입출고_Sorted(System.Windows.Forms.DataGridView,System.EventArgs)">
  <summary>
  입출고 내역 정렬 시 "합계" 행이 항상 마지막에 위치하도록 조정하는 프로시저
- </summary>
-</member>
-<member name="M:MediManage.Form2.grid_기준항목_혼합제_Click(System.Object,System.EventArgs)">
- <summary>
- 기준항목내역 클릭시 라디오에 기준항목이 선택되어 있다면 처방내역 클리어하고 입출고내역 조회 
  </summary>
 </member>
 </members>

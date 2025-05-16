@@ -33,30 +33,35 @@ Partial Class Form1
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle34 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle35 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle36 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle38 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle39 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle40 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle37 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.치료재료대 = New System.Windows.Forms.TabPage()
         Me.tab_단미제재고 = New System.Windows.Forms.TabControl()
@@ -88,6 +93,7 @@ Partial Class Form1
         Me.단가_단미 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.grid_단미제 = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -112,7 +118,7 @@ Partial Class Form1
         Me.btn_Save = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txt_Code = New System.Windows.Forms.TextBox()
-        Me.btn_Update = New System.Windows.Forms.Button()
+        Me.btn_바코드 = New System.Windows.Forms.Button()
         Me.txt_Name = New System.Windows.Forms.TextBox()
         Me.tp_혼합제_출고 = New System.Windows.Forms.TabPage()
         Me.grid_혼합제재고 = New System.Windows.Forms.DataGridView()
@@ -164,6 +170,7 @@ Partial Class Form1
         Me.단가_재료 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.grid_치료재료대 = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -204,7 +211,7 @@ Partial Class Form1
         Me.치료재료대.Margin = New System.Windows.Forms.Padding(2)
         Me.치료재료대.Name = "치료재료대"
         Me.치료재료대.Padding = New System.Windows.Forms.Padding(2)
-        Me.치료재료대.Size = New System.Drawing.Size(1320, 632)
+        Me.치료재료대.Size = New System.Drawing.Size(1320, 628)
         Me.치료재료대.TabIndex = 2
         Me.치료재료대.Text = " 단미제  "
         Me.치료재료대.UseVisualStyleBackColor = True
@@ -214,7 +221,7 @@ Partial Class Form1
         Me.tab_단미제재고.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.tab_단미제재고.Controls.Add(Me.tp_단미제_입고)
         Me.tab_단미제재고.Controls.Add(Me.tp_단미제_출고)
-        Me.tab_단미제재고.Location = New System.Drawing.Point(8, 347)
+        Me.tab_단미제재고.Location = New System.Drawing.Point(8, 343)
         Me.tab_단미제재고.Name = "tab_단미제재고"
         Me.tab_단미제재고.SelectedIndex = 0
         Me.tab_단미제재고.Size = New System.Drawing.Size(300, 271)
@@ -329,14 +336,12 @@ Partial Class Form1
         '
         'btn_save_sg
         '
-        Me.btn_save_sg.AccessibleRole = System.Windows.Forms.AccessibleRole.None
-        Me.btn_save_sg.BackColor = System.Drawing.Color.Transparent
         Me.btn_save_sg.Location = New System.Drawing.Point(214, 204)
         Me.btn_save_sg.Name = "btn_save_sg"
         Me.btn_save_sg.Size = New System.Drawing.Size(63, 23)
         Me.btn_save_sg.TabIndex = 33
         Me.btn_save_sg.Text = "저장"
-        Me.btn_save_sg.UseVisualStyleBackColor = False
+        Me.btn_save_sg.UseVisualStyleBackColor = True
         '
         'lbl_단미제_입출고_수량
         '
@@ -444,16 +449,16 @@ Partial Class Form1
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.grid_단미제재고.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.grid_단미제재고.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.grid_단미제재고.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column5, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.수량_단미, Me.단가_단미, Me.DataGridViewTextBoxColumn20, Me.Column6})
+        Me.grid_단미제재고.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column5, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.수량_단미, Me.단가_단미, Me.DataGridViewTextBoxColumn20, Me.Column6, Me.Column13})
         DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle6.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.InactiveCaption
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.grid_단미제재고.DefaultCellStyle = DataGridViewCellStyle6
-        Me.grid_단미제재고.Location = New System.Drawing.Point(314, 367)
+        Me.grid_단미제재고.Location = New System.Drawing.Point(314, 363)
         Me.grid_단미제재고.MultiSelect = False
         Me.grid_단미제재고.Name = "grid_단미제재고"
         Me.grid_단미제재고.ReadOnly = True
@@ -467,8 +472,8 @@ Partial Class Form1
         Me.grid_단미제재고.RowHeadersDefaultCellStyle = DataGridViewCellStyle7
         Me.grid_단미제재고.RowHeadersWidth = 20
         Me.grid_단미제재고.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.InactiveCaption
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.Highlight
         Me.grid_단미제재고.RowsDefaultCellStyle = DataGridViewCellStyle8
         Me.grid_단미제재고.RowTemplate.Height = 23
         Me.grid_단미제재고.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -524,6 +529,7 @@ Partial Class Form1
         Me.수량_단미.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.수량_단미.DataPropertyName = "수량"
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle4.Format = "#,##0.00"
         Me.수량_단미.DefaultCellStyle = DataGridViewCellStyle4
         Me.수량_단미.HeaderText = "수량"
         Me.수량_단미.MinimumWidth = 8
@@ -561,6 +567,13 @@ Partial Class Form1
         Me.Column6.ReadOnly = True
         Me.Column6.Visible = False
         '
+        'Column13
+        '
+        Me.Column13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column13.HeaderText = " "
+        Me.Column13.Name = "Column13"
+        Me.Column13.ReadOnly = True
+        '
         'GroupBox4
         '
         Me.GroupBox4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -569,7 +582,7 @@ Partial Class Form1
         Me.GroupBox4.Controls.Add(Me.grid_단미제)
         Me.GroupBox4.Location = New System.Drawing.Point(8, 5)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(1307, 327)
+        Me.GroupBox4.Size = New System.Drawing.Size(1307, 323)
         Me.GroupBox4.TabIndex = 8
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "단미제 정보"
@@ -592,26 +605,34 @@ Partial Class Form1
         Me.grid_단미제.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
         Me.grid_단미제.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.grid_단미제.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.Column11})
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.grid_단미제.DefaultCellStyle = DataGridViewCellStyle11
         Me.grid_단미제.Dock = System.Windows.Forms.DockStyle.Fill
         Me.grid_단미제.Location = New System.Drawing.Point(3, 19)
         Me.grid_단미제.MultiSelect = False
         Me.grid_단미제.Name = "grid_단미제"
         Me.grid_단미제.ReadOnly = True
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.grid_단미제.RowHeadersDefaultCellStyle = DataGridViewCellStyle11
-        Me.grid_단미제.RowHeadersWidth = 20
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.InactiveCaption
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.grid_단미제.RowsDefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid_단미제.RowHeadersDefaultCellStyle = DataGridViewCellStyle12
+        Me.grid_단미제.RowHeadersWidth = 20
+        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.Highlight
+        Me.grid_단미제.RowsDefaultCellStyle = DataGridViewCellStyle13
         Me.grid_단미제.RowTemplate.Height = 23
         Me.grid_단미제.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grid_단미제.Size = New System.Drawing.Size(1301, 305)
+        Me.grid_단미제.Size = New System.Drawing.Size(1301, 301)
         Me.grid_단미제.TabIndex = 2
         '
         'DataGridViewTextBoxColumn3
@@ -664,7 +685,7 @@ Partial Class Form1
         Me.보험약.Margin = New System.Windows.Forms.Padding(2)
         Me.보험약.Name = "보험약"
         Me.보험약.Padding = New System.Windows.Forms.Padding(2)
-        Me.보험약.Size = New System.Drawing.Size(1320, 632)
+        Me.보험약.Size = New System.Drawing.Size(1320, 628)
         Me.보험약.TabIndex = 1
         Me.보험약.Text = " 혼합제  "
         '
@@ -673,7 +694,7 @@ Partial Class Form1
         Me.tab_혼합제재고.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.tab_혼합제재고.Controls.Add(Me.tp_혼합제_입고)
         Me.tab_혼합제재고.Controls.Add(Me.tp_혼합제_출고)
-        Me.tab_혼합제재고.Location = New System.Drawing.Point(8, 347)
+        Me.tab_혼합제재고.Location = New System.Drawing.Point(8, 343)
         Me.tab_혼합제재고.Name = "tab_혼합제재고"
         Me.tab_혼합제재고.SelectedIndex = 0
         Me.tab_혼합제재고.Size = New System.Drawing.Size(300, 271)
@@ -681,7 +702,7 @@ Partial Class Form1
         '
         'tp_혼합제_입고
         '
-        Me.tp_혼합제_입고.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.tp_혼합제_입고.BackColor = System.Drawing.Color.Transparent
         Me.tp_혼합제_입고.Controls.Add(Me.pnl_혼합제_입출고)
         Me.tp_혼합제_입고.Location = New System.Drawing.Point(4, 24)
         Me.tp_혼합제_입고.Name = "tp_혼합제_입고"
@@ -707,7 +728,7 @@ Partial Class Form1
         Me.pnl_혼합제_입출고.Controls.Add(Me.btn_Save)
         Me.pnl_혼합제_입출고.Controls.Add(Me.Label3)
         Me.pnl_혼합제_입출고.Controls.Add(Me.txt_Code)
-        Me.pnl_혼합제_입출고.Controls.Add(Me.btn_Update)
+        Me.pnl_혼합제_입출고.Controls.Add(Me.btn_바코드)
         Me.pnl_혼합제_입출고.Controls.Add(Me.txt_Name)
         Me.pnl_혼합제_입출고.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnl_혼합제_입출고.Location = New System.Drawing.Point(3, 3)
@@ -823,14 +844,13 @@ Partial Class Form1
         '
         'btn_Save
         '
-        Me.btn_Save.AccessibleRole = System.Windows.Forms.AccessibleRole.None
         Me.btn_Save.BackColor = System.Drawing.Color.Transparent
         Me.btn_Save.Location = New System.Drawing.Point(214, 204)
         Me.btn_Save.Name = "btn_Save"
         Me.btn_Save.Size = New System.Drawing.Size(63, 23)
         Me.btn_Save.TabIndex = 9
         Me.btn_Save.Text = "저장"
-        Me.btn_Save.UseVisualStyleBackColor = False
+        Me.btn_Save.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -853,15 +873,14 @@ Partial Class Form1
         Me.txt_Code.Size = New System.Drawing.Size(182, 23)
         Me.txt_Code.TabIndex = 1
         '
-        'btn_Update
+        'btn_바코드
         '
-        Me.btn_Update.Location = New System.Drawing.Point(76, 204)
-        Me.btn_Update.Name = "btn_Update"
-        Me.btn_Update.Size = New System.Drawing.Size(63, 23)
-        Me.btn_Update.TabIndex = 8
-        Me.btn_Update.Text = "수정"
-        Me.btn_Update.UseVisualStyleBackColor = True
-        Me.btn_Update.Visible = False
+        Me.btn_바코드.Location = New System.Drawing.Point(76, 204)
+        Me.btn_바코드.Name = "btn_바코드"
+        Me.btn_바코드.Size = New System.Drawing.Size(63, 23)
+        Me.btn_바코드.TabIndex = 8
+        Me.btn_바코드.Text = "바코드"
+        Me.btn_바코드.UseVisualStyleBackColor = True
         '
         'txt_Name
         '
@@ -878,10 +897,10 @@ Partial Class Form1
         'tp_혼합제_출고
         '
         Me.tp_혼합제_출고.BackColor = System.Drawing.Color.Transparent
-        Me.tp_혼합제_출고.Location = New System.Drawing.Point(4, 24)
+        Me.tp_혼합제_출고.Location = New System.Drawing.Point(4, 22)
         Me.tp_혼합제_출고.Name = "tp_혼합제_출고"
         Me.tp_혼합제_출고.Padding = New System.Windows.Forms.Padding(3)
-        Me.tp_혼합제_출고.Size = New System.Drawing.Size(292, 243)
+        Me.tp_혼합제_출고.Size = New System.Drawing.Size(292, 245)
         Me.tp_혼합제_출고.TabIndex = 1
         Me.tp_혼합제_출고.Text = " 출고  "
         '
@@ -895,33 +914,41 @@ Partial Class Form1
         Me.grid_혼합제재고.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
         Me.grid_혼합제재고.BackgroundColor = System.Drawing.Color.WhiteSmoke
         Me.grid_혼합제재고.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.grid_혼합제재고.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid_혼합제재고.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
         Me.grid_혼합제재고.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.grid_혼합제재고.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column4, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn, Me.수량, Me.단가, Me.col_idx, Me.구분, Me.Column10})
-        Me.grid_혼합제재고.Location = New System.Drawing.Point(314, 367)
+        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle20.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        DataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.grid_혼합제재고.DefaultCellStyle = DataGridViewCellStyle20
+        Me.grid_혼합제재고.Location = New System.Drawing.Point(314, 363)
         Me.grid_혼합제재고.MultiSelect = False
         Me.grid_혼합제재고.Name = "grid_혼합제재고"
         Me.grid_혼합제재고.ReadOnly = True
-        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle19.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        DataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.grid_혼합제재고.RowHeadersDefaultCellStyle = DataGridViewCellStyle19
+        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle21.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        DataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid_혼합제재고.RowHeadersDefaultCellStyle = DataGridViewCellStyle21
         Me.grid_혼합제재고.RowHeadersWidth = 20
         Me.grid_혼합제재고.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.InactiveCaption
-        DataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.grid_혼합제재고.RowsDefaultCellStyle = DataGridViewCellStyle20
+        DataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.Highlight
+        Me.grid_혼합제재고.RowsDefaultCellStyle = DataGridViewCellStyle22
         Me.grid_혼합제재고.RowTemplate.Height = 23
         Me.grid_혼합제재고.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.grid_혼합제재고.Size = New System.Drawing.Size(1000, 251)
@@ -932,8 +959,8 @@ Partial Class Form1
         '
         Me.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.Column4.DataPropertyName = "입출고"
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.Column4.DefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.Column4.DefaultCellStyle = DataGridViewCellStyle15
         Me.Column4.HeaderText = "입출고"
         Me.Column4.Name = "Column4"
         Me.Column4.ReadOnly = True
@@ -943,8 +970,8 @@ Partial Class Form1
         '
         Me.DataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.DataGridViewTextBoxColumn1.DataPropertyName = "코드"
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle16
         Me.DataGridViewTextBoxColumn1.FillWeight = 61.54822!
         Me.DataGridViewTextBoxColumn1.HeaderText = "코드"
         Me.DataGridViewTextBoxColumn1.MinimumWidth = 8
@@ -967,8 +994,8 @@ Partial Class Form1
         '
         Me.DataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.DataGridViewTextBoxColumn.DataPropertyName = "일자"
-        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle17
         Me.DataGridViewTextBoxColumn.FillWeight = 103.8071!
         Me.DataGridViewTextBoxColumn.HeaderText = "일자"
         Me.DataGridViewTextBoxColumn.MinimumWidth = 50
@@ -980,10 +1007,10 @@ Partial Class Form1
         '
         Me.수량.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.수량.DataPropertyName = "수량"
-        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle17.Format = "#,##0"
-        DataGridViewCellStyle17.NullValue = Nothing
-        Me.수량.DefaultCellStyle = DataGridViewCellStyle17
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle18.Format = "#,##0.00"
+        DataGridViewCellStyle18.NullValue = Nothing
+        Me.수량.DefaultCellStyle = DataGridViewCellStyle18
         Me.수량.FillWeight = 61.54822!
         Me.수량.HeaderText = "수량"
         Me.수량.MinimumWidth = 8
@@ -995,8 +1022,8 @@ Partial Class Form1
         '
         Me.단가.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.단가.DataPropertyName = "단가"
-        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.단가.DefaultCellStyle = DataGridViewCellStyle18
+        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.단가.DefaultCellStyle = DataGridViewCellStyle19
         Me.단가.FillWeight = 61.54822!
         Me.단가.HeaderText = "단가"
         Me.단가.MinimumWidth = 8
@@ -1038,7 +1065,7 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.grid_혼합제)
         Me.GroupBox2.Location = New System.Drawing.Point(8, 5)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1309, 327)
+        Me.GroupBox2.Size = New System.Drawing.Size(1309, 323)
         Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "혼합제 정보"
@@ -1048,47 +1075,56 @@ Partial Class Form1
         Me.grid_혼합제.AllowUserToAddRows = False
         Me.grid_혼합제.AllowUserToDeleteRows = False
         Me.grid_혼합제.AllowUserToOrderColumns = True
-        Me.grid_혼합제.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders
+        Me.grid_혼합제.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
         Me.grid_혼합제.BackgroundColor = System.Drawing.Color.WhiteSmoke
         Me.grid_혼합제.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle21.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        DataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.grid_혼합제.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle21
-        Me.grid_혼합제.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.grid_혼합제.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.grid_Code, Me.grid_Name, Me.grid_MediCompany, Me.Column9})
-        Me.grid_혼합제.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.grid_혼합제.Location = New System.Drawing.Point(3, 19)
-        Me.grid_혼합제.MultiSelect = False
-        Me.grid_혼합제.Name = "grid_혼합제"
-        Me.grid_혼합제.ReadOnly = True
-        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle23.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         DataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.WindowText
         DataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.WindowText
         DataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.grid_혼합제.RowHeadersDefaultCellStyle = DataGridViewCellStyle23
+        Me.grid_혼합제.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle23
+        Me.grid_혼합제.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.grid_혼합제.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.grid_Code, Me.grid_Name, Me.grid_MediCompany, Me.Column9})
+        DataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle25.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        DataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.grid_혼합제.DefaultCellStyle = DataGridViewCellStyle25
+        Me.grid_혼합제.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grid_혼합제.Location = New System.Drawing.Point(3, 19)
+        Me.grid_혼합제.MultiSelect = False
+        Me.grid_혼합제.Name = "grid_혼합제"
+        Me.grid_혼합제.ReadOnly = True
+        DataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle26.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        DataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid_혼합제.RowHeadersDefaultCellStyle = DataGridViewCellStyle26
         Me.grid_혼합제.RowHeadersWidth = 20
-        DataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.InactiveCaption
-        DataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.grid_혼합제.RowsDefaultCellStyle = DataGridViewCellStyle24
+        Me.grid_혼합제.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        DataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.Highlight
+        Me.grid_혼합제.RowsDefaultCellStyle = DataGridViewCellStyle27
         Me.grid_혼합제.RowTemplate.Height = 23
         Me.grid_혼합제.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grid_혼합제.Size = New System.Drawing.Size(1303, 305)
+        Me.grid_혼합제.Size = New System.Drawing.Size(1303, 301)
         Me.grid_혼합제.TabIndex = 2
         '
         'grid_Code
         '
         Me.grid_Code.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.grid_Code.DataPropertyName = "기준코드"
-        DataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.grid_Code.DefaultCellStyle = DataGridViewCellStyle22
+        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.grid_Code.DefaultCellStyle = DataGridViewCellStyle24
         Me.grid_Code.HeaderText = "코드"
         Me.grid_Code.MinimumWidth = 8
         Me.grid_Code.Name = "grid_Code"
@@ -1133,7 +1169,7 @@ Partial Class Form1
         Me.tab_페이지.Margin = New System.Windows.Forms.Padding(2)
         Me.tab_페이지.Name = "tab_페이지"
         Me.tab_페이지.SelectedIndex = 0
-        Me.tab_페이지.Size = New System.Drawing.Size(1328, 660)
+        Me.tab_페이지.Size = New System.Drawing.Size(1328, 656)
         Me.tab_페이지.TabIndex = 5
         '
         'TabPage1
@@ -1145,7 +1181,7 @@ Partial Class Form1
         Me.TabPage1.Location = New System.Drawing.Point(4, 24)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1320, 632)
+        Me.TabPage1.Size = New System.Drawing.Size(1320, 628)
         Me.TabPage1.TabIndex = 3
         Me.TabPage1.Text = " 치료재료대  "
         '
@@ -1155,7 +1191,7 @@ Partial Class Form1
         Me.tab_치료재재고.Controls.Add(Me.tp_치료대_입고)
         Me.tab_치료재재고.Controls.Add(Me.tp_치료대_출고)
         Me.tab_치료재재고.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.tab_치료재재고.Location = New System.Drawing.Point(8, 347)
+        Me.tab_치료재재고.Location = New System.Drawing.Point(8, 343)
         Me.tab_치료재재고.Name = "tab_치료재재고"
         Me.tab_치료재재고.SelectedIndex = 0
         Me.tab_치료재재고.Size = New System.Drawing.Size(300, 271)
@@ -1392,32 +1428,40 @@ Partial Class Form1
         Me.grid_치료대재고.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
         Me.grid_치료대재고.BackgroundColor = System.Drawing.Color.WhiteSmoke
         Me.grid_치료대재고.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        DataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle25.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        DataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.grid_치료대재고.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle25
+        DataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle28.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        DataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid_치료대재고.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle28
         Me.grid_치료대재고.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.grid_치료대재고.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column7, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.수량_재료, Me.단가_재료, Me.DataGridViewTextBoxColumn14, Me.Column8})
-        Me.grid_치료대재고.Location = New System.Drawing.Point(314, 367)
+        Me.grid_치료대재고.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column7, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.수량_재료, Me.단가_재료, Me.DataGridViewTextBoxColumn14, Me.Column8, Me.Column14})
+        DataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle33.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle33.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        DataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.grid_치료대재고.DefaultCellStyle = DataGridViewCellStyle33
+        Me.grid_치료대재고.Location = New System.Drawing.Point(314, 363)
         Me.grid_치료대재고.MultiSelect = False
         Me.grid_치료대재고.Name = "grid_치료대재고"
         Me.grid_치료대재고.ReadOnly = True
-        DataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle30.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        DataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.grid_치료대재고.RowHeadersDefaultCellStyle = DataGridViewCellStyle30
+        DataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle34.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        DataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid_치료대재고.RowHeadersDefaultCellStyle = DataGridViewCellStyle34
         Me.grid_치료대재고.RowHeadersWidth = 20
-        DataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.InactiveCaption
-        DataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.grid_치료대재고.RowsDefaultCellStyle = DataGridViewCellStyle31
+        DataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.Highlight
+        Me.grid_치료대재고.RowsDefaultCellStyle = DataGridViewCellStyle35
         Me.grid_치료대재고.RowTemplate.Height = 23
         Me.grid_치료대재고.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.grid_치료대재고.Size = New System.Drawing.Size(997, 251)
@@ -1436,8 +1480,8 @@ Partial Class Form1
         '
         Me.DataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.DataGridViewTextBoxColumn9.DataPropertyName = "코드"
-        DataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn9.DefaultCellStyle = DataGridViewCellStyle26
+        DataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn9.DefaultCellStyle = DataGridViewCellStyle29
         Me.DataGridViewTextBoxColumn9.HeaderText = "코드"
         Me.DataGridViewTextBoxColumn9.MinimumWidth = 8
         Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
@@ -1458,8 +1502,8 @@ Partial Class Form1
         '
         Me.DataGridViewTextBoxColumn11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.DataGridViewTextBoxColumn11.DataPropertyName = "일자"
-        DataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn11.DefaultCellStyle = DataGridViewCellStyle27
+        DataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn11.DefaultCellStyle = DataGridViewCellStyle30
         Me.DataGridViewTextBoxColumn11.HeaderText = "일자"
         Me.DataGridViewTextBoxColumn11.MinimumWidth = 8
         Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
@@ -1470,8 +1514,9 @@ Partial Class Form1
         '
         Me.수량_재료.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
         Me.수량_재료.DataPropertyName = "수량"
-        DataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.수량_재료.DefaultCellStyle = DataGridViewCellStyle28
+        DataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle31.Format = "#,##0"
+        Me.수량_재료.DefaultCellStyle = DataGridViewCellStyle31
         Me.수량_재료.HeaderText = "수량"
         Me.수량_재료.MinimumWidth = 8
         Me.수량_재료.Name = "수량_재료"
@@ -1482,8 +1527,8 @@ Partial Class Form1
         '
         Me.단가_재료.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
         Me.단가_재료.DataPropertyName = "단가"
-        DataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.단가_재료.DefaultCellStyle = DataGridViewCellStyle29
+        DataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.단가_재료.DefaultCellStyle = DataGridViewCellStyle32
         Me.단가_재료.HeaderText = "단가"
         Me.단가_재료.MinimumWidth = 8
         Me.단가_재료.Name = "단가_재료"
@@ -1508,6 +1553,13 @@ Partial Class Form1
         Me.Column8.ReadOnly = True
         Me.Column8.Visible = False
         '
+        'Column14
+        '
+        Me.Column14.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column14.HeaderText = " "
+        Me.Column14.Name = "Column14"
+        Me.Column14.ReadOnly = True
+        '
         'GroupBox1
         '
         Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -1518,7 +1570,7 @@ Partial Class Form1
         Me.GroupBox1.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(8, 5)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1306, 327)
+        Me.GroupBox1.Size = New System.Drawing.Size(1306, 323)
         Me.GroupBox1.TabIndex = 10
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = " 치료재료대    "
@@ -1531,45 +1583,53 @@ Partial Class Form1
         Me.grid_치료재료대.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
         Me.grid_치료재료대.BackgroundColor = System.Drawing.Color.WhiteSmoke
         Me.grid_치료재료대.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle32.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        DataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.grid_치료재료대.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle32
+        DataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle36.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle36.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        DataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid_치료재료대.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle36
         Me.grid_치료재료대.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.grid_치료재료대.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.수입업소, Me.Column12})
+        DataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle38.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle38.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        DataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.grid_치료재료대.DefaultCellStyle = DataGridViewCellStyle38
         Me.grid_치료재료대.Dock = System.Windows.Forms.DockStyle.Fill
         Me.grid_치료재료대.Location = New System.Drawing.Point(3, 19)
         Me.grid_치료재료대.Margin = New System.Windows.Forms.Padding(2)
         Me.grid_치료재료대.MultiSelect = False
         Me.grid_치료재료대.Name = "grid_치료재료대"
         Me.grid_치료재료대.ReadOnly = True
-        DataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle34.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        DataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.grid_치료재료대.RowHeadersDefaultCellStyle = DataGridViewCellStyle34
+        DataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle39.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle39.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        DataGridViewCellStyle39.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid_치료재료대.RowHeadersDefaultCellStyle = DataGridViewCellStyle39
         Me.grid_치료재료대.RowHeadersWidth = 20
-        DataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.InactiveCaption
-        DataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.grid_치료재료대.RowsDefaultCellStyle = DataGridViewCellStyle35
+        DataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.Highlight
+        Me.grid_치료재료대.RowsDefaultCellStyle = DataGridViewCellStyle40
         Me.grid_치료재료대.RowTemplate.Height = 30
         Me.grid_치료재료대.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grid_치료재료대.Size = New System.Drawing.Size(1300, 305)
+        Me.grid_치료재료대.Size = New System.Drawing.Size(1300, 301)
         Me.grid_치료재료대.TabIndex = 0
         '
         'Column1
         '
         Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.Column1.DataPropertyName = "처방코드"
-        DataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.Column1.DefaultCellStyle = DataGridViewCellStyle33
+        DataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.Column1.DefaultCellStyle = DataGridViewCellStyle37
         Me.Column1.HeaderText = "코드"
         Me.Column1.MinimumWidth = 8
         Me.Column1.Name = "Column1"
@@ -1617,7 +1677,7 @@ Partial Class Form1
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ClientSize = New System.Drawing.Size(1328, 660)
+        Me.ClientSize = New System.Drawing.Size(1328, 656)
         Me.Controls.Add(Me.tab_페이지)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
@@ -1657,7 +1717,7 @@ Partial Class Form1
     Friend WithEvents grid_혼합제재고 As DataGridView
     Friend WithEvents txt_Price As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents btn_Update As Button
+    Friend WithEvents btn_바코드 As Button
     Friend WithEvents btn_Save As Button
     Friend WithEvents btn_delete As Button
     Friend WithEvents btn_New As Button
@@ -1727,22 +1787,6 @@ Partial Class Form1
     Friend WithEvents Label14 As Label
     Friend WithEvents pnl_혼합제_입출고 As Panel
     Friend WithEvents pnl_치료대_입출고 As Panel
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn15 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn16 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn17 As DataGridViewTextBoxColumn
-    Friend WithEvents 수량_단미 As DataGridViewTextBoxColumn
-    Friend WithEvents 단가_단미 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn20 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
-    Friend WithEvents 수량_재료 As DataGridViewTextBoxColumn
-    Friend WithEvents 단가_재료 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn14 As DataGridViewTextBoxColumn
-    Friend WithEvents Column8 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
@@ -1765,4 +1809,22 @@ Partial Class Form1
     Friend WithEvents col_idx As DataGridViewTextBoxColumn
     Friend WithEvents 구분 As DataGridViewTextBoxColumn
     Friend WithEvents Column10 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn15 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn16 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn17 As DataGridViewTextBoxColumn
+    Friend WithEvents 수량_단미 As DataGridViewTextBoxColumn
+    Friend WithEvents 단가_단미 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn20 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column13 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
+    Friend WithEvents 수량_재료 As DataGridViewTextBoxColumn
+    Friend WithEvents 단가_재료 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn14 As DataGridViewTextBoxColumn
+    Friend WithEvents Column8 As DataGridViewTextBoxColumn
+    Friend WithEvents Column14 As DataGridViewTextBoxColumn
 End Class

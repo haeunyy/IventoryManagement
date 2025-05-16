@@ -72,13 +72,11 @@ Partial Class frm_Main
         '
         'pnl_main
         '
-        Me.pnl_main.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnl_main.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.pnl_main.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnl_main.Location = New System.Drawing.Point(0, 35)
         Me.pnl_main.Name = "pnl_main"
-        Me.pnl_main.Size = New System.Drawing.Size(1344, 663)
+        Me.pnl_main.Size = New System.Drawing.Size(1344, 664)
         Me.pnl_main.TabIndex = 1
         '
         'StatusStrip1
@@ -99,12 +97,12 @@ Partial Class frm_Main
         'prg_상태바
         '
         Me.prg_상태바.Name = "prg_상태바"
-        Me.prg_상태바.Size = New System.Drawing.Size(100, 16)
+        Me.prg_상태바.Size = New System.Drawing.Size(150, 16)
         '
         'lbl_도움말
         '
         Me.lbl_도움말.Name = "lbl_도움말"
-        Me.lbl_도움말.Size = New System.Drawing.Size(1165, 17)
+        Me.lbl_도움말.Size = New System.Drawing.Size(1146, 17)
         Me.lbl_도움말.Spring = True
         Me.lbl_도움말.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -113,8 +111,8 @@ Partial Class frm_Main
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(1344, 721)
-        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.pnl_main)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimumSize = New System.Drawing.Size(1360, 760)
