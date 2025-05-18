@@ -13,7 +13,7 @@ Imports Newtonsoft.Json.Linq
 Public Class clsApi
 
     Private strD_endPoint As String = ""
-    Private ServerIP As String = "192.168.0.79"
+    Private ServerIP As String = "192.168.0.5"
     Private Port As Integer = 9999
 
     Public Sub GetDrugDataAsync()
@@ -37,8 +37,8 @@ Public Class clsApi
 
         ' 서버 스트림을 얻고 엔드포인트 문자열 전송
 
-        Dim reader As StreamReader = New StreamReader(clientSocket.GetStream, Encoding.UTF8)
-        Dim 
+        'Dim reader As StreamReader = New StreamReader(clientSocket.GetStream, Encoding.UTF8)
+        'Dim 
 
         Dim serverStream As NetworkStream = clientSocket.GetStream
         Dim outStream As Byte() = System.Text.Encoding.Default.GetBytes(strD_endPoint)
@@ -47,12 +47,23 @@ Public Class clsApi
 
         Dim buffSize As Integer
         Dim inStream(1024) As Byte
+        Dim totalData As New List(Of Byte)
+        Dim bytesRead As Integer
+
 
         clientSocket.ReceiveBufferSize = 1024
         buffSize = clientSocket.ReceiveBufferSize
-        Dim strL_ResData As String = Reader.ReadToEnd() : Reader.Close()
-        serverStream.Read(inStream, 0, inStream.Length)
-        Dim returndata As String = System.Text.Encoding.UTF8.GetString(inStream)
+        'Dim strL_ResData As String = Reader.ReadToEnd() : Reader.Close()
+        'serverStream.Read(inStream, 0, inStream.Length)
+        ' 수신 루프
+        Do
+            bytesRead = serverStream.Read(inStream, 0, inStream.Length)
+            If bytesRead > 0 Then
+                totalData.AddRange(inStream.Take(bytesRead))
+            End If
+        Loop While serverStream.DataAvailable Or bytesRead > 0
+
+        Dim returndata As String = System.Text.Encoding.UTF8.GetString(totalData.ToArray)
         Do Until returndata.Trim <> ""
             System.Windows.Forms.Application.DoEvents()
         Loop
@@ -76,8 +87,8 @@ Public Class clsApi
 
                             serverStream.Read(inStream, 0, inStream.Length)
 
-                            returndata = System.Text.Encoding.Default.GetString(inStream)
                             Do Until returndata.Trim <> ""
+                                returndata = System.Text.Encoding.Default.GetString(inStream)
                                 System.Windows.Forms.Application.DoEvents()
                             Loop
                             'If returndata.Split("|")(0).ToUpper = "UPDATE" Then
@@ -85,11 +96,12 @@ Public Class clsApi
                             'End If
                         End If
                     Case "UPDATE"
-                        returndata.Split("|")(1)
+                        'returndata.Split("|")(1)
+                        Debug.Print(returndata)
                 End Select
             End If
         Else
-            Dim json As JObject = JObject.Parse(returnData?.ToString)
+            Dim json As JObject = JObject.Parse(returndata?.ToString)
 
             File.WriteAllText(strL_filePath & "drug_" & Date.Today.ToString("yyyyMMdd") & ".json", json("data")?.ToString)
 
