@@ -14,18 +14,16 @@ ODCloud 공공데이터 API를 통해 의약품 정보를 주기적으로 수집
   - 모든 페이지 데이터를 JArray로 병합 후 저장/전송
 - 자동 스케줄 실행
   - Async/Await 기반으로 매일 07:00에 자동 실행
-- 대용량 데이터 전송
-  - 최대 40MB 이상 데이터도 안정적으로 전송 (길이 프리픽스 + 청크 방식)
 - 버전 관리
   - versionIndex.json 파일로 최신 버전/엔드포인트 저장
 
 ⚙️ 기술 스택
 
-Language/UI: Visual Basic .NET (WinForms)
-Network: TcpClient / NetworkStream
-HTTP: HttpWebRequest / HttpClient
-JSON: Newtonsoft.Json (JObject, JArray)
-Scheduler: Task.Delay (비동기 대기)
+- Language/UI: Visual Basic .NET (WinForms)
+- Network: TcpClient / NetworkStream
+- HTTP: HttpWebRequest / HttpClient
+- JSON: Newtonsoft.Json (JObject, JArray)
+- Scheduler: Task.Delay (비동기 대기)
 
 📦 데이터 구조
 
